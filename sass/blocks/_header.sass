@@ -1,0 +1,168 @@
+.header
+  box-shadow: 0px -5px 30px 10px rgba(0, 0, 0, 0.1)
+  padding-bottom: 25px
+  &-top
+    background-color: #000000
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 24px
+    padding: 12px 0
+    letter-spacing: 0.005em
+    &__wrap
+      &-right
+        display: flex
+        align-items: center
+    &__link
+      &-lib
+        display: flex
+        align-items: center
+    &__text
+      color: $primery-text
+      margin-right: 8px
+      &-lib
+        text-decoration: none
+        color: #FFFFFF
+        margin-right: 4px
+      &-eye
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 24px
+        color: $primery-text
+      &::after
+        content: ''
+        margin-left: 5px
+        width: 16px
+        height: 1px
+        background-color: #C4C4C4
+        display: inline-block
+        vertical-align: middle
+    &__phone
+      &-block
+        margin-right: 95px
+        display: flex
+        align-items: center
+      &-number
+        text-decoration: none
+        color: $primery-text
+      &-text
+        display: flex
+        align-items: center
+    &__icon
+      &-block
+        margin-right: 9px
+      &-phone
+        width: 14px
+        height: 15px
+        margin-right: 24px
+    &__eye
+      display: flex
+      align-items: center
+  &-main
+    padding: 20px 0
+    &__wrapper
+      align-items: center
+    &__search
+      margin-right: 16px
+    &__button
+      width: 56px
+      height: 56px
+      border-radius: 16px
+      border: 1px solid $primery-text
+      background-color: #fff
+      padding: 0
+    &__description
+      font-family: Lato
+      width: 250px
+      font-style: normal
+      font-weight: bold
+      font-size: 14px
+      line-height: 14px
+      margin: 16px
+    &__info
+      display: flex
+      align-items: center
+  &__logo
+    margin-right: 26px
+  
+.search
+  &-form
+    width: 564px
+    height: 56px
+    position: relative
+    overflow: hidden
+  &__input
+    width: 100%
+    height: 100%
+    padding: 12px 5px 12px 56px
+    background-color: #F7F7F7
+    border-radius: 16px
+    border: none
+    outline: none
+    &::placeholder
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 32px
+      color: #000000
+  &__button
+    position: absolute
+    height: 56px
+    width: 56px
+    border: none
+    background-color: #F7F7F7
+    border-bottom-left-radius: 16px
+    border-top-left-radius: 16px
+.magnifier
+  width: 24px
+  height: 24px
+.logo
+  width: 304px
+  height: 56px
+.icon
+  &-eye
+    margin-right: 9px
+    width: 21px
+    height: 16px
+  &-history
+    width: 22px
+    height: 22px
+  &-favorites
+    width: 14px
+    height: 17px
+.button
+  &-history
+    margin-right: 16px
+  &-favorites
+    margin-right: 17px
+.author
+  display: flex
+  align-items: center
+  &__photo
+    width: 64px
+    height: 64px
+    margin-right: 15px
+    &-img
+      border-radius: 50%
+  &__info
+    display: flex
+    align-items: flex-start
+  &__text
+    display: flex
+    flex-direction: column
+  &__arrow
+    text-decoration: none
+    width: 24px
+    height: 24px
+      
+  &__name
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 24px
+  &__description
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 24px

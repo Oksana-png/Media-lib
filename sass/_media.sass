@@ -1,0 +1,38 @@
+.container
+  max-width: 1600px
+@media (max-width: 1700px)
+  .container
+    max-width: 1360px
+@media (max-width: 1500px)
+  .container
+    max-width: 880px
+  .header
+    &-top
+      padding: 5.5px 0
+      &__phone
+        &-block
+          margin-right: 30px
+@media (max-width: 1024px)
+  .container
+    max-width: 690px
+  .header
+    &-top
+      padding-top: 9px
+      padding-bottom: 8px
+      &__text
+        &::after
+          display: none
+      &__phone
+        &-text
+          flex-direction: column
+      &__eye
+        width: 134px
+@media (max-width: 768px)
+  .container
+    max-width: 260px
+  .header
+    &-top
+      display: none
+  .logo
+    width: 232px
+    height: 43px
