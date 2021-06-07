@@ -1,0 +1,96 @@
+.articles
+  &__navigation
+    margin-bottom: 32px
+  &__title
+    font-family: 'Montserrat'
+    font-weight: 600
+    font-size: 48px
+    line-height: 56px
+.navigation
+  display: flex
+  align-items: center
+  &__text
+    margin-right: 16px
+    font-size: 14px
+    font-weight: normal
+    line-height: 40px
+  &__pages
+    display: flex
+    align-items: center
+  &__button
+    width: 24px
+    height: 24px
+    border: none
+    background-color: #fff
+  &__arrow
+    height: 10px
+  &__page
+    width: 40px
+    height: 40px
+    text-align: center
+    background: #F7F7F7
+    border-radius: 8px
+    font-size: 16px
+    line-height: 32px
+    margin-right: 16px
+    padding-top: 4px
+    text-decoration: none
+    color: #000
+    &:last-child
+      margin-right: 0
+    &--active
+      background-color: #000
+      color: #fff
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      transform: 0.3s linear
+.filters
+  &__item
+    border: none
+    background-color: #fff
+    margin-right: 24px
+    padding: 10px 0
+    &:last-child
+      margin-right: 0
+  &__icon
+    width: 24px
+    height: 24px
+    margin-right: 24px
+  &__arrow
+    width: 12px
+    height: 10px
+    margin-left: 8px
+  &__choose
+    margin-bottom: 16px
+  &__button
+    &--mobile
+      display: none
+      background: #F7F7F7
+      border-radius: 8px
+      padding-left: 15px
+      padding-right: 7px
+      font-size: 12px
+      line-height: 40px
+      &>.filters__icon
+        margin-right: 8px
+  &__active
+    &-item
+      padding: 10px 24px
+      margin-right: 8px
+      background: #F7F7F7
+      border-radius: 16px
+      display: flex
+      align-items: center
+      &:last-child
+        margin-right: 0
+    &-text
+      font-size: 14px
+  &__delete
+    border: none
+    padding: 0
+    background-color: inherit
+    
+  .cross
+    width: 24px
+    height: 24px
+    margin-left: 8px
+  

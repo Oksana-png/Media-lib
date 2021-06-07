@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:wght@500;600;700&family=Roboto&display=swap" rel="stylesheet">
+
   <title>Media Lib</title>
 </head>
 <body>
@@ -85,7 +88,151 @@
         </div>
       </div>
     </div>
-    <div class="header-nav"></div>
+    <nav class="header-nav">
+      <div class="container">
+        <ul class="nav header-nav__list row">
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#photo'/>
+              </svg>
+              <span class="nav__text">Фотографии</span>
+            </a>
+          </li>
+          <li class="nav__item nav__item--active">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#article'/>
+              </svg>
+              <span class="nav__text">Статьи</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#video'/>
+              </svg>
+              <span class="nav__text">Видео</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#audio'/>
+              </svg>
+              <span class="nav__text">Аудио</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#photo'/>
+              </svg>
+              <span class="nav__text">Презентации</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#video'/>
+              </svg>
+              <span class="nav__text">Промо</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#article'/>
+              </svg>
+              <span class="nav__text">Подкасты</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#audio'/>
+              </svg>
+              <span class="nav__text">Инфо. материалы</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
+  <div class="container">
+    <div class="breadcrumb breadcrumb__block row">
+      <a class="breadcrumb__text">Главная</a>
+      <a class="breadcrumb__text">Статьи</a>
+    </div>
+  </div>
+  <div class="articles">
+    <div class="container">
+      <div class="articles__navigation row justify-content-between">
+        <h1 class="articles__title">Статьи</h1>
+        <div class="navigation">
+          <span class="navigation__text">Страницы</span>
+          <button class="navigation__button ">
+            <img src="image/arrowLeft.svg" alt="arrow prev" class="navigation__arrow navigation__arrow--left">
+          </button>
+          <div class="navigation__pages">
+            <a href="#" class="navigation__page">1</a>
+            <a href="#" class="navigation__page navigation__page--active">2</a>
+            <a href="#" class="navigation__page">3</a>
+            <a href="#" class="navigation__page">4</a>
+            <a href="#" class="navigation__page">...</a>
+          </div>
+          <button class="navigation__button">
+            <img src="image/arrowRight.svg" alt="arrow next" class="navigation__arrow navigation__arrow--right">
+          </button>
+        </div>
+      </div>
+      <div class="filters articles__filter">
+        <div class="filters__button--mobile row">
+          <img src="image/filters.svg" alt="icon choose" class="filters__icon"></img>
+          <span class="filters__text">Фильтр</span>
+          <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow filters__arrow--right">
+        </div>
+        <div class="filters__choose row align-items-center">
+          <img src="image/filters.svg" alt="icon choose" class="filters__icon"></img>
+          <button class="filters__item">
+            <span class="filters__text">Авторы</span>
+            <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
+          </button>
+          <button class="filters__item">
+            <span class="filters__text">Дата публикации</span>
+            <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
+          </button>
+          <button class="filters__item">
+            <span class="filters__text">Теги</span>
+            <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
+          </button>
+          <button class="filters__item">
+            <span class="filters__text">Фильтр редакции</span>
+            <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
+          </button>
+        </div>
+        <div class="filters__active row">
+          <div class="filters__active-item">
+            <span class="filters__active-text">Е. Меньшикова</span>
+            <button class="filters__delete">
+              <img src="image/cross.svg" alt="icon: cross" class="cross">
+            </button>
+          </div>
+          <div class="filters__active-item">
+            <span class="filters__active-text">24.01.2020 - 24.09.2020</span>
+            <button class="filters__delete">
+              <img src="image/cross.svg" alt="icon: cross" class="cross">
+            </button>
+          </div>
+          <div class="filters__active-item">
+            <span class="filters__active-text">Сбросить</span>
+            <button class="filters__delete">
+              <img src="image/cross.svg" alt="icon: cross" class="cross">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

@@ -28,7 +28,6 @@
         font-style: normal
         font-weight: 500
         font-size: 14px
-        line-height: 24px
         color: $primery-text
       &::after
         content: ''
@@ -79,7 +78,7 @@
       font-weight: bold
       font-size: 14px
       line-height: 14px
-      margin: 16px
+      margin-right: 16px
     &__info
       display: flex
       align-items: center
@@ -166,3 +165,78 @@
     font-weight: 300
     font-size: 16px
     line-height: 24px
+.nav
+  &__link
+    display: inline-block
+    text-decoration: none
+    color: inherit
+    padding: 8px 40px 8px 39px
+  &__item
+    position: relative
+    height: 56px
+    font-weight: bold
+    font-size: 16px
+    line-height: 40px
+    fill: #000
+    stroke: #000
+    &--active
+      transform: 0.3 linear
+      fill: #fff
+      stroke: #fff
+      background-color: #000
+      color: #fff
+      border-radius: 16px
+      &.nav
+        &__item
+          &::before
+            background-color: #000
+          &::after
+            background-color: #000
+    &::before
+      content: ''
+      width: 1px
+      height: 16px
+      background-color: $primery-text
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      vertical-align: middle
+      margin-right: 0
+    &:last-child
+      &::after
+        content: ''
+        width: 1px
+        height: 16px
+        background-color: $primery-text
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        vertical-align: middle
+        margin-right: 0
+  &__icon
+    margin-right: 12px
+    fill: inherit
+    stroke: inherit
+.breadcrumb
+  margin-bottom: 0
+  &__block
+    padding: 32px 0
+    background-color: inherit
+  &__text
+    display: inline-block
+    font-family: 'Inter', sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 24px
+    text-decoration: none
+    color: #828282
+    &::after
+      content: '/'
+      color: #828282
+      display: inline-block
+      margin-left: 10px
+      margin-right: 10px
+    &:last-child
+      &::after
+        display: none

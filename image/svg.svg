@@ -1,0 +1,27 @@
+<svg style="display:none">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="article">
+    <path stroke-width="2" d="M4 2h16v20H4zm3 4h10M7 10h6m-6 4h10M7 18h10"></path>
+  </symbol>
+  <symbol id="audio" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0)">
+      <path d="M5.44721 16.1056L5.23607 16H5H1V8H5H5.23607L5.44721 7.89443L12 4.61803V19.382L5.44721 16.1056Z" stroke-width="2"/>
+      <path d="M18.0997 4.9612C19.3418 5.59137 20.3855 6.55276 21.1153 7.73907C21.8451 8.92538 22.2326 10.2904 22.235 11.6832C22.2374 13.076 21.8546 14.4424 21.1289 15.6312C20.4032 16.82 19.3629 17.785 18.123 18.4195" stroke-width="2"/>
+      <path d="M15.9629 8.46114C16.5595 8.76384 17.0608 9.22563 17.4114 9.79547C17.7619 10.3653 17.9481 11.021 17.9492 11.69C17.9504 12.359 17.7665 13.0153 17.4179 13.5864C17.0694 14.1574 16.5697 14.621 15.9741 14.9257" stroke-width="2"/>
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <rect width="24" height="24" fill="white"/>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol>
+  <symbol id="photo" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path stroke-width="2" d="M3 3h18v18H3z"></path>
+    <path d="M3 20.125L9.263 14 20 21" stroke-width="2"></path>
+    <circle cx="15.5" cy="9.5" r="2.5" stroke-width="2"></circle>
+  </symbol>
+  <symbol id="video" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
+    <circle cx="12" cy="12" r="10"  stroke-width="2"></circle>
+    <path d="M15.113 12L10 15.196V8.804L15.113 12z" stroke-width="2"></path>
+  </symbol>
+</svg>

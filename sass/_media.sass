@@ -3,6 +3,23 @@
 @media (max-width: 1700px)
   .container
     max-width: 1360px
+  .header
+    &-main
+      padding: 24px 0
+      &__description
+        width: 200px
+  .search
+    &-form
+      width: 402px
+  .button
+    &-favorites
+      margin-right: 25px
+  .nav
+    &__link
+      padding: 8px 24px
+  .breadcrumb
+    &__block
+      padding: 25px 0
 @media (max-width: 1500px)
   .container
     max-width: 880px
@@ -12,6 +29,57 @@
       &__phone
         &-block
           margin-right: 30px
+    &-main
+      padding: 15px 0
+      &__description
+        margin-right: 54px
+      &__search
+        margin-right: 10px
+  .button
+    &-history
+      margin-right: 10px
+    &-favorites
+      margin-right: 10px
+  .search
+    &-form
+      width: 56px
+    &__input
+      display: none
+    &__button
+      border-radius: 16px
+  .author
+    &__photo
+      margin-right: 10px
+    &__text
+      display: none
+  .nav
+    &__item
+      height: 75px
+      &::before
+        display: none
+      &::after
+        display: none
+      &:last-child
+        .nav
+          &__link
+            padding: 13px 13px
+    &__link
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 13px 20px
+      font-size: 14px
+      line-height: 14px
+    &__icon
+      margin-right: 0
+      margin-bottom: 12px
+  .articles
+    &__title
+      font-size: 35px
+      line-height: 56px
+      margin-bottom: 0
+    &__navigation
+      margin-bottom: 25px
 @media (max-width: 1024px)
   .container
     max-width: 690px
@@ -19,6 +87,7 @@
     &-top
       padding-top: 9px
       padding-bottom: 8px
+      line-height: 16px
       &__text
         &::after
           display: none
@@ -27,12 +96,76 @@
           flex-direction: column
       &__eye
         width: 134px
+    &-main
+      &__description
+        display: none
+    &__logo
+      margin-right: 90px
+  .nav
+    &__link
+      padding: 12px 12px
+    &__item:last-child
+      &>.nav__link
+        text-align: center
+        width: 74px
+        padding-bottom: 7px
+      & .nav__icon
+        margin-bottom: 3px
+  .navigation
+    &__text
+      display: none
+    &__button
+      display: none
+  .filters
+    &__choose
+      margin-bottom: 5px
 @media (max-width: 768px)
   .container
     max-width: 260px
   .header
     &-top
       display: none
+    &-main
+      padding: 17px 0 0 0
+      &__wrapper
+        justify-content: center
+      &__info
+        display: none
+    &__logo
+      margin-right: 0
+  .author
+    display: none
   .logo
     width: 232px
     height: 43px
+  .nav
+    display: none
+  .breadcrumb
+    &__block
+      padding: 11px 0
+    &__text
+      font-size: 10px
+      line-height: 24px
+  .navigation
+    display: none
+  .articles
+    &__title
+      font-size: 25px
+      line-height: 30px
+    &__navigation
+      margin-bottom: 15px
+    &__filter
+      margin-bottom: 15px
+  .filters
+    &__button
+      &--mobile
+        display: block
+    &__text
+      margin-right: auto
+    &__arrow
+      &--right
+        display: inline-block
+    &__choose
+      display: none
+    &__active
+      display: none
