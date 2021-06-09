@@ -166,8 +166,8 @@
     </div>
   </div>
   <div class="articles">
-    <div class="container">
-      <div class="articles__navigation row justify-content-between">
+    <div class="container articles__block">
+      <div class="articles__navigation justify-content-between">
         <h1 class="articles__title">Статьи</h1>
         <div class="navigation">
           <span class="navigation__text">Страницы</span>
@@ -192,7 +192,7 @@
           <span class="filters__text">Фильтр</span>
           <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow filters__arrow--right">
         </div>
-        <div class="filters__choose row align-items-center">
+        <div class="filters__choose align-items-center">
           <img src="image/filters.svg" alt="icon choose" class="filters__icon"></img>
           <button class="filters__item">
             <span class="filters__text">Авторы</span>
@@ -211,7 +211,7 @@
             <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
           </button>
         </div>
-        <div class="filters__active row">
+        <div class="filters__active">
           <div class="filters__active-item">
             <span class="filters__active-text">Е. Меньшикова</span>
             <button class="filters__delete">
@@ -230,6 +230,55 @@
               <img src="image/cross.svg" alt="icon: cross" class="cross">
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="view articles__view row">
+        <div class="view__left">
+          <img src="image/sort.svg" alt="icon: sort" class="view__icon">
+          <div class="view__left--mobile">
+            <span class="view__left-text">Сортировать:</span>
+            <button class="view__dropdown">
+              Сначала поздние
+              <img src="image/arrowDown.svg" alt="arrow down" class="view__dropdown-icon">
+            </button>
+          </div>
+          <a href="#" class="view__sort">Сначало новые</a>
+          <a href="#" class="view__sort">Сначало поздние</a>
+          <a href="#" class="view__sort">От А до Я</a>
+          <a href="#" class="view__sort">От Я до А</a>
+        </div>
+        <div class="view__right">
+          <button class="view__show view__show--active">
+            <svg width="24" height="24" class="icon">
+              <use xlink:href="image/svg.svg#largeСards"></use>
+            </svg>
+          </button>
+          <button class="view__show">
+            <svg width="24" height="24" class="icon">
+              <use xlink:href="image/svg.svg#smallСards"></use>
+            </svg>
+          </button>
+          <button class="view__show">
+            <svg width="24" height="24" class="icon">
+              <use xlink:href="image/svg.svg#listLarge"></use>
+            </svg>
+          </button>
+          <button class="view__show">
+            <svg width="24" height="24" class="icon">
+              <use xlink:href="image/svg.svg#listSmall"></use>
+            </svg>
+          </button>
+          <button class="view__edit">
+            <svg width="32" height="32" class="icon">
+              <use xlink:href="image/svg.svg#toggleButton"></use>
+            </svg>
+            <!-- <svg width="32" height="32" class="icon">
+              <use xlink:href="image/svg.svg#toggleActive"></use>
+            </svg> -->
+          </button>
+          <span class="view__edit-text">Редактирование</span>
         </div>
       </div>
     </div>

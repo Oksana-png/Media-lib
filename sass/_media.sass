@@ -80,6 +80,19 @@
       margin-bottom: 0
     &__navigation
       margin-bottom: 25px
+    &__block
+      margin-bottom: 25px
+  .view
+    &__sort
+      font-size: 14px
+      line-height: 48px
+    &__show
+      margin-right: 0
+    &__edit
+      margin-left: 20px
+      &-text
+        font-size: 14px
+        line-height: 48px
 @media (max-width: 1024px)
   .container
     max-width: 690px
@@ -119,6 +132,19 @@
   .filters
     &__choose
       margin-bottom: 5px
+  .view
+    &__show
+      &:nth-child(2)
+        display: none
+    &__edit
+      margin-left: 30px
+    &__left
+      &--mobile
+        display: flex
+    &__sort
+      display: none
+    &__icon
+      margin-right: 10px
 @media (max-width: 768px)
   .container
     max-width: 260px
@@ -156,10 +182,14 @@
       margin-bottom: 15px
     &__filter
       margin-bottom: 15px
+    &__block
+      margin-bottom: 15px
   .filters
     &__button
       &--mobile
-        display: block
+        display: flex
+        align-items: center
+        justify-content: space-between
     &__text
       margin-right: auto
     &__arrow
@@ -169,3 +199,10 @@
       display: none
     &__active
       display: none
+  .view
+    &__left
+      display: none
+    &__show
+      display: none
+    &__edit
+      margin-left: 0

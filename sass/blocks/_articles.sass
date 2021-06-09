@@ -1,11 +1,19 @@
 .articles
   &__navigation
+    display: flex
     margin-bottom: 32px
   &__title
     font-family: 'Montserrat'
     font-weight: 600
     font-size: 48px
     line-height: 56px
+  &>.container:first-child
+    padding: 0
+  &__view
+    align-items: center
+    justify-content: space-between
+  &__block
+    margin-bottom: 32px
 .navigation
   display: flex
   align-items: center
@@ -70,9 +78,13 @@
       padding-right: 7px
       font-size: 12px
       line-height: 40px
+      border: none
+      width: 100%
+      margin: 0
       &>.filters__icon
         margin-right: 8px
   &__active
+    display: flex
     &-item
       padding: 10px 24px
       margin-right: 8px
@@ -93,4 +105,56 @@
     width: 24px
     height: 24px
     margin-left: 8px
-  
+.view
+  &__left
+    display: flex
+    align-items: center
+    &--mobile
+      display: none
+    &-text
+      margin-right: 10px
+      font-size: 14px
+      line-height: 48px
+  &__dropdown
+    border: none
+    background-color: #fff
+    font-size: 14px
+    line-height: 48px
+    &-icon
+      width: 12px
+      height: 10px
+      margin-left: 8px
+  &__sort
+    margin-right: 16px
+    text-decoration: none
+    color: #000
+    font-weight: normal
+    font-size: 16px
+    line-height: 48px
+  &__icon
+    margin-right: 16px
+    width: 24px
+    height: 24px
+  &__show
+    width: 40px
+    height: 40px
+    margin-right: 16px
+    border: none
+    border-radius: 8px
+    fill: #000
+    stroke: #000
+    background-color: #fff
+    &--active
+      fill: #fff
+      stroke: #fff
+      background-color: #000
+      transform: 0.3s linear
+  &__edit
+    padding: 0
+    border: none
+    background-color: #fff
+    margin-left: 32px
+    margin-right: 16px
+    &-text
+      font-size: 16px
+      line-height: 48px
