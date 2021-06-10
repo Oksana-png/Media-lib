@@ -160,7 +160,7 @@
     </nav>
   </header>
   <div class="container">
-    <div class="breadcrumb breadcrumb__block row">
+    <div class="breadcrumb breadcrumb--block row">
       <a class="breadcrumb__text">Главная</a>
       <a class="breadcrumb__text">Статьи</a>
     </div>
@@ -187,13 +187,13 @@
         </div>
       </div>
       <div class="filters articles__filter">
-        <div class="filters__button--mobile row">
-          <img src="image/filters.svg" alt="icon choose" class="filters__icon"></img>
+        <div class="filters__mobile row">
+          <img src="image/filters.svg" alt="icon choose" class="filters__icon">
           <span class="filters__text">Фильтр</span>
           <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow filters__arrow--right">
         </div>
         <div class="filters__choose align-items-center">
-          <img src="image/filters.svg" alt="icon choose" class="filters__icon"></img>
+          <img src="image/filters.svg" alt="icon choose" class="filters__icon">
           <button class="filters__item">
             <span class="filters__text">Авторы</span>
             <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
@@ -233,11 +233,11 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container ">
       <div class="view articles__view row">
         <div class="view__left">
           <img src="image/sort.svg" alt="icon: sort" class="view__icon">
-          <div class="view__left--mobile">
+          <div class="view__mobile">
             <span class="view__left-text">Сортировать:</span>
             <button class="view__dropdown">
               Сначала поздние
@@ -280,6 +280,446 @@
           </button>
           <span class="view__edit-text">Редактирование</span>
         </div>
+      </div>
+      <div class="articles__cards cards row">
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card"">
+          <div class="card">
+            <a href="#" class="card__link-image">
+              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
+              <div class="card__link-eye">
+              </div>
+            </a>
+            <div class="card__text">
+              <div class="card__section">
+                <svg width="16" height="16" class="articles">
+                  <use xlink:href='image/svg.svg#articles'/>
+                </svg>
+                <span class="card__section-text">Статья</span>
+                <svg width="24" height="24" class="public-link">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                <div class="card__id">ID 880</div>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">Шедевры, рождённые любовью</h3>
+                <div class="card__author">Е. Меньшикова, Л. Останина</div>
+                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
+                <div class="card__data">19 декабря 2020 года</div>
+              </div>
+              <div class="card__down">
+                <form action="#">
+                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
+                  <label for="card__checkbox" class="card__button-checkbox">
+                    <div class="card__checkbox-active">
+                      <svg width="12" height="9" class="card__checkbox-check">
+                        <use xlink:href='image/svg.svg#check'/>
+                      </svg>
+                      <span class="card__hover-text">Выделить</span>
+                    </div>
+                  </label>
+                </form>
+                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
+                <button class="card__button card__button-favorites ">
+                  <svg width="24" height="24" class="card__favorites-icon">
+                    <use xlink:href='image/svg.svg#favoritesActive'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="download">
+                    <use xlink:href='image/svg.svg#download'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="share">
+                    <use xlink:href='image/svg.svg#share'/>
+                  </svg>
+                </button>
+                <button class="card__button card__button-dots">
+                  <svg width="24" height="24" class="dots">
+                    <use xlink:href='image/svg.svg#dots'/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
+          <div class="card">
+            <a href="#" class="card__link-image">
+              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
+              <div class="card__link-eye">
+              </div>
+            </a>
+            <div class="card__text">
+              <div class="card__section">
+                <svg width="16" height="16" class="articles">
+                  <use xlink:href='image/svg.svg#articles'/>
+                </svg>
+                <span class="card__section-text">Статья</span>
+                <svg width="24" height="24" class="public-link">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                <div class="card__id">ID 880</div>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">Шедевры, рождённые любовью</h3>
+                <div class="card__author">Е. Меньшикова, Л. Останина</div>
+                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
+                <div class="card__data">19 декабря 2020 года</div>
+              </div>
+              <div class="card__down">
+                <form action="#">
+                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
+                  <label for="card__checkbox" class="card__button-checkbox">
+                    <div class="card__checkbox-active">
+                      <svg width="12" height="9" class="card__checkbox-check">
+                        <use xlink:href='image/svg.svg#check'/>
+                      </svg>
+                      <span class="card__hover-text">Выделить</span>
+                    </div>
+                  </label>
+                </form>
+                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
+                <button class="card__button card__button-favorites ">
+                  <svg width="24" height="24" class="card__favorites-icon">
+                    <use xlink:href='image/svg.svg#favoritesActive'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="download">
+                    <use xlink:href='image/svg.svg#download'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="share">
+                    <use xlink:href='image/svg.svg#share'/>
+                  </svg>
+                </button>
+                <button class="card__button card__button-dots">
+                  <svg width="24" height="24" class="dots">
+                    <use xlink:href='image/svg.svg#dots'/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
+          <div class="card">
+            <a href="#" class="card__link-image">
+              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
+              <div class="card__link-eye">
+              </div>
+            </a>
+            <div class="card__text">
+              <div class="card__section">
+                <svg width="16" height="16" class="articles">
+                  <use xlink:href='image/svg.svg#articles'/>
+                </svg>
+                <span class="card__section-text">Статья</span>
+                <svg width="24" height="24" class="public-link">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                <div class="card__id">ID 880</div>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">Шедевры, рождённые любовью</h3>
+                <div class="card__author">Е. Меньшикова, Л. Останина</div>
+                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
+                <div class="card__data">19 декабря 2020 года</div>
+              </div>
+              <div class="card__down">
+                <form action="#">
+                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
+                  <label for="card__checkbox" class="card__button-checkbox">
+                    <div class="card__checkbox-active">
+                      <svg width="12" height="9" class="card__checkbox-check">
+                        <use xlink:href='image/svg.svg#check'/>
+                      </svg>
+                      <span class="card__hover-text">Выделить</span>
+                    </div>
+                  </label>
+                </form>
+                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
+                <button class="card__button card__button-favorites ">
+                  <svg width="24" height="24" class="card__favorites-icon">
+                    <use xlink:href='image/svg.svg#favoritesActive'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="download">
+                    <use xlink:href='image/svg.svg#download'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="share">
+                    <use xlink:href='image/svg.svg#share'/>
+                  </svg>
+                </button>
+                <button class="card__button card__button-dots">
+                  <svg width="24" height="24" class="dots">
+                    <use xlink:href='image/svg.svg#dots'/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
+          <div class="card">
+            <a href="#" class="card__link-image">
+              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
+              <div class="card__link-eye">
+              </div>
+            </a>
+            <div class="card__text">
+              <div class="card__section">
+                <svg width="16" height="16" class="articles">
+                  <use xlink:href='image/svg.svg#articles'/>
+                </svg>
+                <span class="card__section-text">Статья</span>
+                <svg width="24" height="24" class="public-link">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                <div class="card__id">ID 880</div>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">Шедевры, рождённые любовью</h3>
+                <div class="card__author">Е. Меньшикова, Л. Останина</div>
+                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
+                <div class="card__data">19 декабря 2020 года</div>
+              </div>
+              <div class="card__down">
+                <form action="#">
+                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
+                  <label for="card__checkbox" class="card__button-checkbox">
+                    <div class="card__checkbox-active">
+                      <svg width="12" height="9" class="card__checkbox-check">
+                        <use xlink:href='image/svg.svg#check'/>
+                      </svg>
+                      <span class="card__hover-text">Выделить</span>
+                    </div>
+                  </label>
+                </form>
+                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
+                <button class="card__button card__button-favorites ">
+                  <svg width="24" height="24" class="card__favorites-icon">
+                    <use xlink:href='image/svg.svg#favoritesActive'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="download">
+                    <use xlink:href='image/svg.svg#download'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="share">
+                    <use xlink:href='image/svg.svg#share'/>
+                  </svg>
+                </button>
+                <button class="card__button card__button-dots">
+                  <svg width="24" height="24" class="dots">
+                    <use xlink:href='image/svg.svg#dots'/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
+          <div class="card">
+            <a href="#" class="card__link-image">
+              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
+              <div class="card__link-eye">
+              </div>
+            </a>
+            <div class="card__text">
+              <div class="card__section">
+                <svg width="16" height="16" class="articles">
+                  <use xlink:href='image/svg.svg#articles'/>
+                </svg>
+                <span class="card__section-text">Статья</span>
+                <svg width="24" height="24" class="public-link">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                <div class="card__id">ID 880</div>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">Шедевры, рождённые любовью</h3>
+                <div class="card__author">Е. Меньшикова, Л. Останина</div>
+                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
+                <div class="card__data">19 декабря 2020 года</div>
+              </div>
+              <div class="card__down">
+                <form action="#">
+                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
+                  <label for="card__checkbox" class="card__button-checkbox">
+                    <div class="card__checkbox-active">
+                      <svg width="12" height="9" class="card__checkbox-check">
+                        <use xlink:href='image/svg.svg#check'/>
+                      </svg>
+                      <span class="card__hover-text">Выделить</span>
+                    </div>
+                  </label>
+                </form>
+                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
+                <button class="card__button card__button-favorites ">
+                  <svg width="24" height="24" class="card__favorites-icon">
+                    <use xlink:href='image/svg.svg#favoritesActive'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="download">
+                    <use xlink:href='image/svg.svg#download'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="share">
+                    <use xlink:href='image/svg.svg#share'/>
+                  </svg>
+                </button>
+                <button class="card__button card__button-dots">
+                  <svg width="24" height="24" class="dots">
+                    <use xlink:href='image/svg.svg#dots'/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
+          <div class="card">
+            <a href="#" class="card__link-image">
+              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
+              <div class="card__link-eye">
+              </div>
+            </a>
+            <div class="card__text">
+              <div class="card__section">
+                <svg width="16" height="16" class="articles">
+                  <use xlink:href='image/svg.svg#articles'/>
+                </svg>
+                <span class="card__section-text">Статья</span>
+                <svg width="24" height="24" class="public-link">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                <div class="card__id">ID 880</div>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">Шедевры, рождённые любовью</h3>
+                <div class="card__author">Е. Меньшикова, Л. Останина</div>
+                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
+                <div class="card__data">19 декабря 2020 года</div>
+              </div>
+              <div class="card__down">
+                <form action="#">
+                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
+                  <label for="card__checkbox" class="card__button-checkbox">
+                    <div class="card__checkbox-active">
+                      <svg width="12" height="9" class="card__checkbox-check">
+                        <use xlink:href='image/svg.svg#check'/>
+                      </svg>
+                      <span class="card__hover-text">Выделить</span>
+                    </div>
+                  </label>
+                </form>
+                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
+                <button class="card__button card__button-favorites ">
+                  <svg width="24" height="24" class="card__favorites-icon">
+                    <use xlink:href='image/svg.svg#favoritesActive'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="download">
+                    <use xlink:href='image/svg.svg#download'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="share">
+                    <use xlink:href='image/svg.svg#share'/>
+                  </svg>
+                </button>
+                <button class="card__button card__button-dots">
+                  <svg width="24" height="24" class="dots">
+                    <use xlink:href='image/svg.svg#dots'/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
+          <div class="card">
+            <a href="#" class="card__link-image">
+              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
+              <div class="card__link-eye">
+              </div>
+            </a>
+            <div class="card__text">
+              <div class="card__section">
+                <svg width="16" height="16" class="articles">
+                  <use xlink:href='image/svg.svg#articles'/>
+                </svg>
+                <span class="card__section-text">Статья</span>
+                <svg width="24" height="24" class="public-link">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                <div class="card__id">ID 880</div>
+              </div>
+              <div class="card__info">
+                <h3 class="card__title">Шедевры, рождённые любовью</h3>
+                <div class="card__author">Е. Меньшикова, Л. Останина</div>
+                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
+                <div class="card__data">19 декабря 2020 года</div>
+              </div>
+              <div class="card__down">
+                <form action="#">
+                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
+                  <label for="card__checkbox" class="card__button-checkbox">
+                    <div class="card__checkbox-active">
+                      <svg width="12" height="9" class="card__checkbox-check">
+                        <use xlink:href='image/svg.svg#check'/>
+                      </svg>
+                      <span class="card__hover-text">Выделить</span>
+                    </div>
+                  </label>
+                </form>
+                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
+                <button class="card__button card__button-favorites ">
+                  <svg width="24" height="24" class="card__favorites-icon">
+                    <use xlink:href='image/svg.svg#favoritesActive'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="download">
+                    <use xlink:href='image/svg.svg#download'/>
+                  </svg>
+                </button>
+                <button class="card__button">
+                  <svg width="24" height="24" class="share">
+                    <use xlink:href='image/svg.svg#share'/>
+                  </svg>
+                </button>
+                <button class="card__button card__button-dots">
+                  <svg width="24" height="24" class="dots">
+                    <use xlink:href='image/svg.svg#dots'/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more articles__more">
+        <div class="more__hidden"></div>
+        <button class="more__button">Показать ещё</button>
+        <button class="more__show">
+          Выводить по 25
+          <img src="image/arrowDown.svg" alt="arrow down" class="more__arrow">
+        </button>
+      </div>
+      <div class="navigation articles__navigation">
+        button.navigation__button+.navigation
       </div>
     </div>
   </div>

@@ -1,5 +1,10 @@
 .container
   max-width: 1600px
+@media ( min-width:  1501px)
+  .col-xxl-3
+    flex: 0 0 25%
+    max-width: 25%
+  
 @media (max-width: 1700px)
   .container
     max-width: 1360px
@@ -18,7 +23,7 @@
     &__link
       padding: 8px 24px
   .breadcrumb
-    &__block
+    &--block
       padding: 25px 0
 @media (max-width: 1500px)
   .container
@@ -93,7 +98,34 @@
       &-text
         font-size: 14px
         line-height: 48px
-@media (max-width: 1024px)
+  .card
+    &__image
+      height: 180px
+    &__title
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 8px
+    &__author
+      font-size: 14px
+      line-height: 32px
+      margin-bottom: 8px
+    &__description
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 12px
+    &__data
+      font-size: 14px
+      line-height: 32px
+    &__info
+      margin-bottom: 15px
+    &__section
+      &-text
+        font-size: 14px
+    &__id
+      font-size: 14px
+    &__section
+      margin-bottom: 12px
+@media (max-width: 991px)
   .container
     max-width: 690px
   .header
@@ -138,14 +170,13 @@
         display: none
     &__edit
       margin-left: 30px
-    &__left
-      &--mobile
-        display: flex
+    &__mobile
+      display: flex
     &__sort
       display: none
     &__icon
       margin-right: 10px
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 260px
   .header
@@ -167,7 +198,7 @@
   .nav
     display: none
   .breadcrumb
-    &__block
+    &--block
       padding: 11px 0
     &__text
       font-size: 10px
@@ -184,12 +215,17 @@
       margin-bottom: 15px
     &__block
       margin-bottom: 15px
+    &__view 
+      margin-bottom: 15px
+    &__cards
+      margin-bottom: 15px
+    &__card
+      margin-bottom: 10px
   .filters
-    &__button
-      &--mobile
-        display: flex
-        align-items: center
-        justify-content: space-between
+    &__mobile
+      display: flex
+      align-items: center
+      justify-content: space-between
     &__text
       margin-right: auto
     &__arrow
@@ -206,3 +242,74 @@
       display: none
     &__edit
       margin-left: 0
+  .card
+    &__image
+      height: 130px
+    &__text
+      padding: 20px 24px
+    &__section
+      margin-bottom: 5px
+    &__title
+      font-size: 12px
+      line-height: 15px
+      margin-bottom: 8px
+    &__author
+      font-size: 8px
+      line-height: 10px
+      margin-bottom: 8px
+    &__description
+      font-size: 8px
+      line-height: 10px
+      margin-bottom: 5px
+    &__data
+      font-size: 8px
+      line-height: 10px
+    &__info
+      margin-bottom: 15px
+    &__section
+      &-text
+        font-size: 12px
+        line-height: 15px
+    &__id
+      font-size: 12px
+      line-height: 15px
+      color: #000
+    &__button 
+      width: 30px
+      height: 30px
+      margin-right: 10px
+    &__favorites-icon
+      stroke: #000
+      width: 16px
+      height: 16px
+    &__button
+      &-favorites
+        position: static
+        background-color: #F7F7F7
+        opacity: 1
+    &__button
+      &-checkbox
+        position: static
+        width: 30px
+        height: 30px
+        margin-bottom: 0
+        margin-right: 10px
+        border: 1px solid #D6D6D6
+        background-color: #fff
+    &__checkbox
+      &-active
+        position: static
+        border-color: #000
+        margin-left: 6px
+  .download
+    width: 16px
+    height: 16px
+  .share
+    width: 16px
+    height: 16px
+  .dots
+    width: 16px
+    height: 16px
+  .share
+    width: 16px
+    height: 16px
