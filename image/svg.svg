@@ -87,4 +87,13 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" id="check">
     <path d="M1 5l3 2 6-6" stroke="#fff" stroke-width="2"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 14" id="arrow-prev">
+    <path d="M6.444 1L2 7m0 0l4.444 6M2 7h10" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 14" id="arrow-next">
+    <path d="M5.556 1L10 7m0 0l-4.444 6M10 7H0" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11" id="cross">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.11.197L.695 1.611l3.89 3.89L.694 9.39l1.415 1.414 3.889-3.89 3.889 3.89 1.414-1.414-3.89-3.89 3.89-3.889L9.888.197l-3.89 3.89L2.11.196z" fill="#000"></path>
+  </symbol>
 </svg>

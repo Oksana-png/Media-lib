@@ -1,9 +1,5 @@
 .container
   max-width: 1600px
-@media ( min-width:  1501px)
-  .col-xxl-3
-    flex: 0 0 25%
-    max-width: 25%
   
 @media (max-width: 1700px)
   .container
@@ -25,6 +21,14 @@
   .breadcrumb
     &--block
       padding: 25px 0
+  .navigation
+    &__page
+      &-down
+        margin-right: 7px
+@media ( min-width:  1501px)
+  .col-xxl-3
+    flex: 0 0 25%
+    max-width: 25%
 @media (max-width: 1500px)
   .container
     max-width: 880px
@@ -125,6 +129,23 @@
       font-size: 14px
     &__section
       margin-bottom: 12px
+  .navigation
+    &__page
+      &-down
+        &:nth-child( n+18 )
+          display: none
+  .footer
+    padding-bottom: 48px
+    &__description
+      max-width: 421px
+    &__logo
+      width: 226px
+      height: 41px
+    &__copyright
+      display: flex
+      align-items: center
+      &-text
+        max-width: 104px
 @media (max-width: 991px)
   .container
     max-width: 690px
@@ -161,6 +182,11 @@
       display: none
     &__button
       display: none
+    &__page
+      &-down
+        &:nth-child(n + 13)
+          display: none
+          margin-right: 10px
   .filters
     &__choose
       margin-bottom: 5px
@@ -176,6 +202,10 @@
       display: none
     &__icon
       margin-right: 10px
+  .footer
+    padding-bottom: 29px
+    &__description
+      max-width: 220px
 @media (max-width: 767px)
   .container
     max-width: 260px
@@ -205,12 +235,26 @@
       line-height: 24px
   .navigation
     display: none
+    &__pages
+      &-down
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+    &__page
+      &-down
+        margin-right: 4px
+        margin-bottom: 5px
+    &__button
+      &-down
+        display: none
   .articles
+    padding-bottom: 15px
     &__title
       font-size: 25px
       line-height: 30px
     &__navigation
-      margin-bottom: 15px
+      display: flex
+      margin-bottom: 10px
     &__filter
       margin-bottom: 15px
     &__block
@@ -221,6 +265,14 @@
       margin-bottom: 15px
     &__card
       margin-bottom: 10px
+    &__more
+      flex-direction: column
+  .more
+    &__button
+      transform: translateX(0)
+      width: 100%
+    &__show
+      display: none
   .filters
     &__mobile
       display: flex
@@ -294,13 +346,18 @@
         height: 30px
         margin-bottom: 0
         margin-right: 10px
+        opacity: 1
         border: 1px solid #D6D6D6
         background-color: #fff
     &__checkbox
       &-active
         position: static
-        border-color: #000
+        border-color: #d6d6d6
         margin-left: 6px
+  .public
+    &-link
+      width: 16px
+      height: 16px
   .download
     width: 16px
     height: 16px
@@ -313,3 +370,16 @@
   .share
     width: 16px
     height: 16px
+  .footer
+    padding-top: 20px
+    padding-bottom: 50px
+    &__fullname
+      margin-top: 20px
+      font-weight: 300
+      font-size: 10px
+      line-height: 12px
+    &__logo
+      margin-bottom: 20px
+    &__description
+      margin-left: 0
+      margin-bottom: 20px

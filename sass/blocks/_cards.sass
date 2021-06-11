@@ -19,6 +19,9 @@
       display: none
       font-size: 14px
       line-height: 16px
+      padding-top: 12px
+      padding-bottom: 12px
+      padding-right: 12px
   &__id
     margin-left: auto
     font-weight: 300
@@ -78,11 +81,13 @@
       background-color: #000
       opacity: 0.3
       z-index: 10
+      transition: 0.2s linear
       &:hover
         backdrop-filter: blur(0)
         border: 1px solid #D6D6D6
         background-color: #fff
         opacity: 1
+        transition: 0.2s linear
         & .card
           &__favorites
             &-icon
@@ -163,4 +168,5 @@
       font-size: 16px
       line-height: 24px
 .articles
-  margin-right: 8px
+  &-icon
+    margin-right: 8px
