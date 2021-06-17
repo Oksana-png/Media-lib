@@ -84,6 +84,42 @@
                 <img src="image/OptionMenu.svg" alt="arrowDown" class="author__arrow-img">
               </a>
             </div>
+            <div class="author-menu">
+              <ul class="author-menu__list">
+                <li class="author-menu__item">
+                  <a href="#" class="author-menu__link">
+                    <svg class="author-menu__icon">
+                      <use xlink:href="image/svg.svg#profile"></use>
+                    </svg>
+                    <span class="author-menu__text">Профиль</span>
+                  </a>
+                </li>
+                <li class="author-menu__item">
+                  <a href="#" class="author-menu__link">
+                    <svg class="author-menu__icon">
+                      <use xlink:href="image/svg.svg#link"></use>
+                    </svg>
+                    <span class="author-menu__text">Публичные ссылки</span>
+                  </a>
+                </li>
+                <li class="author-menu__item">
+                  <a href="#" class="author-menu__link">
+                    <svg class="author-menu__icon">
+                      <use xlink:href="image/svg.svg#delete"></use>
+                    </svg>
+                    <span class="author-menu__text">Корзина</span>
+                  </a>
+                </li>
+                <li class="author-menu__item">
+                  <a href="#" class="author-menu__link">
+                    <svg class="author-menu__icon">
+                      <use xlink:href="image/svg.svg#exit"></use>
+                    </svg>
+                    <span class="author-menu__text">Выйти из профиля</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -161,8 +197,8 @@
   </header>
   <div class="container">
     <div class="breadcrumb breadcrumb--block row">
-      <a class="breadcrumb__text">Главная</a>
-      <a class="breadcrumb__text">Статьи</a>
+      <a href="#" class="breadcrumb__text">Главная</a>
+      <a href="#" class="breadcrumb__text">Статьи</a>
     </div>
   </div>
   <div class="articles">
@@ -287,6 +323,7 @@
             <a href="#" class="card__link-image">
               <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
               <div class="card__link-eye">
+                <img src="image/eye.svg" alt="eye" class="card__eye">
               </div>
             </a>
             <div class="card__text">
@@ -307,8 +344,6 @@
                 <div class="card__data">19 декабря 2020 года</div>
               </div>
               <div class="card__down">
-
-
                 <form action="#">
                   <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
                   <div class="card__button-checkbox">
@@ -320,8 +355,6 @@
                     </label>
                   </div>
                 </form>
-
-
                 <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
                 <button class="card__button card__button-favorites ">
                   <svg width="24" height="24" class="card__favorites-icon">
@@ -766,7 +799,7 @@
             <tr class="popup-info__id">
               <td class="popup-info__name">ID</td>
               <td class="popup-info__data">
-                
+                <button class="popup-info__copy-button"><img src="image/copy.svg" alt="icon: copy" class="popup-info__copy-icon"></button>
                 235211
               </td>
             </tr>
@@ -794,7 +827,6 @@
         </table>
       </div>
       <h4 class="popup-info__subtitle">История изменений</h4>
-
       <div class="popup-info__content-table">
         <table class="popup-info__table-head">
           <thead>
@@ -810,33 +842,82 @@
           <tbody>
             <tr class="popup-info__row">
               <td class="popup-info__editor">Елена Меньшикова</td>
-              <td class="popup-info__date">21.12.2020</td>
+              <td class="popup-info__datet">21.12.2020</td>
               <td class="popup-info__field">Анонс</td>
-              <td class="popup-info__datas">14 августа в детский сад № 105 для детей с О...</td>
+              <td class="popup-info__datas">14 августа в детский сад № 105..</td>
             </tr>
             <tr class="popup-info__row">
               <td class="popup-info__editor">Елена Меньшикова</td>
-              <td class="popup-info__date">21.12.2020</td>
+              <td class="popup-info__datet">21.12.2020</td>
               <td class="popup-info__field">Анонс</td>
-              <td class="popup-info__datas">14 августа в детский сад № 105 для детей с О...</td>
+              <td class="popup-info__datas">14 августа в детский сад № 105..</td>
             </tr>
             <tr class="popup-info__row">
               <td class="popup-info__editor">Елена Меньшикова</td>
-              <td class="popup-info__date">21.12.2020</td>
+              <td class="popup-info__datet">21.12.2020</td>
               <td class="popup-info__field">Анонс</td>
-              <td class="popup-info__datas">14 августа в детский сад № 105 для детей с О...</td>
+              <td class="popup-info__datas">14 августа в детский сад № 105..</td>
             </tr>
             <tr class="popup-info__row">
               <td class="popup-info__editor">Елена Меньшикова</td>
-              <td class="popup-info__date">21.12.2020</td>
+              <td class="popup-info__datet">21.12.2020</td>
               <td class="popup-info__field">Анонс</td>
-              <td class="popup-info__datas">14 августа в детский сад № 105 для детей с О...</td>
+              <td class="popup-info__datas">14 августа в детский сад № 105..</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div class="popup-info__mobile-table">
+        <div class="popup-info__blocks">
+          <div class="popup-info__mobile-editor">
+            Редактор: <span class="popup-info__mobile-editor-data">Елена Меньшикова</span>
+          </div>
+          <div class="popup-info__mobile-date">
+            21.12.2020
+          </div>
+          <div class="popup-info__mobile-field">
+            Поле: <span class="popup-info__mobile-field-data">Анонс</span>
+          </div>
+          <div class="popup-info__mobile-datas">
+            Данные: <span class="popup-info__mobile-datas-data">14 августа в детский сад № 105 14 августа в детский сад № 105 14 августа в детский сад № 105 14 августа в детский сад №...</span>
+          </div>
+        </div>
+        <div class="popup-info__blocks">
+          <div class="popup-info__mobile-editor">
+            Редактор: <span class="popup-info__mobile-editor-data">Елена Меньшикова</span>
+          </div>
+          <div class="popup-info__mobile-date">
+            21.12.2020
+          </div>
+          <div class="popup-info__mobile-field">
+            Поле: <span class="popup-info__mobile-field-data">Анонс</span>
+          </div>
+          <div class="popup-info__mobile-datas">
+            Данные: <span class="popup-info__mobile-datas-data">14 августа в детский сад № 105 14 августа в детский сад № 105 14 августа в детский сад № 105 14 августа в детский сад №...</span>
+          </div>
+        </div>
+        <div class="popup-info__blocks">
+          <div class="popup-info__mobile-editor">
+            Редактор: <span class="popup-info__mobile-editor-data">Елена Меньшикова</span>
+          </div>
+          <div class="popup-info__mobile-date">
+            21.12.2020
+          </div>
+          <div class="popup-info__mobile-field">
+            Поле: <span class="popup-info__mobile-field-data">Анонс</span>
+          </div>
+          <div class="popup-info__mobile-datas">
+            Данные: <span class="popup-info__mobile-datas-data">14 августа в детский сад № 105 14 августа в детский сад № 105 14 августа в детский сад № 105 14 августа в детский сад №...</span>
+          </div>
+        </div>
+      </div>
+      <button class="popup-info__button">Показать ещё</button>
 
-
+    </div>
+  </div>
+  <div class="popup popup-download">
+    <div class="popup-dialog popup-dialog-download">
+      <h4 class="popup-download__title">Файлы для загрузки</h4>
     </div>
   </div>
 </body>

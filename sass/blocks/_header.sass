@@ -84,7 +84,7 @@
       align-items: center
   &__logo
     margin-right: 26px
-  
+
 .search
   &-form
     width: 564px
@@ -136,6 +136,7 @@
   &-favorites
     margin-right: 17px
 .author
+  position: relative
   display: flex
   align-items: center
   &__photo
@@ -147,6 +148,11 @@
   &__info
     display: flex
     align-items: flex-start
+    cursor: pointer
+    &:hover
+      & +.author
+        &-menu
+          display: block
   &__text
     display: flex
     flex-direction: column
@@ -154,7 +160,7 @@
     text-decoration: none
     width: 24px
     height: 24px
-      
+
   &__name
     font-style: normal
     font-weight: 500
@@ -165,6 +171,52 @@
     font-weight: 300
     font-size: 16px
     line-height: 24px
+  &-menu
+    display: none
+    position: absolute
+    top: 33px
+    z-index: 1000
+    background-color: #fff
+    border: 1px solid #D6D6D6
+    box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1)
+    border-radius: 16px
+    transition: 0.3s linear
+    &:hover
+      display: block
+      transition: 0.3s linear
+    &__list
+      padding: 0
+      margin: 0
+    &__item
+      list-style: none
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 100%
+        height: 1px
+        background-color: #D6D6D6
+        display: inline-block
+      &:first-child
+        &::before
+          display: none
+    &__link
+      width: 100%
+      display: flex
+      align-items: center
+      padding: 16px 24px
+      text-decoration: none
+      color: #000
+      font-weight: normal
+      font-size: 16px
+      line-height: 32px
+    &__icon
+      stroke: #000
+      width: 24px
+      height: 24px
+      margin-right: 16px
 .nav
   &__link
     display: inline-block

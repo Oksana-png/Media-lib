@@ -13,13 +13,110 @@
   background-color: rgba(0, 0, 0, 0.15)
   z-index: 9999
   &-info
-    visibility: visible
+    &__copy
+      &-icon
+        width: 100%
+        height: 100%
+        vertical-align: sub
+      &-button
+        margin-right: 10px
+        padding: 0
+        width: 24px
+        height: 24px
+        border: none
+        background-color: #fff
+
+    &__blocks
+      padding-bottom: 15px
+      padding-top: 15px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 1px
+        background-color: #D6D6D6
+    &__button
+      font-weight: normal
+      font-size: 16px
+      line-height: 40px
+      padding-left: 32px
+      padding-right: 32px
+      color: #000
+      border: 1px solid #D6D6D6
+      border-radius: 16px
+      background-color: #fff
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+    &__row
+      width: 100%
+      font-weight: 300
+      font-size: 16px
+      line-height: 32px
+      padding-bottom: 8px
+      display: inline-block
+    &__head
+      &-editor
+        font-weight: inherit
+        width: 250px
+        padding-bottom: 9px
+      &-date
+        font-weight: inherit
+        width: 142px
+        padding-bottom: 9px
+      &-field
+        font-weight: inherit
+        width: 109px
+        padding-bottom: 9px
+      &-info
+        font-weight: inherit
+        padding-bottom: 9px
     &__content
       &-table
         margin-bottom: 30px
     &__table
-      &-list, &-list-history, &-head
+      &-head
         width: 100%
+      &-head
+        font-family: Inter
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 32px
+      &-list
+        width: 100%
+        display: flex
+        flex-direction: column
+        &-history
+          width: 100%
+          height: 204px
+    &__mobile
+      &-editor, &-date, &-field, &-datas
+        font-size: 12px
+        line-height: 18px
+        font-weight: normal
+        color: #828282
+        margin-bottom: 5px
+        &-data
+          color: #000
+      &-date
+        color: #000
+      &-datas
+        &-data
+          display: block
+          padding-top: 5px
+      &-table
+        display: none
+        margin-bottom: 25px
+    &__editor
+      width: 250px
+    &__datet
+      width: 142px
+    &__field
+      width: 109px
     &__data
       text-align: right
       font-size: 16px
@@ -53,16 +150,45 @@
         position: absolute
         top: 48px
         right: 40px
+        display: flex
+        align-items: center
+        justify-content: center
   &-dialog
+    position: relative
+    background-color: #fff
+    border: 1px solid #D6D6D6
+    box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1)
+    border-radius: 16px
     &-info
       width: 984px
       height: 892px
-      position: relative
-      background-color: #fff
       padding: 40px
-      border: 1px solid #D6D6D6
-      box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1)
-      border-radius: 16px
+    &-download
+      width: 1120px
+      height: 572px
+      padding: 32px
+  &-download
+    visibility: visible
+    &__title
+      position: relative
+      font-weight: normal
+      font-size: 16px
+      line-height: 32px
+      padding-bottom: 24px
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: #D6D6D6
+        height: 1px
+        width: 100%
+
 tr
   margin-bottom: 8px
   border-bottom: 1px solid #D6D6D6
+  display: flex
+  align-items: center
+  justify-content: space-between
+thead>tr
+  display: block

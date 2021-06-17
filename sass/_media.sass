@@ -1,6 +1,6 @@
 .container
   max-width: 1600px
-  
+
 @media (max-width: 1700px)
   .container
     max-width: 1360px
@@ -146,6 +146,35 @@
       align-items: center
       &-text
         max-width: 104px
+  // МОДАЛЬНЫЕ ОКНА
+  .popup
+    &-dialog
+      &-info
+        width: 882px
+        height: 852px
+    &-info
+      &__row
+        font-size: 14px
+        padding-bottom: 5px
+        margin-bottom: 5px
+      &__head
+        &-editor
+          width: 207px
+        &-date
+          width: 132px
+      &__editor
+        width: 207px
+      &__datet
+        width: 132px
+      &__name, &__data
+        font-size: 14px
+        line-height: 32px
+      &__table
+        &-head
+          font-size: 14px
+        &-list
+          &-history
+            height: 180px
 @media (max-width: 991px)
   .container
     max-width: 690px
@@ -206,6 +235,26 @@
     padding-bottom: 29px
     &__description
       max-width: 220px
+  // МОДАЛЬНЫЕ ОКНА
+  .popup
+    &-dialog
+      &-info
+        width: 686px
+        height: 852px
+    &-info
+      &__head
+        &-editor
+          width: 177px
+        &-date
+          width: 112px
+        &-field
+          width: 89px
+      &__editor
+        width: 177px
+      &__datet
+        width: 112px
+      &__field
+        width: 89px
 @media (max-width: 767px)
   .container
     max-width: 260px
@@ -259,7 +308,7 @@
       margin-bottom: 15px
     &__block
       margin-bottom: 15px
-    &__view 
+    &__view
       margin-bottom: 15px
     &__cards
       margin-bottom: 15px
@@ -326,7 +375,7 @@
       font-size: 12px
       line-height: 15px
       color: #000
-    &__button 
+    &__button
       width: 30px
       height: 30px
       margin-right: 10px
@@ -383,3 +432,85 @@
     &__description
       margin-left: 0
       margin-bottom: 20px
+  // МОДАЛЬНЫЕ ОКНА
+  .popup
+    &-dialog
+      overflow: scroll
+      width: 100%
+      height: 100%
+      border: none
+      border-radius: 0
+      &-info
+        padding: 26px 30px 27px 30px
+      &-download
+        padding: 30px
+    &-info
+      &__icon
+        &-copy
+          vertical-align:
+      &__mobile
+        &-table
+          display: block
+      &__name
+        font-size: 12px
+        line-height: 18px
+      &__data
+        display: flex
+        align-items: center
+        font-size: 12px
+        line-height: 18px
+        margin-bottom: 8px
+      &__title
+        margin-bottom: 20px
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+      &__subtitle
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 10px
+      &__button
+        width: 100%
+        margin: 0
+        font-size: 14px
+        line-height: 32px
+      &__head
+        &-editor
+          width: 177px
+        &-date
+          width: 112px
+        &-field
+          width: 89px
+      &__editor
+        width: 177px
+      &__datet
+        width: 112px
+      &__field
+        width: 89px
+      &__close-btn
+        background-color: #fff
+        border: 1px solid #D6D6D6
+        top: 33px
+        right: 29px
+      &__content
+        &-table
+          margin-bottom: 20px
+          &:nth-child(5)
+            display: none
+    &-download
+      &__title
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        padding-bottom: 30px
+
+  tr
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 5px
+@media (max-width: 360px)
+  .popup
+    &-info
+      &__title
+        width: 250px
