@@ -1331,6 +1331,10 @@ img {
   padding: 32px;
 }
 
+.popup-download {
+  visibility: visible;
+}
+
 .popup-download__down {
   display: flex;
   flex-direction: column;
@@ -2138,11 +2142,48 @@ thead > tr {
   .popup-info__content-table:nth-child(5) {
     display: none;
   }
+  .popup-download__menu-view {
+    font-size: 12px;
+    line-height: 24px;
+    width: 111px;
+    height: 30px;
+    border-radius: 500px;
+    padding: 3px 14px;
+    margin-right: 8px;
+  }
+  .popup-download__menu-view-text {
+    display: block;
+  }
+  .popup-download__menu-view-icon {
+    margin-right: 8px;
+  }
+  .popup-download__item {
+    padding: 15px 0;
+  }
+  .popup-download__download {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 3px 14px;
+  }
   .popup-download__title {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     padding-bottom: 30px;
+  }
+  .popup-download__list {
+    margin-bottom: 15px;
+  }
+  .popup-download__info {
+    margin-bottom: 6px;
+  }
+  .popup-download__info-name {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .popup-download__info-type {
+    font-size: 12px;
+    line-height: 18px;
   }
   tr {
     display: flex;
