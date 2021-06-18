@@ -168,13 +168,110 @@
       height: 572px
       padding: 32px
   &-download
-    visibility: visible
+    
+    &__down
+      display: flex
+      flex-direction: column
+      &-up
+        margin-bottom: 22px
+    &__open
+      font-weight: normal
+      font-size: 16px
+      line-height: 24px
+      padding: 8px 24px
+      background-color: #fff
+      border: 1px solid #D6D6D6
+      border-radius: 100px
+      margin-right: 16px
+    &__list
+      height: 316px
+      width: 100%
+      overflow-y: auto
+      position: relative
+      margin-bottom: 24px
+      &::after
+        content: ''
+        height: 1px
+        width: 100%
+        position: absolute
+        bottom: 0
+        background-color: #D6D6D6
+    &__item
+      position: relative
+      padding: 20px 0
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      &::after
+        content: ''
+        height: 1px
+        width: 100%
+        position: absolute
+        bottom: 0
+        background-color: #D6D6D6
+      &:last-child
+        &::after
+          display: none
+    &__info
+      &-name
+        font-size: 16px
+        line-height: 32px
+      &-type
+        color: #828282
+        font-weight: normal
+        font-size: 16px
+        line-height: 32px
+    &__download
+      font-weight: normal
+      font-size: 16px
+      line-height: 32px
+      padding: 8px 24px
+      background: #000000
+      border-radius: 100px
+      border: none
+      color: #fff
+      &-all
+        margin-right: 16px
+    &__text
+      font-weight: 300
+      font-size: 18px
+      line-height: 32px
+      color: #828282
+      &-link
+        font-size: 16px
+        line-height: 32px
+        display: inline-block
+        margin-right: 8px
+    &__menu
+      margin-right: 0
+      margin-left: auto
+      display: flex
+      align-items: center
+      &-view
+        width: 40px
+        height: 40px
+        background: #FFFFFF
+        border: 1px solid #D6D6D6
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 16px
+        &-text
+          display: none
+    &__wrapper
+      display: flex
+      align-items: center
+    &__icon
+      align-self: flex-start
+      margin-right: 8px
     &__title
       position: relative
       font-weight: normal
       font-size: 16px
       line-height: 32px
       padding-bottom: 24px
+      margin: 0
       &::after
         content: ''
         position: absolute
@@ -183,6 +280,23 @@
         background-color: #D6D6D6
         height: 1px
         width: 100%
+    &__menu
+      &-view
+        &-icon
+          width: 24px
+          height: 24px
+    &__icon
+      width: 24px
+      height: 24px
+      stroke: #000
+      &-share
+        align-self: center
+        margin-right: 8px
+      &-download
+        margin-right: 8px
+        stroke: #fff
+      &-copy
+        margin-right: 0
 
 tr
   margin-bottom: 8px
@@ -192,3 +306,8 @@ tr
   justify-content: space-between
 thead>tr
   display: block
+.image
+  &-social
+    width: 194px
+    height: 26px
+    margin-right: 5px
