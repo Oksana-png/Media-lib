@@ -1335,6 +1335,25 @@ img {
   visibility: visible;
 }
 
+.popup-download__copy {
+  border: none;
+  background-color: #fff;
+  padding: 0;
+}
+
+.popup-download__close {
+  padding: 0;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #D6D6D6;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 26px;
+  right: 30px;
+}
+
 .popup-download__down {
   display: flex;
   flex-direction: column;
@@ -1509,6 +1528,13 @@ img {
 
 .popup-download__icon-copy {
   margin-right: 0;
+}
+
+.popup-download__icon-close {
+  width: 10px;
+  height: 10px;
+  margin-right: 0;
+  margin-top: -4px;
 }
 
 tr {
@@ -2157,6 +2183,11 @@ thead > tr {
   .popup-download__menu-view-icon {
     margin-right: 8px;
   }
+  .popup-download__down-up {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
   .popup-download__item {
     padding: 15px 0;
   }
@@ -2164,6 +2195,35 @@ thead > tr {
     font-size: 12px;
     line-height: 24px;
     padding: 3px 14px;
+  }
+  .popup-download__download-all {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .popup-download__open {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 3px 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .popup-download__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .popup-download__text-link {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+  .popup-download__wrapper {
+    display: flex;
+    flex-direction: column;
   }
   .popup-download__title {
     font-weight: 600;
@@ -2184,6 +2244,12 @@ thead > tr {
   .popup-download__info-type {
     font-size: 12px;
     line-height: 18px;
+  }
+  .popup-download__icon-share {
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+    margin-bottom: 8px;
   }
   tr {
     display: flex;

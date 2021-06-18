@@ -918,6 +918,11 @@
   <div class="popup popup-download">
     <div class="popup-dialog popup-dialog-download">
       <h4 class="popup-download__title">Файлы для загрузки</h4>
+      <button class="popup-download__close">
+        <svg class="popup-download__icon popup-download__icon-close">
+          <use xlink:href='image/svg.svg#cross'/>
+        </svg>
+      </button>
       <div class="popup-download__list">
         <div class="popup-download__item">
           <svg class="popup-download__icon">
@@ -1003,10 +1008,12 @@
           <svg width="24" height="24" class="share popup-download__icon popup-download__icon-share">
             <use xlink:href='image/svg.svg#share'/>
           </svg>
-          <span class="popup-download__text-link">Поделиться <span class="popup-download__mobile-hidden">страницей</span>:</span>
+          <span class="popup-download__text-link">Поделиться<span class="popup-download__mobile-hidden"> страницей</span>:</span>
           <div class="popup-download__icon-social">
             <img src="image/social.png" alt="social" class="image-social">
-            <img src="image/copy.svg" alt="copy icon" class="popup-download__icon popup-download__icon-copy">
+            <button class="popup-download__copy">
+              <img src="image/copy.svg" alt="copy icon" class="popup-download__icon popup-download__icon-copy">
+            </button>
           </div>
         </div>
 

@@ -169,6 +169,21 @@
       padding: 32px
   &-download
     visibility: visible
+    &__copy
+      border: none
+      background-color: #fff
+      padding: 0
+    &__close
+      padding: 0
+      border: none
+      width: 30px
+      height: 30px
+      border: 1px solid #D6D6D6
+      background-color: #fff
+      border-radius: 50%
+      position: absolute
+      top: 26px
+      right: 30px
     &__down
       display: flex
       flex-direction: column
@@ -297,7 +312,11 @@
         stroke: #fff
       &-copy
         margin-right: 0
-
+      &-close
+        width: 10px
+        height: 10px
+        margin-right: 0
+        margin-top: -4px
 tr
   margin-bottom: 8px
   border-bottom: 1px solid #D6D6D6
