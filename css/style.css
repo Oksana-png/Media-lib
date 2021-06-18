@@ -957,7 +957,6 @@ img {
   opacity: 1;
   border-radius: 4px;
   left: 12px;
-  shadow-opacity: 1;
 }
 
 .card__checkbox-check {
@@ -2052,6 +2051,10 @@ thead > tr {
     position: static;
     border-color: #d6d6d6;
     margin-left: 6px;
+    margin-bottom: 0;
+  }
+  .card__checkbox-check {
+    top: 292px;
   }
   .public-link {
     width: 16px;
