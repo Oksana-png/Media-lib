@@ -1331,10 +1331,6 @@ img {
   padding: 32px;
 }
 
-.popup-download {
-  visibility: visible;
-}
-
 .popup-download__copy {
   border: none;
   background-color: #fff;
