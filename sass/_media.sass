@@ -159,6 +159,9 @@
         height: 852px
       &-download
         width: 880px
+      &-registration
+        width: 879px
+        height: 580px
     &-info
       &__row
         font-size: 14px
@@ -182,6 +185,50 @@
         &-list
           &-history
             height: 180px
+    &-registration
+      &__left
+        display: none
+      &__right
+        width: 100%
+        padding: 30px 60px 57px 60px
+      &__close
+        top: 38px
+        right: 60px
+      &__title
+        margin-bottom: 15px
+      &__form
+        margin-bottom: 15px
+      &__text
+        &-social
+          font-size: 14px
+          line-height: 24px
+          margin-bottom: 10px
+      &__social
+        width: 131px
+        height: 30px
+  .form
+    &-label
+      font-size: 14px
+      line-height: 32px
+      margin-bottom: 5px
+    &-input
+      padding: 11px 24px
+      &::placeholder
+        font-size: 14px
+        line-height: 24px
+      &:focus
+        font-size: 14px
+        line-height: 24px
+    &__wrapper
+      width: 371px
+      margin-bottom: 10px
+    &-btn
+      &__send
+        font-weight: 500
+        font-size: 14px
+        line-height: 40px
+        width: 100%
+        margin-top: 5px
 @media (max-width: 991px)
   .container
     max-width: 690px
@@ -250,6 +297,8 @@
         height: 852px
       &-download
         width: 690px
+      &-registration
+        width: 691px
     &-info
       &__head
         &-editor
@@ -452,7 +501,7 @@
   // МОДАЛЬНЫЕ ОКНА
   .popup
     &-dialog
-      overflow: scroll
+      overflow: auto
       width: 100%
       height: 100%
       border: none
@@ -584,7 +633,53 @@
           height: 24px
           margin-right: 0
           margin-bottom: 8px
+    &-registration
+      &__title
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 14px
+      &__close
+        background-color: #FFFFFF
+        border: 1px solid #D6D6D6
+        top: 26px
+        right: 30px
+      &__right
+        padding: 30px
+        min-height: 610px
+      &__text
+        &-social
+          font-size: 12px
+          line-height: 24px
+          margin-bottom: 10px
 
+  .form
+    &__wrapper
+      flex-basis: 100%
+      margin-bottom: 0
+      &-replay
+        margin-bottom: 15px
+    &-label
+      margin-bottom: 0
+      font-size: 12px
+      line-height: 32px
+    &-input
+      padding: 8px 24px
+      font-size: 12px
+      line-height: 24px
+      &::placeholder
+        font-size: 12px
+        line-height: 24px
+      &:focus
+        font-size: 12px
+        line-height: 24px
+    &-btn
+      &__send
+        margin-top: 0
+        font-size: 12px
+        line-height: 40px
+        padding: 0
+        padding-left: 32px
+        padding-right: 32px
   tr
     display: flex
     flex-direction: column

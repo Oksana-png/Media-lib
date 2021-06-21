@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:wght@500;600;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Media Lib</title>
 </head>
@@ -1016,9 +1016,59 @@
             </button>
           </div>
         </div>
-
       </div>
       
+    </div>
+  </div>
+  <div class="popup popup-registration">
+    <div class="popup-dialog popup-dialog-registration">
+      <div class="popup-registration__left">
+        <img src="image/popup-registration.png" alt="photo" class="popup-registration__background">
+        <div class="popup-registration__text">
+          <div class="logo popup-registration__logo">
+            <img src="image/logo.svg" alt="Media Lib">
+          </div>
+          <div class="popup-registration__description">
+            Онлайн-архив центральной городской библиотеки г. Нижний Тагил
+          </div>
+        </div>
+      </div>
+      
+      <div class="popup-registration__right">
+        <h3 class="popup-registration__title">Регистрация</h3>
+        <button class="popup-registration__close close-btn">
+          <svg width="13px" height="13px" class="icon">
+            <use xlink:href="image/svg.svg#cross"></use>
+          </svg>
+        </button>
+        <form action="#" class="popup-registration__form form">
+          <div class="form__wrapper form__wrapper-email">
+            <label for="registration-email" class="form-label form-label__email">Электронная почта</label>
+            <input id="registration-email" type="email" class="form-input form-input__email" placeholder="Введите Вашу электронную почту">
+          </div>
+          <div class="form__wrapper form__wrapper-name">
+            <label for="registration-name" class="form-label form-label__name">Имя</label>
+            <input id="registration-name" type="text" class="form-input form-input__name" placeholder="Введите Ваше имя">
+          </div>
+          <div class="form__wrapper form__wrapper-lastname">
+            <label for="registration-lastname" class="form-label form-label__lastname">Фамилия</label>
+            <input id="registration-lastname" type="text" class="form-input form-input__lastname" placeholder="Введите Вашу фамилию">
+          </div>
+          <div class="form__wrapper form__wrapper-password">
+            <label for="registration-password" class="form-label form-label__password">Пароль</label>
+            <input id="registration-password" type="password" class="form-input form-input__password" placeholder="Введите пароль">
+          </div>
+          <div class="form__wrapper form__wrapper-replay">
+            <label for="registration-password-replay" class="form-label form-label__password-replay">Повторите пароль</label>
+            <input id="registration-password-replay" type="password" class="form-input form-input__password-replay" placeholder="Повторите пароль">
+          </div>
+          <button class="form-btn__send">Зарегистрироваться</button>
+        </form>
+        <div class="popup-registration__text-social">Зарегистрироваться черз соц. сети</div>
+        <div class="popup-registration__social">
+          <img src="image/socialFour.png" alt="social">
+        </div>
+      </div>
     </div>
   </div>
 </body>

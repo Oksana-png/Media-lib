@@ -1312,6 +1312,7 @@ img {
 
 .popup-dialog {
   position: relative;
+  overflow: auto;
   background-color: #fff;
   border: 1px solid #D6D6D6;
   box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1);
@@ -1328,6 +1329,14 @@ img {
   width: 1120px;
   height: 572px;
   padding: 32px;
+}
+
+.popup-dialog-registration {
+  width: 1341px;
+  height: 760px;
+  display: flex;
+  overflow: auto;
+  border: none;
 }
 
 .popup-download__copy {
@@ -1530,6 +1539,173 @@ img {
   height: 10px;
   margin-right: 0;
   margin-top: -4px;
+}
+
+.popup-registration {
+  visibility: visible;
+}
+
+.popup-registration__logo {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.popup-registration__background {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  filter: blur(30px);
+}
+
+.popup-registration__left {
+  position: relative;
+  width: 537px;
+  height: 100%;
+  overflow: hidden;
+  padding-left: 99px;
+  padding-right: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-registration__text {
+  position: relative;
+  z-index: 100;
+}
+
+.popup-registration__text-social {
+  margin-bottom: 16px;
+  color: #828282;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.popup-registration__social {
+  width: 204px;
+  height: 48px;
+}
+
+.popup-registration__description {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  width: 269px;
+  margin-left: 65px;
+}
+
+.popup-registration__right {
+  width: 804px;
+  padding: 60px;
+  min-height: 600px;
+}
+
+.popup-registration__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 25px;
+}
+
+.popup-registration__close {
+  position: absolute;
+  top: 68px;
+  right: 60px;
+  background-color: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-registration__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.form-label {
+  margin-bottom: 16px;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.form-input {
+  padding: 16px 24px;
+  background-color: #FFFFFF;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.form-input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form-input:focus {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 49%;
+  margin-bottom: 16px;
+}
+
+.form__wrapper-email {
+  flex-basis: 100%;
+}
+
+.form__wrapper-name {
+  width: 334px;
+}
+
+.form__wrapper-lastname {
+  width: 334px;
+}
+
+.form__wrapper-password {
+  width: 334px;
+}
+
+.form__wrapper-replay {
+  width: 334px;
+}
+
+.form-btn__send {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  background: #000000;
+  border-radius: 16px;
+  border: none;
+  color: #fff;
+  padding: 8px 32px;
+  margin-top: 16px;
+}
+
+.close-btn {
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
 }
 
 tr {
@@ -1741,6 +1917,10 @@ thead > tr {
   .popup-dialog-download {
     width: 880px;
   }
+  .popup-dialog-registration {
+    width: 879px;
+    height: 580px;
+  }
   .popup-info__row {
     font-size: 14px;
     padding-bottom: 5px;
@@ -1767,6 +1947,59 @@ thead > tr {
   }
   .popup-info__table-list-history {
     height: 180px;
+  }
+  .popup-registration__left {
+    display: none;
+  }
+  .popup-registration__right {
+    width: 100%;
+    padding: 30px 60px 57px 60px;
+  }
+  .popup-registration__close {
+    top: 38px;
+    right: 60px;
+  }
+  .popup-registration__title {
+    margin-bottom: 15px;
+  }
+  .popup-registration__form {
+    margin-bottom: 15px;
+  }
+  .popup-registration__text-social {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .popup-registration__social {
+    width: 131px;
+    height: 30px;
+  }
+  .form-label {
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+  .form-input {
+    padding: 11px 24px;
+  }
+  .form-input::placeholder {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .form-input:focus {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .form__wrapper {
+    width: 371px;
+    margin-bottom: 10px;
+  }
+  .form-btn__send {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    width: 100%;
+    margin-top: 5px;
   }
 }
 
@@ -1845,6 +2078,9 @@ thead > tr {
   }
   .popup-dialog-download {
     width: 690px;
+  }
+  .popup-dialog-registration {
+    width: 691px;
   }
   .popup-info__head-editor {
     width: 177px;
@@ -2094,7 +2330,7 @@ thead > tr {
     margin-bottom: 20px;
   }
   .popup-dialog {
-    overflow: scroll;
+    overflow: auto;
     width: 100%;
     height: 100%;
     border: none;
@@ -2249,6 +2485,59 @@ thead > tr {
     height: 24px;
     margin-right: 0;
     margin-bottom: 8px;
+  }
+  .popup-registration__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 14px;
+  }
+  .popup-registration__close {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    top: 26px;
+    right: 30px;
+  }
+  .popup-registration__right {
+    padding: 30px;
+    min-height: 610px;
+  }
+  .popup-registration__text-social {
+    font-size: 12px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .form__wrapper {
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+  .form__wrapper-replay {
+    margin-bottom: 15px;
+  }
+  .form-label {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 32px;
+  }
+  .form-input {
+    padding: 8px 24px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .form-input::placeholder {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .form-input:focus {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .form-btn__send {
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   tr {
     display: flex;
