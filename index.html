@@ -710,9 +710,11 @@
       <div class="more articles__more row">
         <div class="more__hidden"></div>
         <button class="more__button">Показать ещё</button>
-        <button class="more__show">
-          Выводить по <span class="more__show-text">25</span>
-          <img src="image/arrowDown.svg" alt="arrow down" class="more__arrow">
+        <div class="more__wrap">
+          <button class="more__show">
+            Выводить по <span class="more__show-text">25</span>
+            <img src="image/arrowDown.svg" alt="arrow down" class="more__arrow">
+          </button>
           <div class="more__show-select">
             <input id="show25" type="radio" class="more__show-input" name="moreShow">
             <label for="show25" class="more__show-label">25</label>
@@ -721,7 +723,7 @@
             <input id="show100" type="radio" class="more__show-input" name="moreShow">
             <label for="show100" class="more__show-label">100</label>
           </div>
-        </button>
+        </div>
         
       </div>
       <div class="navigation articles__navigation row">
@@ -1043,32 +1045,68 @@
         </button>
         <form action="#" class="popup-registration__form form">
           <div class="form__wrapper form__wrapper-email">
-            <label for="registration-email" class="form-label form-label__email">Электронная почта</label>
-            <input id="registration-email" type="email" class="form-input form-input__email" placeholder="Введите Вашу электронную почту">
+            <label for="registration-email" class="form-label form-label--email">Электронная почта</label>
+            <input id="registration-email" type="email" class="form-input form-input--email" placeholder="Введите Вашу электронную почту">
           </div>
           <div class="form__wrapper form__wrapper-name">
-            <label for="registration-name" class="form-label form-label__name">Имя</label>
-            <input id="registration-name" type="text" class="form-input form-input__name" placeholder="Введите Ваше имя">
+            <label for="registration-name" class="form-label form-label--name">Имя</label>
+            <input id="registration-name" type="text" class="form-input form-input--name" placeholder="Введите Ваше имя">
           </div>
           <div class="form__wrapper form__wrapper-lastname">
-            <label for="registration-lastname" class="form-label form-label__lastname">Фамилия</label>
-            <input id="registration-lastname" type="text" class="form-input form-input__lastname" placeholder="Введите Вашу фамилию">
+            <label for="registration-lastname" class="form-label form-label--lastname">Фамилия</label>
+            <input id="registration-lastname" type="text" class="form-input form-input--lastname" placeholder="Введите Вашу фамилию">
           </div>
           <div class="form__wrapper form__wrapper-password">
-            <label for="registration-password" class="form-label form-label__password">Пароль</label>
-            <input id="registration-password" type="password" class="form-input form-input__password" placeholder="Введите пароль">
+            <label for="registration-password" class="form-label form-label--password">Пароль</label>
+            <input id="registration-password" type="password" class="form-input form-input--password" placeholder="Введите пароль">
           </div>
           <div class="form__wrapper form__wrapper-replay">
-            <label for="registration-password-replay" class="form-label form-label__password-replay">Повторите пароль</label>
-            <input id="registration-password-replay" type="password" class="form-input form-input__password-replay" placeholder="Повторите пароль">
+            <label for="registration-password-replay" class="form-label form-label--password-replay">Повторите пароль</label>
+            <input id="registration-password-replay" type="password" class="form-input form-input--password-replay" placeholder="Повторите пароль">
           </div>
-          <button class="form-btn__send">Зарегистрироваться</button>
+          <button class="form__btn-send">Зарегистрироваться</button>
         </form>
         <div class="popup-registration__text-social">Зарегистрироваться черз соц. сети</div>
         <div class="popup-registration__social">
           <img src="image/socialFour.png" alt="social">
         </div>
       </div>
+    </div>
+  </div>
+  <div class="popup popup-reg-success">
+    <div class="popup-dialog popup-dialog-reg-success">
+      <div class="popup-reg-success__text-success">
+        <img src="image/success.svg" alt="icon: okey" class="popup-reg-success__icon">
+        Регистрация прошла успешно
+      </div>
+      <div class="popup-reg-success__text-welcome">Добро пожаловать <br> в онлайн-архив <span class="popup-reg-success__logo"><img src="image/welcomeLogo.svg" alt="media Lib"></span></div>
+      <div class="popup-reg-success__advantages">
+        <div class="popup-reg-success__advantages-item">
+          <div class="popup-reg-success__icons popup-reg-success__icon-favorites">
+            <svg width="24" height="24" class="card__favorites-icon">
+              <use xlink:href='image/svg.svg#favoritesActive'/>
+            </svg>
+          </div>
+          <div class="popup-reg-success__advantages-text">Добавляйте материалы в избранное</div>
+        </div>
+        <div class="popup-reg-success__advantages-item">
+          <div class="popup-reg-success__icons popup-reg-success__icon-history">
+            <svg width="24" height="24" class="icon">
+              <use xlink:href="image/svg.svg#historyView"></use>
+            </svg>
+          </div>
+          <div class="popup-reg-success__advantages-text">Отслеживайте историю просмотров</div>
+        </div>
+        <div class="popup-reg-success__advantages-item">
+          <div class="popup-reg-success__icons popup-reg-success__icon-link">
+            <svg width="24" height="24">
+              <use xlink:href="image/svg.svg#link"></use>
+            </svg>
+          </div>
+          <div class="popup-reg-success__advantages-text">Сохраняйте в истории то, чем поделились с другими</div>
+        </div>
+      </div>
+      <button class="popup-reg-success__close">Закрыть окно</button>
     </div>
   </div>
 </body>

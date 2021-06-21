@@ -117,4 +117,8 @@
     <path fill="#D6D6D6" d="M3 4h18v8H3z"></path>
     <path d="M3 3h4.5L13 7h8v14H3V3z" fill="#2F80ED"></path>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="historyView">
+    <circle cx="12.219" cy="12" r="10" stroke-width="2"></circle>
+    <path d="M12.219 6v6l3 3" stroke-width="2"></path>
+  </symbol>
 </svg>

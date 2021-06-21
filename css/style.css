@@ -1049,6 +1049,21 @@ img {
   margin-top: 34px;
 }
 
+.more__wrap {
+  position: relative;
+}
+
+.more__wrap:hover .more__show-select {
+  display: flex;
+  transition: 0.2s ease-out;
+  transform: translateY(0);
+}
+
+.more__wrap:hover .more__arrow {
+  transition: 0.2s linear;
+  transform: rotate(180deg);
+}
+
 .more__show-select {
   display: none;
   position: absolute;
@@ -1093,17 +1108,6 @@ img {
   height: 1px;
   width: 100%;
   display: inline-block;
-}
-
-.more__show:hover .more__show-select {
-  display: flex;
-  transition: 0.2s ease-out;
-  transform: translateY(0);
-}
-
-.more__show:hover .more__arrow {
-  transition: 0.2s linear;
-  transform: rotate(180deg);
 }
 
 .popup {
@@ -1339,6 +1343,15 @@ img {
   border: none;
 }
 
+.popup-dialog-reg-success {
+  width: 1106px;
+  height: 612px;
+  padding: 64px 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .popup-download__copy {
   border: none;
   background-color: #fff;
@@ -1541,10 +1554,6 @@ img {
   margin-top: -4px;
 }
 
-.popup-registration {
-  visibility: visible;
-}
-
 .popup-registration__logo {
   margin-left: 0;
   margin-bottom: 10px;
@@ -1633,6 +1642,96 @@ img {
   margin-bottom: 32px;
 }
 
+.popup-reg-success {
+  visibility: visible;
+}
+
+.popup-reg-success__close {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 8px 32px;
+  background-color: #fff;
+  border: 1px solid #D6D6D6;
+  border-radius: 16px;
+}
+
+.popup-reg-success__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.popup-reg-success__icons {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 16px;
+  stroke: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.popup-reg-success__logo {
+  display: inline-block;
+  width: 231px;
+  height: 31px;
+}
+
+.popup-reg-success__advantages {
+  width: 100%;
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-reg-success__advantages-item {
+  position: relative;
+  width: 246px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-reg-success__advantages-item::before {
+  content: '';
+  width: 1px;
+  height: 32px;
+  background-color: #D6D6D6;
+  position: absolute;
+  top: 35px;
+  right: -29px;
+}
+
+.popup-reg-success__advantages-item:last-child::before {
+  display: none;
+}
+
+.popup-reg-success__advantages-text {
+  text-align: center;
+}
+
+.popup-reg-success__text-success {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+.popup-reg-success__text-welcome {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
 .form-label {
   margin-bottom: 16px;
   font-family: Inter;
@@ -1689,7 +1788,7 @@ img {
   width: 334px;
 }
 
-.form-btn__send {
+.form__btn-send {
   font-weight: 500;
   font-size: 16px;
   line-height: 40px;
@@ -1921,6 +2020,11 @@ thead > tr {
     width: 879px;
     height: 580px;
   }
+  .popup-dialog-reg-success {
+    width: 880px;
+    height: 522px;
+    padding: 52px 50px;
+  }
   .popup-info__row {
     font-size: 14px;
     padding-bottom: 5px;
@@ -1974,6 +2078,22 @@ thead > tr {
     width: 131px;
     height: 30px;
   }
+  .popup-reg-success__text-success {
+    font-size: 14px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .popup-reg-success__text-welcome {
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 50px;
+  }
+  .popup-reg-success__advantages {
+    margin-bottom: 50px;
+  }
+  .popup-reg-success__advantages-item::before {
+    right: -7px;
+  }
   .form-label {
     font-size: 14px;
     line-height: 32px;
@@ -1994,7 +2114,7 @@ thead > tr {
     width: 371px;
     margin-bottom: 10px;
   }
-  .form-btn__send {
+  .form__btn-send {
     font-weight: 500;
     font-size: 14px;
     line-height: 40px;
@@ -2531,7 +2651,7 @@ thead > tr {
     font-size: 12px;
     line-height: 24px;
   }
-  .form-btn__send {
+  .form__btn-send {
     margin-top: 0;
     font-size: 12px;
     line-height: 40px;

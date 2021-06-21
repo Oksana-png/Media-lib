@@ -174,6 +174,13 @@
       display: flex
       overflow: auto
       border: none
+    &-reg-success
+      width: 1106px
+      height: 612px
+      padding: 64px 116px
+      display: flex
+      flex-direction: column
+      align-items: center
   &-download
     &__copy
       border: none
@@ -324,7 +331,6 @@
         margin-right: 0
         margin-top: -4px
   &-registration
-    visibility: visible
     &__logo
       margin-left: 0
       margin-bottom: 10px
@@ -391,6 +397,74 @@
       flex-wrap: wrap
       justify-content: space-between
       margin-bottom: 32px
+  &-reg-success
+    visibility: visible
+    &__close
+      font-weight: 500
+      font-size: 16px
+      line-height: 40px
+      padding: 8px 32px
+      background-color: #fff
+      border: 1px solid #D6D6D6
+      border-radius: 16px
+    &__icon
+      width: 24px
+      height: 24px
+      margin-right: 16px
+      &s
+        width: 40px
+        height: 40px
+        background-color: #000
+        border-radius: 16px
+        stroke: #fff
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 16px
+    &__logo
+      display: inline-block
+      width: 231px
+      height: 31px
+    &__advantages
+      width: 100%
+      margin-bottom: 72px
+      display: flex
+      justify-content: space-between
+      &-item
+        position: relative
+        width: 246px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &::before
+          content: ''
+          width: 1px
+          height: 32px
+          background-color: #D6D6D6
+          position: absolute
+          top: 35px
+          right: -29px
+        &:last-child
+          &::before
+            display: none
+      &-text
+        text-align: center
+    &__text
+      &-success
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        margin-bottom: 32px
+      &-welcome
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 40px
+        line-height: 56px
+        margin-bottom: 72px
+        text-align: center
 
 .form
   &-label
@@ -430,8 +504,8 @@
       width: 334px
     &-replay
       width: 334px
-  &-btn
-    &__send
+  &__btn
+    &-send
       font-weight: 500
       font-size: 16px
       line-height: 40px

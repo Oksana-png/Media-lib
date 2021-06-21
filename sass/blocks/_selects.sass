@@ -1,4 +1,16 @@
 .more
+  &__wrap
+    position: relative
+    &:hover
+      & .more
+        &__show
+          &-select
+            display: flex
+            transition: 0.2s ease-out
+            transform: translateY(0)
+        &__arrow
+          transition: 0.2s linear
+          transform: rotate(180deg)
   &__show
     &-select
       display: none
@@ -37,13 +49,3 @@
         height: 1px
         width: 100%
         display: inline-block
-    &:hover
-      & .more
-        &__show
-          &-select
-            display: flex
-            transition: 0.2s ease-out
-            transform: translateY(0)
-        &__arrow
-          transition: 0.2s linear
-          transform: rotate(180deg)
