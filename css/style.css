@@ -2265,7 +2265,6 @@ thead > tr {
 
 .search {
   background-color: #fff;
-  width: 100%;
 }
 
 .search__list {
@@ -2638,6 +2637,10 @@ thead > tr {
   .popup-entry__close {
     top: 38px;
     right: 60px;
+  }
+  .popup-search__input {
+    display: block;
+    width: 100%;
   }
   .form-label {
     font-size: 14px;
