@@ -1075,6 +1075,12 @@
   </div>
   <div class="popup popup-reg-success">
     <div class="popup-dialog popup-dialog-reg-success">
+      <h3 class="popup-reg-success__title">Регистрация</h3>
+      <button class="popup-reg-success__btn-close close-btn">
+        <svg width="13px" height="13px" class="icon">
+            <use xlink:href="image/svg.svg#cross"></use>
+          </svg>
+      </button>
       <div class="popup-reg-success__text-success">
         <img src="image/success.svg" alt="icon: okey" class="popup-reg-success__icon">
         Регистрация прошла успешно
@@ -1083,7 +1089,7 @@
       <div class="popup-reg-success__advantages">
         <div class="popup-reg-success__advantages-item">
           <div class="popup-reg-success__icons popup-reg-success__icon-favorites">
-            <svg width="24" height="24" class="card__favorites-icon">
+            <svg width="24" height="24">
               <use xlink:href='image/svg.svg#favoritesActive'/>
             </svg>
           </div>
@@ -1107,6 +1113,45 @@
         </div>
       </div>
       <button class="popup-reg-success__close">Закрыть окно</button>
+    </div>
+  </div>
+  <div class="popup popup-registration popup-entry">
+    <div class="popup-dialog popup-dialog-entry">
+      <div class="popup-registration__left">
+        <img src="image/popup-registration.png" alt="photo" class="popup-registration__background">
+        <div class="popup-registration__text">
+          <div class="logo popup-registration__logo">
+            <img src="image/logo.svg" alt="Media Lib">
+          </div>
+          <div class="popup-registration__description">
+            Онлайн-архив центральной городской библиотеки г. Нижний Тагил
+          </div>
+        </div>
+      </div>
+      
+      <div class="popup-registration__right popup-entry__right">
+        <h3 class="popup-registration__title popup-entry__title">Вход</h3>
+        <button class="close-btn popup-entry__close">
+          <svg width="13px" height="13px" class="icon">
+            <use xlink:href="image/svg.svg#cross"></use>
+          </svg>
+        </button>
+        <form action="#" class="popup-registration__form form">
+          <div class="form__wrapper form__wrapper-email">
+            <label for="registration-email" class="form-label form-label--email">Электронная почта</label>
+            <input id="registration-email" type="email" class="form-input form-input--email" placeholder="Введите Вашу электронную почту">
+          </div>
+          <div class="form__wrapper form__wrapper-entry">
+            <label for="registration-password" class="form-label form-label--password">Пароль</label>
+            <input id="registration-password" type="password" class="form-input form-input--password" placeholder="Введите пароль">
+          </div>
+          <button class="form__btn-send form__btn-entry">Войти</button>
+        </form>
+        <div class="popup-registration__text-social">Войти черз соц. сети</div>
+        <div class="popup-registration__social">
+          <img src="image/socialFour.png" alt="social">
+        </div>
+      </div>
     </div>
   </div>
 </body>

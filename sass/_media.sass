@@ -166,6 +166,9 @@
         width: 880px
         height: 522px
         padding: 52px 50px
+      &-entry
+        width: 879px
+        height: 482px
     &-info
       &__row
         font-size: 14px
@@ -225,6 +228,19 @@
         &-item
           &::before
             right: -7px
+        &-text
+          font-family: Inter
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 18px
+    &-entry
+      &__right
+        padding: 30px 60px 50px 60px
+        min-height: 482px
+      &__close
+        top: 38px
+        right: 60px
   .form
     &-label
       font-size: 14px
@@ -318,6 +334,14 @@
         width: 690px
       &-registration
         width: 691px
+      &-reg-success
+        width: 692px
+        height: 522px
+        padding: 52px 44px
+      &-entry
+        width: 690px
+        height: 484px
+        padding: 30px 60px 10px 60px
     &-info
       &__head
         &-editor
@@ -336,10 +360,24 @@
       &__mobile
         &-hidden
           display: none
-
+    &-reg-success
+      &__advantages
+        &-item
+          width: 188px
+          &::before
+            display: none
+        &-text
+          font-size: 14px
+          line-height: 18px
+    &-entry
+      &__right
+        padding: 0
+        min-height: 100%
 @media (max-width: 767px)
   .container
-    max-width: 260px
+    width: 80%
+    min-width: 260px
+    max-width: 460px
   .header
     &-top
       display: none
@@ -513,8 +551,10 @@
       font-size: 10px
       line-height: 12px
     &__logo
+
       margin-bottom: 20px
     &__description
+      flex-basis: 100%
       margin-left: 0
       margin-bottom: 20px
   // МОДАЛЬНЫЕ ОКНА
@@ -529,10 +569,16 @@
         padding: 26px 30px 27px 30px
       &-download
         padding: 30px
+      &-reg-success
+        padding: 30px
+        flex-direction: column
+        align-items: flex-start
+        max-width: 500px
+      &-entry
+        padding: 30px
+        min-width: 260px
+        max-width: 460px
     &-info
-      &__icon
-        &-copy
-          vertical-align:
       &__mobile
         &-table
           display: block
@@ -670,7 +716,59 @@
           font-size: 12px
           line-height: 24px
           margin-bottom: 10px
+    &-reg-success
+      &__btn
+        &-close
+          display: block
+      &__close
 
+        padding: 4px 32px
+        font-size: 12px
+        line-height: 32px
+        width: 100%
+      &__title
+        display: block
+      &__logo
+        display: block
+        margin-top: 16px
+      &__text
+        &-welcome
+          align-self: center
+          font-style: normal
+          font-weight: 600
+          font-size: 18px
+          line-height: 22px
+          margin-bottom: 30px
+        &-success
+          align-self: center
+      &__icons
+        margin-right: 16px
+        margin-bottom: 0
+      &__advantages
+        flex-direction: column
+        align-items: center
+        margin-bottom: 30px
+        &-item
+          flex-direction: row
+          width: 260px
+          margin-bottom: 10px
+          &:last-child
+            margin-bottom: 0
+        &-text
+          width: 206px
+          text-align: left
+    &-entry
+      &__close
+        width: 30px
+        height: 30px
+        background: #FFFFFF
+        border: 1px solid #D6D6D6
+        border-radius: 100px
+        top: 26px
+        right: 29px
+      &__right
+        padding: 0
+        min-height: 400px
   .form
     &__wrapper
       flex-basis: 100%
@@ -699,6 +797,8 @@
         padding: 0
         padding-left: 32px
         padding-right: 32px
+      &-entry
+        margin-top: 15px
   tr
     display: flex
     flex-direction: column

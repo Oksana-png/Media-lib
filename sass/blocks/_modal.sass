@@ -1,4 +1,5 @@
 .popup
+  overflow: auto
   visibility: hidden
   position: fixed
   top: 0
@@ -12,6 +13,40 @@
   justify-content: center
   background-color: rgba(0, 0, 0, 0.15)
   z-index: 9999
+  &-dialog
+    position: relative
+    overflow: auto
+    background-color: #fff
+    border: 1px solid #D6D6D6
+    box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1)
+    border-radius: 16px
+    &-info
+      width: 984px
+      height: 892px
+      padding: 40px
+    &-download
+      width: 1120px
+      height: 572px
+      padding: 32px
+    &-registration
+      width: 1341px
+      height: 760px
+      display: flex
+      overflow: auto
+      border: none
+    &-reg-success
+      width: 1106px
+      height: 612px
+      padding: 64px 116px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-entry
+      display: flex
+      overflow: auto
+      border: none
+      width: 1181px
+      height: 640px
   &-info
     &__copy
       &-icon
@@ -153,34 +188,6 @@
         display: flex
         align-items: center
         justify-content: center
-  &-dialog
-    position: relative
-    overflow: auto
-    background-color: #fff
-    border: 1px solid #D6D6D6
-    box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1)
-    border-radius: 16px
-    &-info
-      width: 984px
-      height: 892px
-      padding: 40px
-    &-download
-      width: 1120px
-      height: 572px
-      padding: 32px
-    &-registration
-      width: 1341px
-      height: 760px
-      display: flex
-      overflow: auto
-      border: none
-    &-reg-success
-      width: 1106px
-      height: 612px
-      padding: 64px 116px
-      display: flex
-      flex-direction: column
-      align-items: center
   &-download
     &__copy
       border: none
@@ -398,7 +405,25 @@
       justify-content: space-between
       margin-bottom: 32px
   &-reg-success
-    visibility: visible
+    &__btn
+      &-close
+        display: none
+        width: 30px
+        height: 30px
+        background-color: #FFFFFF
+        border: 1px solid #D6D6D6 !important
+        border-radius: 100px
+        position: absolute
+        top: 26px
+        right: 29px
+    &__title
+      display: none
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 600
+      font-size: 18px
+      line-height: 22px
+      margin-bottom: 72px
     &__close
       font-weight: 500
       font-size: 16px
@@ -449,6 +474,11 @@
             display: none
       &-text
         text-align: center
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 24px
     &__text
       &-success
         font-family: Montserrat
@@ -465,7 +495,17 @@
         line-height: 56px
         margin-bottom: 72px
         text-align: center
-
+  &-entry
+    visibility: visible
+    &__close
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: 68px
+      right: 60px
+    &__title
+      margin-bottom: 32px
 .form
   &-label
     margin-bottom: 16px
@@ -504,6 +544,8 @@
       width: 334px
     &-replay
       width: 334px
+    &-entry
+      flex-basis: 100%
   &__btn
     &-send
       font-weight: 500
