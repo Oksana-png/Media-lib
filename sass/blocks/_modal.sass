@@ -47,6 +47,12 @@
       border: none
       width: 1181px
       height: 640px
+    &-search
+      padding-top: 64px
+      width: 1232px
+      height: 100%
+      border: none
+      border-radius: 0
   &-info
     &__copy
       &-icon
@@ -496,7 +502,6 @@
         margin-bottom: 72px
         text-align: center
   &-entry
-    visibility: visible
     &__close
       display: flex
       align-items: center
@@ -506,6 +511,47 @@
       right: 60px
     &__title
       margin-bottom: 32px
+  &-search
+    visibility: visible
+    &__form
+      width: 100%
+      margin-bottom: 36px
+    &__input
+      background-color: #FFFFFF
+      box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1)
+      border: 2px solid rgba(0, 0, 0, 0.1)
+      border-radius: 8px
+      padding: 20px 30px 20px 58px
+      font-weight: normal
+      &:placeholder
+        color: #828282
+        font-size: 16px
+        line-height: 40px
+      &:focus
+        font-weight: normal
+        font-size: 16px
+        line-height: 40px
+        color: #828282
+    &__magnifier
+      position: absolute
+      top: 18px
+      left: 24px
+      stroke: #000
+    & .icon
+      margin-bottom: 8px
+    & .nav
+      &__link
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 16px 32px
+      &__text
+        font-weight: normal
+        font-size: 16px
+        line-height: 24px
+      &__item
+        height: 88px
 .form
   &-label
     margin-bottom: 16px
@@ -557,6 +603,7 @@
       color: #fff
       padding: 8px 32px
       margin-top: 16px
+
 .close
   &-btn
     border: none
@@ -577,3 +624,49 @@ thead>tr
     width: 194px
     height: 26px
     margin-right: 5px
+
+.search
+  background-color: #fff
+  width: 100%
+  &__list
+    justify-content: space-between
+  &__nav
+    margin-bottom: 36px
+  & .filters
+    &__icon
+      margin-right: 16px
+    &__item
+      padding: 8px 0
+      margin-right: 16px
+    &__active
+      &-item
+        margin-bottom: 8px
+        border: none
+    &__title
+      font-weight: 500
+      font-size: 18px
+      line-height: 32px
+      flex-basis: 100%
+      margin-bottom: 16px
+  &__line
+    border-top-color: #D6D6D6
+    margin-top: 36px
+    margin-bottom: 36px
+  & .filters
+    &-active
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 36px
+.tags
+  &__title
+    font-weight: 500
+    font-size: 18px
+    line-height: 32px
+    margin-bottom: 10px
+  &__elem
+    font-weight: 300
+    font-size: 18px
+    line-height: 32px
+    color: #000
+    display: inline-block
+    margin-right: 16px

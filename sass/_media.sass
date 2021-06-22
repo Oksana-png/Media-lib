@@ -29,7 +29,10 @@
     &-dialog
       &-download
         width: 902px
-
+    &-search
+      & .search
+        &-form
+          width: 100%
 @media ( min-width:  1501px)
   .col-xxl-3
     flex: 0 0 25%
@@ -169,6 +172,8 @@
       &-entry
         width: 879px
         height: 482px
+      &-search
+        width: 880px
     &-info
       &__row
         font-size: 14px
@@ -241,6 +246,9 @@
       &__close
         top: 38px
         right: 60px
+    &-search
+      &__input
+
   .form
     &-label
       font-size: 14px
@@ -264,6 +272,7 @@
         line-height: 40px
         width: 100%
         margin-top: 5px
+
 @media (max-width: 991px)
   .container
     max-width: 690px
