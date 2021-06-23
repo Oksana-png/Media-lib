@@ -1045,23 +1045,58 @@
         </button>
         <form action="#" class="popup-registration__form form">
           <div class="form__wrapper form__wrapper-email">
-            <label for="registration-email" class="form-label form-label--email">Электронная почта</label>
+            <label for="registration-email" class="form-label form-label--email">Электронная почта 
+              <img src="image/required.svg" alt="star" class="form__required-icon">
+              <span class="form__question">
+                <svg class="question-mark">
+                  <use xlink:href="image/svg.svg#question"></use>
+                </svg>
+              </span>
+            </label>
             <input id="registration-email" type="email" class="form-input form-input--email" placeholder="Введите Вашу электронную почту">
           </div>
           <div class="form__wrapper form__wrapper-name">
-            <label for="registration-name" class="form-label form-label--name">Имя</label>
+            <label for="registration-name" class="form-label form-label--name">Имя
+              <img src="image/required.svg" alt="star" class="form__required-icon">
+              <span class="form__question">
+                <svg class="question-mark">
+                  <use xlink:href="image/svg.svg#question"></use>
+                </svg>
+              </span>
+            </label>
             <input id="registration-name" type="text" class="form-input form-input--name" placeholder="Введите Ваше имя">
           </div>
           <div class="form__wrapper form__wrapper-lastname">
-            <label for="registration-lastname" class="form-label form-label--lastname">Фамилия</label>
+            <label for="registration-lastname" class="form-label form-label--lastname">Фамилия
+              <img src="image/required.svg" alt="star" class="form__required-icon">
+              <span class="form__question">
+                <svg class="question-mark">
+                  <use xlink:href="image/svg.svg#question"></use>
+                </svg>
+              </span>
+            </label>
             <input id="registration-lastname" type="text" class="form-input form-input--lastname" placeholder="Введите Вашу фамилию">
           </div>
           <div class="form__wrapper form__wrapper-password">
-            <label for="registration-password" class="form-label form-label--password">Пароль</label>
+            <label for="registration-password" class="form-label form-label--password">Пароль
+              <img src="image/required.svg" alt="star" class="form__required-icon">
+              <span class="form__question">
+                <svg class="question-mark">
+                  <use xlink:href="image/svg.svg#question"></use>
+                </svg>
+              </span>
+            </label>
             <input id="registration-password" type="password" class="form-input form-input--password" placeholder="Введите пароль">
           </div>
           <div class="form__wrapper form__wrapper-replay">
-            <label for="registration-password-replay" class="form-label form-label--password-replay">Повторите пароль</label>
+            <label for="registration-password-replay" class="form-label form-label--password-replay">Повторите пароль
+              <img src="image/required.svg" alt="star" class="form__required-icon">
+              <span class="form__question">
+                <svg class="question-mark">
+                  <use xlink:href="image/svg.svg#question"></use>
+                </svg>
+              </span>
+            </label>
             <input id="registration-password-replay" type="password" class="form-input form-input--password-replay" placeholder="Повторите пароль">
           </div>
           <button class="form__btn-send">Зарегистрироваться</button>
@@ -1138,12 +1173,26 @@
         </button>
         <form action="#" class="popup-registration__form form">
           <div class="form__wrapper form__wrapper-email">
-            <label for="registration-email" class="form-label form-label--email">Электронная почта</label>
-            <input id="registration-email" type="email" class="form-input form-input--email" placeholder="Введите Вашу электронную почту">
+            <label for="entry-email" class="form-label form-label--email">Электронная почта
+              <img src="image/required.svg" alt="star" class="form__required-icon">
+              <span class="form__question">
+                <svg class="question-mark">
+                  <use xlink:href="image/svg.svg#question"></use>
+                </svg>
+              </span>
+            </label>
+            <input id="entry-email" type="email" class="form-input form-input--email" placeholder="Введите Вашу электронную почту">
           </div>
           <div class="form__wrapper form__wrapper-entry">
-            <label for="registration-password" class="form-label form-label--password">Пароль</label>
-            <input id="registration-password" type="password" class="form-input form-input--password" placeholder="Введите пароль">
+            <label for="entry-password" class="form-label form-label--password">Пароль
+              <img src="image/required.svg" alt="star" class="form__required-icon">
+              <span class="form__question">
+                <svg class="question-mark">
+                  <use xlink:href="image/svg.svg#question"></use>
+                </svg>
+              </span>
+            </label>
+            <input id="entry-password" type="password" class="form-input form-input--password" placeholder="Введите пароль">
           </div>
           <button class="form__btn-send form__btn-entry">Войти</button>
         </form>
@@ -1261,6 +1310,26 @@
           <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow filters__arrow--right">
         </button>
       </div>
+      <div class="filters__active">
+          <div class="filters__active-item">
+            <span class="filters__active-text">Е. Меньшикова</span>
+            <button class="filters__delete">
+              <img src="image/cross.svg" alt="icon: cross" class="cross">
+            </button>
+          </div>
+          <div class="filters__active-item">
+            <span class="filters__active-text">24.01.2020 - 24.09.2020</span>
+            <button class="filters__delete">
+              <img src="image/cross.svg" alt="icon: cross" class="cross">
+            </button>
+          </div>
+          <div class="filters__active-item">
+            <span class="filters__active-text">Сбросить</span>
+            <button class="filters__delete">
+              <img src="image/cross.svg" alt="icon: cross" class="cross">
+            </button>
+          </div>
+        </div>
       <hr class="search__line">
       <div class="filters filters-active">
         <h4 class="filters__title">Вы искали</h4>
@@ -1299,7 +1368,19 @@
         <span class="tags__elem">#помощь фронту</span>
         <span class="tags__elem">#пригород</span>
       </div>
+
     </div>
+  </div>
+  <div class="add">
+    <div class="add__wrapper">
+      <h3 class="add__title">Добавление нового материала</h3>
+      <button class="close-btn add__close">
+        <svg width="13px" height="13px">
+          <use xlink:href="image/svg.svg#cross"></use>
+        </svg>
+      </button>
+    </div>
+
   </div>
 </body>
 </html>

@@ -513,7 +513,6 @@
     &__title
       margin-bottom: 32px
   &-search
-    visibility: visible
     &__form
       width: 100%
       margin-bottom: 36px
@@ -554,6 +553,22 @@
       &__item
         height: 88px
 .form
+  &__required
+    &-icon
+      margin-left: 8px
+      width: 10px
+      height: 10px
+      vertical-align: super
+      display: none
+  &__question
+    margin-left: 8px
+    background: #F7F7F7
+    border-radius: 100px
+    width: 24px
+    height: 24px
+    display: inline-flex
+    justify-content: center
+    align-items: center
   &-label
     margin-bottom: 16px
     font-family: Inter
@@ -685,3 +700,7 @@ thead>tr
     color: #000
     display: inline-block
     margin-right: 16px
+.question
+  &-mark
+    width: 7px
+    height: 12px
