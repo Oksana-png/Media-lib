@@ -1078,8 +1078,8 @@
       <h3 class="popup-reg-success__title">Регистрация</h3>
       <button class="popup-reg-success__btn-close close-btn">
         <svg width="13px" height="13px" class="icon">
-            <use xlink:href="image/svg.svg#cross"></use>
-          </svg>
+          <use xlink:href="image/svg.svg#cross"></use>
+        </svg>
       </button>
       <div class="popup-reg-success__text-success">
         <img src="image/success.svg" alt="icon: okey" class="popup-reg-success__icon">
@@ -1156,6 +1156,12 @@
   </div>
   <div class="popup popup-search search">
     <div class="popup-dialog-search">
+      <h3 class="search__title">Поиск</h3>
+      <button class="search__close close-btn">
+        <svg width="13px" height="13px">
+          <use xlink:href="image/svg.svg#cross"></use>
+        </svg>
+      </button>
       <form action="#" class="search-form popup-search__form">
         <img src="image/searchLarge.svg" alt="magnifier" class="popup-search__magnifier magnifier">
         <input type="text" class="search__input popup-search__input" placeholder="Введите поисковый запрос">
@@ -1228,7 +1234,7 @@
           </li>
           <li class="nav__item">
               <a href="#" class="nav__link">
-                <svg width="24" height="24" class="nav__icon">
+                <svg width="24" height="24" class="nav__icon nav__icon--last">
                   <use xlink:href='image/svg.svg#audio'/>
                 </svg>
                 <span class="nav__text">Инфо. материалы</span>
@@ -1249,6 +1255,10 @@
         <button class="filters__item">
           <span class="filters__text">Теги</span>
           <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
+        </button>
+        <button class="filters__item">
+          <span class="filters__text">Фильтр</span>
+          <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow filters__arrow--right">
         </button>
       </div>
       <hr class="search__line">

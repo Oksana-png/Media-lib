@@ -33,6 +33,9 @@
       & .search
         &-form
           width: 100%
+  .search
+    &__close
+      right: -82px
 @media ( min-width:  1501px)
   .col-xxl-3
     flex: 0 0 25%
@@ -247,9 +250,20 @@
         top: 38px
         right: 60px
     &-search
+      &__form
+        margin-bottom: 15px
       &__input
         display: block
         width: 100%
+      & .nav
+        &__item
+          width: 97px
+        &__text
+          &:last-child
+            text-align: center
+        &__icon
+          &--last
+            margin-bottom: 1px
   .form
     &-label
       font-size: 14px
@@ -273,7 +287,34 @@
         line-height: 40px
         width: 100%
         margin-top: 5px
+  .search
+    &__close
+      top: 20px
+      right: -20px
+    &__list
+      justify-content: flex-start
+    &__nav
+      margin-bottom: 15px
+    &__line
+      margin-bottom: 15px
+      margin-top: 15px
+    & .filters
+      &__active
+        &-item
+          margin-bottom: 16px
 
+      &-active
+        margin-bottom: 0px
+      &__item
+        padding: 0
+        padding-right: 3px
+        font-size: 14px
+        line-height: 40px
+  .tags
+    &__elem
+      font-weight: 300
+      font-size: 14px
+      line-height: 32px
 @media (max-width: 991px)
   .container
     max-width: 690px
@@ -352,6 +393,8 @@
         width: 690px
         height: 484px
         padding: 30px 60px 10px 60px
+      &-search
+        width: 600px
     &-info
       &__head
         &-editor
@@ -383,7 +426,9 @@
       &__right
         padding: 0
         min-height: 100%
-
+  .search
+    &__close
+      right: -32px
 @media (max-width: 767px)
   .container
     width: 80%
@@ -589,6 +634,11 @@
         padding: 30px
         min-width: 260px
         max-width: 460px
+      &-search
+        padding-top: 26px
+        width: 80%
+        min-width: 261px
+        max-width: 460px
     &-info
       &__mobile
         &-table
@@ -780,6 +830,20 @@
       &__right
         padding: 0
         min-height: 400px
+    &-search
+      &__form
+        margin-bottom: 10px
+        height: 40px
+      &__magnifier
+        top: 8px
+        left: 15px
+      &__input
+        padding: 0
+        padding-left: 49px
+        &::placeholder
+          font-weight: normal
+          font-size: 12px
+          line-height: 40px
   .form
     &__wrapper
       flex-basis: 100%
@@ -815,6 +879,50 @@
     flex-direction: column
     align-items: flex-start
     margin-bottom: 5px
+  .search
+    &__line
+      margin-top: 10px
+      margin-bottom: 10px
+    &__title
+      display: block
+    &__nav
+      display: none
+    & .filters
+      display: flex
+      &__item
+        display: none
+        &:last-child
+          display: block
+    &__close
+      top: 26px
+      right: 0px
+      background: #FFFFFF
+      border: 1px solid #D6D6D6
+      border-radius: 100px
+    & .filters
+      &__title
+        font-weight: 500
+        font-size: 14px
+        line-height: 32px
+        margin-bottom: 5px
+      &__active
+        &-text
+          font-size: 10px
+        &-item
+          margin-bottom: 5px
+          margin-right: 5px
+          padding: 7px 12px
+  .tags
+    margin-top: 5px
+    &__title
+      font-weight: 500
+      font-size: 14px
+      line-height: 32px
+      margin-bottom: 10px
+    &__elem
+      font-size: 10px
+      line-height: 20px
+      margin-bottom: 5px
 @media (max-width: 360px)
   .popup
     &-info
