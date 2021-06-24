@@ -1139,11 +1139,11 @@
         <form action="#" class="popup-registration__form form">
           <div class="form__wrapper form__wrapper-email">
             <label for="registration-email" class="form-label form-label--email">Электронная почта</label>
-            <input id="registration-email" type="email" class="form-input form-input--email" placeholder="Введите Вашу электронную почту">
+            <input id="entry-email" type="email" class="form-input form-input--email" placeholder="Введите Вашу электронную почту">
           </div>
           <div class="form__wrapper form__wrapper-entry">
-            <label for="registration-password" class="form-label form-label--password">Пароль</label>
-            <input id="registration-password" type="password" class="form-input form-input--password" placeholder="Введите пароль">
+            <label for="entry-password" class="form-label form-label--password">Пароль</label>
+            <input id="entry-password" type="password" class="form-input form-input--password" placeholder="Введите пароль">
           </div>
           <button class="form__btn-send form__btn-entry">Войти</button>
         </form>
@@ -1158,7 +1158,7 @@
     <div class="popup-dialog-search">
       <form action="#" class="search-form popup-search__form">
         <img src="image/searchLarge.svg" alt="magnifier" class="popup-search__magnifier magnifier">
-        <input type="text" class="search__input popup-search__input" placeholder="Введите поисковый запрос">
+        <input type="search" class="search__input popup-search__input" placeholder="Введите поисковый запрос">
       </form>
       <div class="search__nav">
         <ul class="nav search__list">
@@ -1289,6 +1289,456 @@
         <span class="tags__elem">#помощь фронту</span>
         <span class="tags__elem">#пригород</span>
       </div>
+    </div>
+  </div>
+  <div class="add">
+    <div class="add__wrapper">
+      <h3 class="add__title">Добавление нового материала</h3>
+      <button class="add__close close-btn">
+        <svg width="13px" height="13px" class="icon">
+          <use xlink:href="image/svg.svg#cross"></use>
+        </svg>
+      </button>
+      <p class="add__nav-text">Выберите раздел куда хотите добавить новый материал</p>
+      <div class="add__nav">
+        <ul class="nav add__list">
+          <li class="nav__item nav__item--active">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#photo'/>
+              </svg>
+              <span class="nav__text">Фотографии</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#article'/>
+              </svg>
+              <span class="nav__text">Статьи</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#video'/>
+              </svg>
+              <span class="nav__text">Видео</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#audio'/>
+              </svg>
+              <span class="nav__text">Аудио</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#photo'/>
+              </svg>
+              <span class="nav__text">Презентации</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#video'/>
+              </svg>
+              <span class="nav__text">Промо</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon">
+                <use xlink:href='image/svg.svg#article'/>
+              </svg>
+              <span class="nav__text">Подкасты</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <svg width="24" height="24" class="nav__icon nav__icon-last">
+                <use xlink:href='image/svg.svg#audio'/>
+              </svg>
+              <span class="nav__text">Инфо. материалы</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class="add__form form-add">
+        <div class="form-add__block">
+          <p class="form-add__label">Публичность файла</p>
+          <div class="form-add__radio-wrapper">
+            <div class="form-add__radio">
+              <input id="noPublic" type="radio" name="public" value="false" class="form-add__public">
+              <label for="noPublic" class="form-add__public-text">
+                <svg width="13" height="10" class="form-add__radio-check">
+                  <use xlink:href='image/svg.svg#check'/>
+                </svg>
+                <span class="form-add__radio-curcul"></span>
+                Не публичный
+              </label>
+            </div>
+            <div class="form-add__radio">
+              <input id="public" type="radio" name="public" value="true" class="form-add__public">
+              <label for="public" class="form-add__public-text">
+                <svg width="13" height="10" class="form-add__radio-check">
+                  <use xlink:href='image/svg.svg#check'/>
+                </svg>
+                <span class="form-add__radio-curcul"></span>
+                Публичный
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-add__block">
+          <label for="article-title" class="form-add__label">Заголовок альбома</label>
+          <input id="article-title" type="text" class="form-input form-add__input" placeholder="Введите название заголовка статьи. Максимум 100 символов.">
+        </div>
+        <div class="form-add__block">
+          <label for="article-anons" class="form-add__label">Анонс</label>
+          <input id="article-anons" type="text" class="form-input form-add__input" placeholder="Введите название заголовка статьи. Максимум 100 символов.">
+        </div>
+        <div class="form-add__block">
+          <p class="form-add__label">Загрузка фотографий</p>
+          <label for="article-files" class="form-add__download-btn">
+            <span class="form-add__download-curcul">
+              <svg width="24" height="24" class="form-add__download-icon">
+                <use xlink:href='image/svg.svg#download'/>
+              </svg>
+            </span>
+            Загрузить с компьютера
+          </label>
+          <label for="article-files" class="form-add__download-zona">
+            <img src="image/drap-drop.svg" alt="icon: drap-drop" class="form-add__icon-drap">
+            Вы можете загрузить файл просто&nbsp;перетащив его в эту рамку
+            <input id="article-files" type="file" class="form-add__download-drag" multiple>
+          </label>
+          <div class="form-add__download-format">
+            Поддерживаемые форматы: .txt, .doc, .pdf <br>
+            Максимальный размер файла 10 Мб
+          </div>
+          <div class="form-add__download-photos">
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-add__block">
+          <p class="form-add__label">Обложка альбома</p>
+          <label for="article-files" class="form-add__download-btn">
+            <span class="form-add__download-curcul">
+              <svg width="24" height="24" class="form-add__download-icon">
+                <use xlink:href='image/svg.svg#download'/>
+              </svg>
+            </span>
+            Загрузить с компьютера
+          </label>
+          <label for="article-files" class="form-add__download-zona">
+            <img src="image/drap-drop.svg" alt="icon: drap-drop" class="form-add__icon-drap">
+            Вы можете загрузить файл просто&nbsp;перетащив его в эту рамку
+            <input id="article-files" type="file" class="form-add__download-drag">
+          </label>
+          <div class="form-add__download-format">
+            Поддерживаемые форматы: .txt, .doc, .pdf<br>
+            Максимальный размер файла 10 Мб
+          </div>
+          <div class="form-add__download-photos">
+            <div class="form-add__download-photo photo-edit">
+              <div class="photo-edit__img">
+                <img src="image/imageCard.png" alt="photo" class="photo-edit__image">
+              </div>
+              <button class="photo-edit__info">
+                <svg width="16" height="16" class="photo-edit__icon">
+                  <use xlink:href="image/svg.svg#info"></use>
+                </svg>
+              </button>
+              <div class="photo-edit__buttons">
+                <button class="photo-edit__turn">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#turn"></use>
+                  </svg>
+                </button>
+                <button class="photo-edit__delete">
+                  <svg width="24" height="24" class="photo-edit__icon">
+                    <use xlink:href="image/svg.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-add__block filters">
+          <label for="article-authors" class="form-add__label">Авторство</label>
+          <div class="filters__active">
+            <div class="filters__active-item">
+              <span class="filters__active-text">Елена Меньшикова</span>
+              <button class="filters__delete">
+                <img src="image/cross.svg" alt="icon: cross" class="cross">
+              </button>
+            </div>
+            <div class="filters__active-item">
+              <span class="filters__active-text">Андрей Володарский</span>
+              <button class="filters__delete">
+                <img src="image/cross.svg" alt="icon: cross" class="cross">
+              </button>
+            </div>
+            <button class="form-add__btn-add">
+              <span class="form-add__circle">
+                <svg class="form-add__icon-plus">
+                  <use xlink:href="image/svg.svg#plus"></use>
+                </svg>
+              </span>
+              Добавить
+            </button>
+          </div>
+        </div>
+        <div class="form-add__block">
+          <label for="article-soauthors" class="form-add__label">Соавтор - учавствовали в создании материала</label>
+          <div class="filters__active">
+            <div class="filters__active-item">
+              <span class="filters__active-text">Сергей Ранецкий</span>
+              <button class="filters__delete">
+                <img src="image/cross.svg" alt="icon: cross" class="cross">
+              </button>
+            </div>
+            
+            <button class="form-add__btn-add">
+              <span class="form-add__circle">
+                <svg class="form-add__icon-plus">
+                  <use xlink:href="image/svg.svg#plus"></use>
+                </svg>
+              </span>
+              Добавить
+            </button>
+          </div>
+        </div>
+        <div class="form-add__block">
+          <label for="article-tags" class="form-add__label">Анонс</label>
+          <input id="article-tags" type="text" class="form-input form-add__input" placeholder="Введи теги через запятую. Максимум 15 тегов.">
+        </div>
+      </form>
+        <!-- /.add__form -->
     </div>
   </div>
 </body>

@@ -273,7 +273,34 @@
         line-height: 40px
         width: 100%
         margin-top: 5px
-
+@media (max-width: 1250px)
+  .add
+    &__wrapper
+      width: 880px
+    & .nav
+      &__item
+        height: 88px
+        width: 110px
+        &:last-child
+          text-align: center
+      &__icon
+        &-last
+          margin-bottom: 1px
+  .form
+    &-add
+      &__download
+        &-photo
+          width: 133px
+          &:nth-child(7n)
+            margin-right: 16px
+          &:nth-child(6n)
+            margin-right: 0
+  .photo
+    &-edit
+      &__turn
+        padding: 12px 21px
+      &__delete
+        padding: 12px 21px
 @media (max-width: 991px)
   .container
     max-width: 690px
@@ -383,7 +410,55 @@
       &__right
         padding: 0
         min-height: 100%
-
+  .add
+    &__wrapper
+      width: 690px
+    &__title
+      font-weight: 600
+      font-size: 25px
+      line-height: 30px
+    &__close
+      top: 64px
+    & .filters
+      &__active
+        &-item
+          padding: 0 15px
+        &-text
+          font-size: 14px
+  .form
+    &-add
+      &__input
+        &::placeholder
+          font-size: 14px
+          line-height: 24px
+        &:focus
+          font-size: 14px
+          line-height: 24px
+      &__public
+        &-text
+          font-size: 14px
+          line-height: 32px
+      &__radio
+        &-wrapper
+          width: 338px
+      &__download
+        &-btn
+          font-size: 14px
+          line-height: 32px
+        &-zona
+          font-size: 14px
+          line-height: 24px
+        &-photo
+          width: 160px
+          &:nth-child(6n)
+            margin-right: 16px
+          &:nth-child(4n)
+            margin-right: 0
+      &__btn
+        &-add
+          font-size: 14px
+          line-height: 40px
+          padding: 0 15px
 @media (max-width: 767px)
   .container
     width: 80%
