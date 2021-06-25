@@ -2047,7 +2047,6 @@ thead > tr {
 }
 
 .add {
-  visibility: hidden;
   position: fixed;
   overflow: auto;
   top: 0;
@@ -2140,6 +2139,11 @@ thead > tr {
 
 .add .cross {
   margin-left: 12pxw;
+}
+
+.form-add__line {
+  margin-top: 0;
+  background-color: #E0E0E0;
 }
 
 .form-add__public {
@@ -3536,6 +3540,95 @@ thead > tr {
   .form__btn-entry {
     margin-top: 15px;
   }
+  .form-add__input {
+    height: 50px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .form-add__input::placeholder {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .form-add__input:focus {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .form-add__download-btn {
+    width: 100%;
+    padding: 4px 32px;
+    font-size: 12px;
+    line-height: 32px;
+  }
+  .form-add__download-zona {
+    display: none;
+  }
+  .form-add__download-format {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .form-add__download-photo {
+    flex-basis: 48%;
+    margin-right: 0;
+  }
+  .form-add__download-photo:nth-child(6n), .form-add__download-photo:nth-child(7n) {
+    margin-right: 0;
+  }
+  .form-add__download-photos {
+    justify-content: space-between;
+  }
+  .form-add__block {
+    margin-bottom: 15px;
+  }
+  .form-add__block-public, .form-add__block-title {
+    margin-bottom: 5px;
+  }
+  .form-add__label {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+  .form-add__radio {
+    width: 50%;
+  }
+  .form-add__radio-wrapper {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .form-add__radio-check {
+    top: 16px;
+    left: 20px;
+  }
+  .form-add__public-text {
+    font-size: 10px;
+    line-height: 32px;
+    padding: 4px 13px;
+  }
+  .form-add__btn-add {
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 12px;
+    line-height: 18px;
+    justify-content: center;
+  }
+  .form-add .filters__active {
+    display: flex;
+  }
+  .form-add .filters__active-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .form-add .filters__active-item {
+    padding: 8px 15px;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .photo-edit__turn {
+    padding: 12px 16px;
+  }
+  .photo-edit__delete {
+    padding: 12px 18px;
+  }
   tr {
     display: flex;
     flex-direction: column;
@@ -3595,6 +3688,29 @@ thead > tr {
     font-size: 10px;
     line-height: 20px;
     margin-bottom: 5px;
+  }
+  .add__wrapper {
+    min-width: 260px;
+    width: 75%;
+    max-width: 470px;
+  }
+  .add__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    width: 191px;
+  }
+  .add__nav {
+    display: none;
+  }
+  .add__nav-text {
+    width: 260px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 16px;
   }
 }
 

@@ -1410,8 +1410,15 @@
         </ul>
       </div>
       <form class="add__form form-add">
-        <div class="form-add__block">
-          <p class="form-add__label">Публичность файла</p>
+        <div class="form-add__block form-add__block-public">
+          <p class="form-add__label">Публичность файла
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </p>
           <div class="form-add__radio-wrapper">
             <div class="form-add__radio">
               <input id="noPublic" type="radio" name="public" value="false" class="form-add__public">
@@ -1435,16 +1442,37 @@
             </div>
           </div>
         </div>
-        <div class="form-add__block">
-          <label for="article-title" class="form-add__label">Заголовок альбома</label>
+        <div class="form-add__block form-add__block-title">
+          <label for="article-title" class="form-add__label">Заголовок альбома
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </label>
           <input id="article-title" type="text" class="form-input form-add__input" placeholder="Введите название заголовка статьи. Максимум 100 символов.">
         </div>
         <div class="form-add__block">
-          <label for="article-anons" class="form-add__label">Анонс</label>
+          <label for="article-anons" class="form-add__label">Анонс
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </label>
           <input id="article-anons" type="text" class="form-input form-add__input" placeholder="Введите название заголовка статьи. Максимум 100 символов.">
         </div>
         <div class="form-add__block">
-          <p class="form-add__label">Загрузка фотографий</p>
+          <p class="form-add__label">Загрузка фотографий
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </p>
           <label for="article-files" class="form-add__download-btn">
             <span class="form-add__download-curcul">
               <svg width="24" height="24" class="form-add__download-icon">
@@ -1686,7 +1714,14 @@
           </div>
         </div>
         <div class="form-add__block">
-          <p class="form-add__label">Обложка альбома</p>
+          <p class="form-add__label">Обложка альбома
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </p>
           <label for="article-files" class="form-add__download-btn">
             <span class="form-add__download-curcul">
               <svg width="24" height="24" class="form-add__download-icon">
@@ -1695,10 +1730,10 @@
             </span>
             Загрузить с компьютера
           </label>
-          <label for="article-files" class="form-add__download-zona">
+          <label for="article-cover" class="form-add__download-zona">
             <img src="image/drap-drop.svg" alt="icon: drap-drop" class="form-add__icon-drap">
             Вы можете загрузить файл просто&nbsp;перетащив его в эту рамку
-            <input id="article-files" type="file" class="form-add__download-drag">
+            <input id="article-cover" type="file" class="form-add__download-drag">
           </label>
           <div class="form-add__download-format">
             Поддерживаемые форматы: .txt, .doc, .pdf<br>
@@ -1730,7 +1765,14 @@
           </div>
         </div>
         <div class="form-add__block filters">
-          <label for="article-authors" class="form-add__label">Авторство</label>
+          <p class="form-add__label">Авторство
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </p>
           <div class="filters__active">
             <div class="filters__active-item">
               <span class="filters__active-text">Елена Меньшикова</span>
@@ -1755,7 +1797,14 @@
           </div>
         </div>
         <div class="form-add__block">
-          <label for="article-soauthors" class="form-add__label">Соавтор - учавствовали в создании материала</label>
+          <p class="form-add__label">Соавтор - учавствовали в создании материала
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </p>
           <div class="filters__active">
             <div class="filters__active-item">
               <span class="filters__active-text">Сергей Ранецкий</span>
@@ -1775,8 +1824,26 @@
           </div>
         </div>
         <div class="form-add__block">
-          <label for="article-tags" class="form-add__label">Анонс</label>
+          <label for="article-tags" class="form-add__label">Теги
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </label>
           <input id="article-tags" type="text" class="form-input form-add__input" placeholder="Введи теги через запятую. Максимум 15 тегов.">
+        </div>
+        <hr class="form-add__line form-add__block">
+        <div class="form-add__block">
+          <p class="form-add__label">Связанные материалы
+            <img src="image/required.svg" alt="star" class="form__required-icon">
+            <span class="form__question">
+              <svg class="question-mark">
+                <use xlink:href="image/svg.svg#question"></use>
+              </svg>
+            </span>
+          </p>
         </div>
       </form>
         <!-- /.add__form -->
