@@ -85,7 +85,7 @@
     <path d="M11.504 16.132L6 19.277V5h12v14.277l-5.504-3.145-.496-.284-.496.284z" stroke-width="2"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 9" id="check">
-    <path d="M1 5l3 2 6-6" stroke="#fff" stroke-width="2"></path>
+    <path d="M1 5l3 2 6-6" stroke-width="2"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 14" id="arrow-prev">
     <path d="M6.444 1L2 7m0 0l4.444 6M2 7h10" stroke-width="2"></path>
@@ -120,6 +120,24 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="historyView">
     <circle cx="12.219" cy="12" r="10" stroke-width="2"></circle>
     <path d="M12.219 6v6l3 3" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="turn">
+    <g clip-path="url(#clip0)" stroke-width="2">
+      <path d="M4.668 13.964a7.589 7.589 0 015.366-9.294m-5.366 9.294l-3.983-2.3m3.983 2.3l3.628-3.216m11.032-.712a7.589 7.589 0 01-5.366 9.294m5.366-9.294l3.983 2.3m-3.983-2.3l-3.627 3.217"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <path d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12z"></path>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="info">
+    <path stroke-width="2" d="M6 7h4v8H6z"></path>
+    <path d="M6 0h4v4H6z"></path>
+    <path d="M2 7h11" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="plus">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.017 7.017V1.948h2v5.069h5.068v2H9.016v5.068h-2V9.018H1.948v-2h5.069z" fill="#fff"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" id="question">
     <path d="M2.438 8.307H4.59v-.193c.012-1.108.41-1.625 1.308-2.165 1.062-.63 1.755-1.466 1.755-2.801C7.653 1.159 6.051 0 3.795 0 1.733 0 .051 1.08 0 3.352h2.318c.034-.926.722-1.42 1.466-1.42.767 0 1.386.511 1.386 1.301 0 .744-.54 1.239-1.238 1.682-.955.602-1.489 1.21-1.494 3.199v.193zm1.119 3.636c.727 0 1.358-.608 1.363-1.364a1.38 1.38 0 00-1.363-1.352c-.75 0-1.37.608-1.364 1.352a1.36 1.36 0 001.364 1.364z" fill="#828282"></path>
