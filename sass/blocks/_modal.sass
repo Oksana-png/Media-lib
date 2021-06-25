@@ -552,6 +552,22 @@
       &__item
         height: 88px
 .form
+  &__required
+    &-icon
+      margin-left: 8px
+      width: 10px
+      height: 10px
+      vertical-align: super
+      display: none
+  &__question
+    margin-left: 8px
+    background: #F7F7F7
+    border-radius: 100px
+    width: 24px
+    height: 24px
+    display: inline-flex
+    justify-content: center
+    align-items: center
   &-label
     margin-bottom: 16px
     font-family: Inter
@@ -626,6 +642,22 @@ thead>tr
 
 .search
   background-color: #fff
+  &__title
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 22px
+    margin-bottom: 24px
+    display: none
+  &__close
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 64px
+    right: -120px
   &__list
     justify-content: space-between
   &__nav
@@ -668,3 +700,7 @@ thead>tr
     color: #000
     display: inline-block
     margin-right: 16px
+.question
+  &-mark
+    width: 7px
+    height: 12px
