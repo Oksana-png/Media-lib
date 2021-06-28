@@ -33,10 +33,43 @@
       & .search
         &-form
           width: 100%
+  .articles
+    &-container
+      &.small-cards
+        & .card
+          &__section
+            margin-bottom: 12px
+            &-text
+              font-size: 14px
+              line-height: 24px
+          &__image
+            height: 180px
+          &__id
+            font-size: 14px
+            line-height: 24px
+          &__author
+            margin-bottom: 12px
+          &__info
+            margin-bottom: 12px
+          &__title
+            font-size: 16px
+            line-height: 20px
+          &__author
+            font-size: 14px
+            line-height: 32px
+          &__data
+            font-size: 14px
+            line-height: 32px
 @media ( min-width:  1501px)
   .col-xxl-3
     flex: 0 0 25%
     max-width: 25%
+  .articles
+    &-container
+      &.small-cards
+        & .col-xxl-3
+          flex: 0 0 20%
+          max-width: 25%
 @media (max-width: 1500px)
   .container
     max-width: 880px
@@ -316,6 +349,12 @@
       font-weight: 300
       font-size: 14px
       line-height: 32px
+  .articles
+    &-container
+      &.small-cards
+        & .card
+          &__info
+            margin-bottom: 27px
 @media (max-width: 1250px)
   .add
     &__wrapper
@@ -507,6 +546,20 @@
   .search
     &__close
       right: -32px
+  .matherial
+    &__info
+      flex-direction: column
+      &-date
+        margin: 0
+      &-description
+        font-size: 14px
+        line-height: 24px
+    &__do
+      font-size: 14px
+      line-height: 24px
+    &__title
+      font-size: 14px
+      line-height: 32px
 @media (max-width: 767px)
   .container
     width: 80%
@@ -1025,6 +1078,12 @@
             padding: 8px 15px
             margin-right: 0
             margin-bottom: 5px
+      &__submit
+        width: 100%
+        font-weight: 500
+        font-size: 12px
+        line-height: 40px
+        padding: 0 32px
   .photo
     &-edit
       &__turn
@@ -1085,6 +1144,8 @@
       min-width: 260px
       width: 75%
       max-width: 470px
+      padding-top: 30px
+      padding-bottom: 30px
     &__title
       font-style: normal
       font-weight: 600
@@ -1100,6 +1161,25 @@
         font-size: 12px
         line-height: 18px
         margin-bottom: 16px
+  .matherial
+    &-icon
+      margin-top: 8px
+    &__title
+      width: 204px
+      font-size: 12px
+      line-height: 18px
+    &__info
+      &-description
+        width: 204px
+      &-date
+        display: none
+    &__do
+      font-size: 10px
+      line-height: 24px
+      &:nth-child(2)
+        &::after
+          display: none
+
 @media (max-width: 360px)
   .popup
     &-info

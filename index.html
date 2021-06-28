@@ -269,7 +269,8 @@
         </div>
       </div>
     </div>
-    <div class="container ">
+    <!-- small-cards/list-large -->
+    <div class="container articles-container list-large">
       <div class="view articles__view row">
         <div class="view__left">
           <img src="image/sort.svg" alt="icon: sort" class="view__icon">
@@ -327,21 +328,25 @@
               </div>
             </a>
             <div class="card__text">
-              <div class="card__section">
-                <svg width="16" height="16" class="articles-icon">
-                  <use xlink:href='image/svg.svg#articles'/>
-                </svg>
-                <span class="card__section-text">Статья</span>
-                <svg width="24" height="24" class="public-link">
-                  <use xlink:href='image/svg.svg#publicLink'/>
-                </svg>
-                <div class="card__id">ID 880</div>
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Шедевры, рождённые любовью</h3>
-                <div class="card__author">Е. Меньшикова, Л. Останина</div>
-                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
-                <div class="card__data">19 декабря 2020 года</div>
+              <div class="card-text">
+                <div class="card__section">
+                  <svg width="16" height="16" class="articles-icon">
+                    <use xlink:href='image/svg.svg#articles'/>
+                  </svg>
+                  <span class="card__section-text">Статья</span>
+                  <svg width="24" height="24" class="public-link">
+                    <use xlink:href='image/svg.svg#publicLink'/>
+                  </svg>
+                  <div class="card__id">ID 880</div>
+                </div>
+                <div class="card__info">
+                  <div class="card__piple">
+                    <h3 class="card__title">Шедевры, рождённые любовью</h3>
+                    <div class="card__author">Е. Меньшикова, Л. Останина</div>
+                  </div>
+                  <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
+                  <div class="card__data">19 декабря 2020 года</div>
+                </div>
               </div>
               <div class="card__down">
                 <form action="#">
@@ -355,331 +360,6 @@
                     </label>
                   </div>
                 </form>
-                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
-                <button class="card__button card__button-favorites ">
-                  <svg width="24" height="24" class="card__favorites-icon">
-                    <use xlink:href='image/svg.svg#favoritesActive'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="download">
-                    <use xlink:href='image/svg.svg#download'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="share">
-                    <use xlink:href='image/svg.svg#share'/>
-                  </svg>
-                </button>
-                <button class="card__button card__button-dots">
-                  <svg width="24" height="24" class="dots">
-                    <use xlink:href='image/svg.svg#dots'/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
-          <div class="card">
-            <a href="#" class="card__link-image">
-              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
-              <div class="card__link-eye">
-              </div>
-            </a>
-            <div class="card__text">
-              <div class="card__section">
-                <svg width="16" height="16" class="articles-icon">
-                  <use xlink:href='image/svg.svg#articles'/>
-                </svg>
-                <span class="card__section-text">Статья</span>
-                <svg width="24" height="24" class="public-link">
-                  <use xlink:href='image/svg.svg#publicLink'/>
-                </svg>
-                <div class="card__id">ID 880</div>
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Шедевры, рождённые любовью</h3>
-                <div class="card__author">Е. Меньшикова, Л. Останина</div>
-                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
-                <div class="card__data">19 декабря 2020 года</div>
-              </div>
-              <div class="card__down">
-
-
-                <form action="#">
-                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
-                  <div class="card__button-checkbox">
-                    <label for="card__checkbox" class="card__checkbox-active">
-                      <svg width="12" height="9" class="card__checkbox-check">
-                        <use xlink:href='image/svg.svg#check'/>
-                      </svg>
-                      <span class="card__hover-text">Выделить</span>
-                    </label>
-                  </div>
-                </form>
-
-
-                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
-                <button class="card__button card__button-favorites ">
-                  <svg width="24" height="24" class="card__favorites-icon">
-                    <use xlink:href='image/svg.svg#favoritesActive'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="download">
-                    <use xlink:href='image/svg.svg#download'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="share">
-                    <use xlink:href='image/svg.svg#share'/>
-                  </svg>
-                </button>
-                <button class="card__button card__button-dots">
-                  <svg width="24" height="24" class="dots">
-                    <use xlink:href='image/svg.svg#dots'/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
-          <div class="card">
-            <a href="#" class="card__link-image">
-              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
-              <div class="card__link-eye">
-              </div>
-            </a>
-            <div class="card__text">
-              <div class="card__section">
-                <svg width="16" height="16" class="articles-icon">
-                  <use xlink:href='image/svg.svg#articles'/>
-                </svg>
-                <span class="card__section-text">Статья</span>
-                <svg width="24" height="24" class="public-link">
-                  <use xlink:href='image/svg.svg#publicLink'/>
-                </svg>
-                <div class="card__id">ID 880</div>
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Шедевры, рождённые любовью</h3>
-                <div class="card__author">Е. Меньшикова, Л. Останина</div>
-                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
-                <div class="card__data">19 декабря 2020 года</div>
-              </div>
-              <div class="card__down">
-
-
-                <form action="#">
-                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
-                  <div class="card__button-checkbox">
-                    <label for="card__checkbox" class="card__checkbox-active">
-                      <svg width="12" height="9" class="card__checkbox-check">
-                        <use xlink:href='image/svg.svg#check'/>
-                      </svg>
-                      <span class="card__hover-text">Выделить</span>
-                    </label>
-                  </div>
-                </form>
-
-
-                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
-                <button class="card__button card__button-favorites ">
-                  <svg width="24" height="24" class="card__favorites-icon">
-                    <use xlink:href='image/svg.svg#favoritesActive'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="download">
-                    <use xlink:href='image/svg.svg#download'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="share">
-                    <use xlink:href='image/svg.svg#share'/>
-                  </svg>
-                </button>
-                <button class="card__button card__button-dots">
-                  <svg width="24" height="24" class="dots">
-                    <use xlink:href='image/svg.svg#dots'/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
-          <div class="card">
-            <a href="#" class="card__link-image">
-              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
-              <div class="card__link-eye">
-              </div>
-            </a>
-            <div class="card__text">
-              <div class="card__section">
-                <svg width="16" height="16" class="articles-icon">
-                  <use xlink:href='image/svg.svg#articles'/>
-                </svg>
-                <span class="card__section-text">Статья</span>
-                <svg width="24" height="24" class="public-link">
-                  <use xlink:href='image/svg.svg#publicLink'/>
-                </svg>
-                <div class="card__id">ID 880</div>
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Шедевры, рождённые любовью</h3>
-                <div class="card__author">Е. Меньшикова, Л. Останина</div>
-                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
-                <div class="card__data">19 декабря 2020 года</div>
-              </div>
-              <div class="card__down">
-
-
-                <form action="#">
-                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
-                  <div class="card__button-checkbox">
-                    <label for="card__checkbox" class="card__checkbox-active">
-                      <svg width="12" height="9" class="card__checkbox-check">
-                        <use xlink:href='image/svg.svg#check'/>
-                      </svg>
-                      <span class="card__hover-text">Выделить</span>
-                    </label>
-                  </div>
-                </form>
-
-
-                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
-                <button class="card__button card__button-favorites ">
-                  <svg width="24" height="24" class="card__favorites-icon">
-                    <use xlink:href='image/svg.svg#favoritesActive'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="download">
-                    <use xlink:href='image/svg.svg#download'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="share">
-                    <use xlink:href='image/svg.svg#share'/>
-                  </svg>
-                </button>
-                <button class="card__button card__button-dots">
-                  <svg width="24" height="24" class="dots">
-                    <use xlink:href='image/svg.svg#dots'/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
-          <div class="card">
-            <a href="#" class="card__link-image">
-              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
-              <div class="card__link-eye">
-              </div>
-            </a>
-            <div class="card__text">
-              <div class="card__section">
-                <svg width="16" height="16" class="articles-icon">
-                  <use xlink:href='image/svg.svg#articles'/>
-                </svg>
-                <span class="card__section-text">Статья</span>
-                <svg width="24" height="24" class="public-link">
-                  <use xlink:href='image/svg.svg#publicLink'/>
-                </svg>
-                <div class="card__id">ID 880</div>
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Шедевры, рождённые любовью</h3>
-                <div class="card__author">Е. Меньшикова, Л. Останина</div>
-                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
-                <div class="card__data">19 декабря 2020 года</div>
-              </div>
-              <div class="card__down">
-
-
-                <form action="#">
-                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
-                  <div class="card__button-checkbox">
-                    <label for="card__checkbox" class="card__checkbox-active">
-                      <svg width="12" height="9" class="card__checkbox-check">
-                        <use xlink:href='image/svg.svg#check'/>
-                      </svg>
-                      <span class="card__hover-text">Выделить</span>
-                    </label>
-                  </div>
-                </form>
-
-
-                <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
-                <button class="card__button card__button-favorites ">
-                  <svg width="24" height="24" class="card__favorites-icon">
-                    <use xlink:href='image/svg.svg#favoritesActive'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="download">
-                    <use xlink:href='image/svg.svg#download'/>
-                  </svg>
-                </button>
-                <button class="card__button">
-                  <svg width="24" height="24" class="share">
-                    <use xlink:href='image/svg.svg#share'/>
-                  </svg>
-                </button>
-                <button class="card__button card__button-dots">
-                  <svg width="24" height="24" class="dots">
-                    <use xlink:href='image/svg.svg#dots'/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12 articles__card">
-          <div class="card">
-            <a href="#" class="card__link-image">
-              <img src="image/imageCard.png" alt="Шедевры, рождённые любовью" class="card__image">
-              <div class="card__link-eye">
-              </div>
-            </a>
-            <div class="card__text">
-              <div class="card__section">
-                <svg width="16" height="16" class="articles-icon">
-                  <use xlink:href='image/svg.svg#articles'/>
-                </svg>
-                <span class="card__section-text">Статья</span>
-                <svg width="24" height="24" class="public-link">
-                  <use xlink:href='image/svg.svg#publicLink'/>
-                </svg>
-                <div class="card__id">ID 880</div>
-              </div>
-              <div class="card__info">
-                <h3 class="card__title">Шедевры, рождённые любовью</h3>
-                <div class="card__author">Е. Меньшикова, Л. Останина</div>
-                <div class="card__description">14 августа в детский сад № 105 для детей с ОВЗ пришли сотрудники библиотеки № 18. Они принесли ребятам необычные книги, которые сразу привлекли...</div>
-                <div class="card__data">19 декабря 2020 года</div>
-              </div>
-              <div class="card__down">
-
-
-                <form action="#">
-                  <input type="checkbox" id="card__checkbox" name="scales" class="card__checkbox">
-                  <div class="card__button-checkbox">
-                    <label for="card__checkbox" class="card__checkbox-active">
-                      <svg width="12" height="9" class="card__checkbox-check">
-                        <use xlink:href='image/svg.svg#check'/>
-                      </svg>
-                      <span class="card__hover-text">Выделить</span>
-                    </label>
-                  </div>
-                </form>
-
-
                 <!--  ДЛЯ АКТИВНОГО ИЗБРАННОГО - card__button-favorites--active -->
                 <button class="card__button card__button-favorites ">
                   <svg width="24" height="24" class="card__favorites-icon">
@@ -1844,7 +1524,106 @@
               </svg>
             </span>
           </p>
+          <div class="matherial form-add__matherial">
+            <div class="matherial__item">
+              <svg width="16" height="16" class="articles-icon matherial-icon">
+                <use xlink:href='image/svg.svg#articles'/>
+              </svg>
+              <div class="matherial__info">
+                <div class="matherial__info-text">
+                  <div class="matherial__title">Поэтический марафон «Богатырская наша сила!» (ТК «Телекон»)</div>
+                  <div class="matherial__info-description">
+                    <span class="matherial__do matherial__info-type">Статья</span>
+                    <span class="matherial__do matherial__info-authors">Е. Меньшикова, Л. Останина</span>
+                    <span class="matherial__do matherial__info-expansion">.doc</span>
+                    <span class="matherial__do matherial__info-id">ID: 2341</span>
+                  </div>
+                </div>
+                <div class="matherial__info-date">24 марта 2020 года</div>
+                <button class="matherial__close close-btn">
+                  <svg width="10px" height="10px" class="icon">
+                    <use xlink:href="image/svg.svg#cross"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="matherial__item">
+              <svg width="16" height="16" class="articles-icon matherial-icon">
+                <use xlink:href='image/svg.svg#articles'/>
+              </svg>
+              <div class="matherial__info">
+                <div class="matherial__info-text">
+                  <div class="matherial__title">Поэтический марафон «Богатырская наша сила!» (ТК «Телекон»)</div>
+                  <div class="matherial__info-description">
+                    <span class="matherial__do matherial__info-type">Статья</span>
+                    <span class="matherial__do matherial__info-authors">Е. Меньшикова, Л. Останина</span>
+                    <span class="matherial__do matherial__info-expansion">.doc</span>
+                    <span class="matherial__do matherial__info-id">ID: 2341</span>
+                  </div>
+                </div>
+                <div class="matherial__info-date">24 марта 2020 года</div>
+                <button class="matherial__close close-btn">
+                  <svg width="10px" height="10px" class="icon">
+                    <use xlink:href="image/svg.svg#cross"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="matherial__item">
+              <svg width="16" height="16" class="articles-icon matherial-icon">
+                <use xlink:href='image/svg.svg#articles'/>
+              </svg>
+              <div class="matherial__info">
+                <div class="matherial__info-text">
+                  <div class="matherial__title">Поэтический марафон «Богатырская наша сила!» (ТК «Телекон»)</div>
+                  <div class="matherial__info-description">
+                    <span class="matherial__do matherial__info-type">Статья</span>
+                    <span class="matherial__do matherial__info-authors">Е. Меньшикова, Л. Останина</span>
+                    <span class="matherial__do matherial__info-expansion">.doc</span>
+                    <span class="matherial__do matherial__info-id">ID: 2341</span>
+                  </div>
+                </div>
+                <div class="matherial__info-date">24 марта 2020 года</div>
+                <button class="matherial__close close-btn">
+                  <svg width="10px" height="10px" class="icon">
+                    <use xlink:href="image/svg.svg#cross"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="matherial__item">
+              <svg width="16" height="16" class="articles-icon matherial-icon">
+                <use xlink:href='image/svg.svg#articles'/>
+              </svg>
+              <div class="matherial__info">
+                <div class="matherial__info-text">
+                  <div class="matherial__title">Поэтический марафон «Богатырская наша сила!» (ТК «Телекон»)</div>
+                  <div class="matherial__info-description">
+                    <span class="matherial__do matherial__info-type">Статья</span>
+                    <span class="matherial__do matherial__info-authors">Е. Меньшикова, Л. Останина</span>
+                    <span class="matherial__do matherial__info-expansion">.doc</span>
+                    <span class="matherial__do matherial__info-id">ID: 2341</span>
+                  </div>
+                </div>
+                <div class="matherial__info-date">24 марта 2020 года</div>
+                <button class="matherial__close close-btn">
+                  <svg width="10px" height="10px" class="icon">
+                    <use xlink:href="image/svg.svg#cross"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="form-add__btn-add">
+            <span class="form-add__circle">
+              <svg class="form-add__icon-plus">
+                <use xlink:href="image/svg.svg#plus"></use>
+              </svg>
+            </span>
+            Добавить материал
+          </button>
         </div>
+        <button type="submit" class="form-add__submit">Опубликовать материал</button>
       </form>
         <!-- /.add__form -->
     </div>

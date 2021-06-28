@@ -743,6 +743,85 @@ img {
   stroke: #000;
 }
 
+.articles-container.small-cards .card__description {
+  display: none;
+}
+
+.articles-container.small-cards .card__author {
+  margin-bottom: 24px;
+}
+
+.articles-container.small-cards .articles__card {
+  margin-bottom: 20px;
+}
+
+.articles-container.small-cards .public-link {
+  display: none;
+}
+
+.articles-container.list-large .articles__cards {
+  display: block;
+}
+
+.articles-container.list-large .articles__card {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+.articles-container.list-large .card {
+  flex-direction: row;
+}
+
+.articles-container.list-large .card__author {
+  margin-bottom: 0;
+}
+
+.articles-container.list-large .card__info {
+  margin-bottom: 0;
+}
+
+.articles-container.list-large .card__description {
+  line-height: 24px;
+  width: 388px;
+  margin-bottom: 0;
+}
+
+.articles-container.list-large .card__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.articles-container.list-large .card__piple {
+  width: 328px;
+  margin-right: 72px;
+}
+
+.articles-container.list-large .card__link-image {
+  width: 120px;
+  height: 120px;
+}
+
+.articles-container.list-large .card__image {
+  height: 120px;
+}
+
+.articles-container.list-large .card__section {
+  width: 241px;
+}
+
+.articles-container.list-large .card__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 32px;
+  padding-right: 0;
+}
+
+.articles-container.list-large .card__data {
+  display: none;
+}
+
 .card {
   background-color: #FFFFFF;
   border: 1px solid #F2F2F2;
@@ -2047,6 +2126,7 @@ thead > tr {
 }
 
 .add {
+  visibility: hidden;
   position: fixed;
   overflow: auto;
   top: 0;
@@ -2069,6 +2149,7 @@ thead > tr {
   width: 1141px;
   margin: 0 auto;
   padding-top: 64px;
+  padding-bottom: 64px;
   position: relative;
 }
 
@@ -2338,6 +2419,21 @@ thead > tr {
   margin-right: 12px;
 }
 
+.form-add__submit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 8px 32px;
+  background-color: #000000;
+  border-radius: 16px;
+  color: #fff;
+  border: none;
+}
+
+.form-add__matherial {
+  margin-bottom: 24px;
+}
+
 .photo-edit {
   position: relative;
   background: #FFFFFF;
@@ -2409,6 +2505,88 @@ thead > tr {
   flex-basis: 50%;
 }
 
+.matherial {
+  display: flex;
+  flex-direction: column;
+}
+
+.matherial__info {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.matherial__info-date {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  margin-right: 136px;
+  margin-left: auto;
+  color: #828282;
+}
+
+.matherial-icon {
+  margin-top: 4px;
+}
+
+.matherial__item {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.matherial__item::after {
+  content: '';
+  background-color: #E0E0E0;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.matherial__close {
+  position: absolute;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.matherial__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.matherial__do {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #828282;
+}
+
+.matherial__do::after {
+  content: '';
+  background-color: #828282;
+  height: 1px;
+  width: 8px;
+  margin: 0 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.matherial__do:last-child::after {
+  display: none;
+}
+
 .container {
   max-width: 1600px;
 }
@@ -2444,11 +2622,47 @@ thead > tr {
   .popup-search .search-form {
     width: 100%;
   }
+  .articles-container.small-cards .card__section {
+    margin-bottom: 12px;
+  }
+  .articles-container.small-cards .card__section-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .articles-container.small-cards .card__image {
+    height: 180px;
+  }
+  .articles-container.small-cards .card__id {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .articles-container.small-cards .card__author {
+    margin-bottom: 12px;
+  }
+  .articles-container.small-cards .card__info {
+    margin-bottom: 12px;
+  }
+  .articles-container.small-cards .card__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .articles-container.small-cards .card__author {
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .articles-container.small-cards .card__data {
+    font-size: 14px;
+    line-height: 32px;
+  }
 }
 
 @media (min-width: 1501px) {
   .col-xxl-3 {
     flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .articles-container.small-cards .col-xxl-3 {
+    flex: 0 0 20%;
     max-width: 25%;
   }
 }
@@ -2781,6 +2995,9 @@ thead > tr {
     font-size: 14px;
     line-height: 32px;
   }
+  .articles-container.small-cards .card__info {
+    margin-bottom: 27px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -2997,6 +3214,24 @@ thead > tr {
   }
   .search__close {
     right: -32px;
+  }
+  .matherial__info {
+    flex-direction: column;
+  }
+  .matherial__info-date {
+    margin: 0;
+  }
+  .matherial__info-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .matherial__do {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .matherial__title {
+    font-size: 14px;
+    line-height: 32px;
   }
 }
 
@@ -3623,6 +3858,13 @@ thead > tr {
     margin-right: 0;
     margin-bottom: 5px;
   }
+  .form-add__submit {
+    width: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 32px;
+  }
   .photo-edit__turn {
     padding: 12px 16px;
   }
@@ -3693,6 +3935,8 @@ thead > tr {
     min-width: 260px;
     width: 75%;
     max-width: 470px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .add__title {
     font-style: normal;
@@ -3711,6 +3955,27 @@ thead > tr {
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 16px;
+  }
+  .matherial-icon {
+    margin-top: 8px;
+  }
+  .matherial__title {
+    width: 204px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .matherial__info-description {
+    width: 204px;
+  }
+  .matherial__info-date {
+    display: none;
+  }
+  .matherial__do {
+    font-size: 10px;
+    line-height: 24px;
+  }
+  .matherial__do:nth-child(2)::after {
+    display: none;
   }
 }
 

@@ -217,3 +217,58 @@
 .arrow
   &-next, &-prev
     stroke: #000
+
+.articles
+  &-container
+    &.small-cards
+      & .card
+        &__description
+          display: none
+        &__author
+          margin-bottom: 24px
+
+      & .articles
+        &__card
+          margin-bottom: 20px
+      & .public-link
+        display: none
+    &.list-large
+      & .articles
+        &__cards
+          display: block
+        &__card
+          display: block
+          max-width: 100%
+          width: 100%
+      & .card
+        flex-direction: row
+        &__author
+          margin-bottom: 0
+        &__info
+          margin-bottom: 0
+        &__description
+          line-height: 24px
+          width: 388px
+          margin-bottom: 0
+        &__info
+          display: flex
+          align-items: flex-end
+        &__piple
+          width: 328px
+          margin-right: 72px
+        &__link
+          &-image
+            width: 120px
+            height: 120px
+        &__image
+          height: 120px
+        &__section
+          width: 241px
+        &__text
+          display: flex
+          justify-content: space-between
+          width: 100%
+          padding: 32px
+          padding-right: 0
+        &__data
+          display: none
