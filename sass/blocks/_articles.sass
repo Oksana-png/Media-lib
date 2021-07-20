@@ -217,7 +217,7 @@
 .arrow
   &-next, &-prev
     stroke: #000
-
+// ВИДЫ КАРТОЧЕК
 .articles
   &-container
     &.small-cards
@@ -240,8 +240,32 @@
           display: block
           max-width: 100%
           width: 100%
+          margin-bottom: 0
       & .card
+        border: none
         flex-direction: row
+        box-shadow: none
+        background-color: transparent
+        border-radius: 0
+        &:first-child
+          &::before
+            content: ''
+            position: absolute
+            left: 0
+            right: 0
+            width: 100%
+            background-color: #D6D6D6
+            height: 1px
+        &::after
+          content: ''
+          position: absolute
+          bottom: 0
+          right: 0
+          width: 1600px
+          background-color: #D6D6D6
+          height: 1px
+        &__id
+          margin-left: 32px
         &__author
           margin-bottom: 0
         &__info
@@ -260,8 +284,10 @@
           &-image
             width: 120px
             height: 120px
+            margin: auto
         &__image
           height: 120px
+          border-radius: 8px
         &__section
           width: 241px
         &__text
@@ -270,5 +296,61 @@
           width: 100%
           padding: 32px
           padding-right: 0
+        &__down
+          width: 370px
+          flex-wrap: wrap
+          align-items: flex-start
+          justify-content: flex-end
         &__data
           display: none
+        &__favorites
+          &-icon
+            stroke: #000
+        &__button
+          width: auto
+          &-checkbox
+            position: relative
+            top: 0
+            left: 0
+            right: 0
+            background: #FFFFFF
+            border: 1px solid #E0E0E0
+          &-favorites
+            padding: 8px 16px
+            position: relative
+            top: 0
+            right: 0
+            order: 2
+            margin-right: 16px
+            background-color: transparent
+          &-download
+            padding: 8px 16px
+            order: -1
+            margin-left: 51px
+          &-share
+            padding: 8px 16px
+            background-color: transparent
+            order: 1
+          &-dots
+            background: #FFFFFF
+            border: 1px solid #D6D6D6
+            order: 3
+            margin-left: 0
+          &-text
+            display: inline
+            font-family: Inter
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            margin-left: 4px
+          &-form
+            &-checkbox
+              margin-right: 0
+              background-color: transparent
+              margin-bottom: 30px
+        &__checkbox
+          &-active
+            border: 2px solid #000000
+            top: 11px
+            left: 11px

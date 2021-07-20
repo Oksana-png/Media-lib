@@ -355,6 +355,54 @@
         & .card
           &__info
             margin-bottom: 27px
+          &__description
+            display: none
+          &__author
+            margin-bottom: 24px
+      &.list-large
+        & .card
+          &__text
+            flex-direction: column
+          &__info
+            flex-direction: column
+            align-items: flex-start
+          &__section
+            margin-bottom: 10px
+          &__piple
+            margin-right: 0
+            width: 100%
+          &__description
+            width: 100%
+          &__title
+            font-size: 16px
+            line-height: 20px
+          &__author
+            font-size: 14px
+            line-height: 32px
+            margin-bottom: 10px
+          &-text
+            margin-bottom: 10px
+          &__text
+            padding-bottom: 25px
+            padding-top: 25px
+          &__link
+            &-image
+              margin-top: 25px
+          &__down
+            width: 100%
+            justify-content: flex-start
+          &__button
+            margin-right: 0
+            &-share
+              margin-right: 0
+              margin-left: auto
+            &-download
+              margin-left: 0
+            &-form
+              &-checkbox
+                margin-bottom: 0
+                order: -2
+                margin-right: 16px
 @media (max-width: 1250px)
   .add
     &__wrapper
