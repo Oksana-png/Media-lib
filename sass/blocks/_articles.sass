@@ -218,139 +218,266 @@
   &-next, &-prev
     stroke: #000
 // ВИДЫ КАРТОЧЕК
-.articles
-  &-container
-    &.small-cards
-      & .card
-        &__description
-          display: none
-        &__author
-          margin-bottom: 24px
+@media (min-width: 991px)
+  .articles
+    &-container
+      &.small-cards
+        & .card
+          &__description
+            display: none
+          &__author
+            margin-bottom: 24px
 
-      & .articles
-        &__card
-          margin-bottom: 20px
-      & .public-link
-        display: none
-    &.list-large
-      & .articles
-        &__cards
-          display: block
-        &__card
-          display: block
-          max-width: 100%
-          width: 100%
-          margin-bottom: 0
-      & .card
-        border: none
-        flex-direction: row
-        box-shadow: none
-        background-color: transparent
-        border-radius: 0
-        &:first-child
-          &::before
+        & .articles
+          &__card
+            margin-bottom: 20px
+        & .public-link
+          display: none
+@media (min-width: 767px)
+  .articles
+    &-container
+      &.list-large
+        & .articles
+          &__cards
+            display: block
+          &__card
+            &:first-child
+              & > .card
+                &::before
+                  content: ''
+                  position: absolute
+                  left: 0
+                  right: 0
+                  width: 100%
+                  background-color: #D6D6D6
+                  height: 1px
+          &__card
+            display: block
+            max-width: 100%
+            width: 100%
+            margin-bottom: 0
+        & .card
+          border: none
+          flex-direction: row
+          box-shadow: none
+          background-color: transparent
+          border-radius: 0
+          &::after
             content: ''
             position: absolute
-            left: 0
+            bottom: 0
             right: 0
-            width: 100%
+            width: 1600px
             background-color: #D6D6D6
             height: 1px
-        &::after
-          content: ''
-          position: absolute
-          bottom: 0
-          right: 0
-          width: 1600px
-          background-color: #D6D6D6
-          height: 1px
-        &__id
-          margin-left: 32px
-        &__author
-          margin-bottom: 0
-        &__info
-          margin-bottom: 0
-        &__description
-          line-height: 24px
-          width: 388px
-          margin-bottom: 0
-        &__info
-          display: flex
-          align-items: flex-end
-        &__piple
-          width: 328px
-          margin-right: 72px
-        &__link
-          &-image
-            width: 120px
+          &__id
+            margin-left: 32px
+          &__author
+            margin-bottom: 0
+          &__info
+            margin-bottom: 0
+          &__description
+            line-height: 24px
+            width: 388px
+            margin-bottom: 0
+          &__info
+            display: flex
+            align-items: flex-end
+          &__piple
+            width: 328px
+            margin-right: 72px
+          &__link
+            &-image
+              width: 120px
+              height: 120px
+              margin: auto
+          &__image
             height: 120px
-            margin: auto
-        &__image
-          height: 120px
-          border-radius: 8px
-        &__section
-          width: 241px
-        &__text
-          display: flex
-          justify-content: space-between
-          width: 100%
-          padding: 32px
-          padding-right: 0
-        &__down
-          width: 370px
-          flex-wrap: wrap
-          align-items: flex-start
-          justify-content: flex-end
-        &__data
-          display: none
-        &__favorites
-          &-icon
-            stroke: #000
-        &__button
-          width: auto
-          &-checkbox
-            position: relative
-            top: 0
-            left: 0
-            right: 0
-            background: #FFFFFF
-            border: 1px solid #E0E0E0
-          &-favorites
-            padding: 8px 16px
-            position: relative
-            top: 0
-            right: 0
-            order: 2
-            margin-right: 16px
-            background-color: transparent
-          &-download
-            padding: 8px 16px
-            order: -1
-            margin-left: 51px
-          &-share
-            padding: 8px 16px
-            background-color: transparent
-            order: 1
-          &-dots
-            background: #FFFFFF
-            border: 1px solid #D6D6D6
-            order: 3
-            margin-left: 0
-          &-text
-            display: inline
-            font-family: Inter
-            font-style: normal
-            font-weight: normal
-            font-size: 14px
-            line-height: 16px
-            margin-left: 4px
-          &-form
+            border-radius: 8px
+          &__section
+            width: 241px
+          &__text
+            display: flex
+            justify-content: space-between
+            width: 100%
+            padding: 32px
+            padding-right: 0
+          &__down
+            width: 370px
+            flex-wrap: wrap
+            align-items: flex-start
+            justify-content: flex-end
+          &__data
+            display: none
+          &__favorites
+            &-icon
+              stroke: #000
+          &__button
+            width: auto
             &-checkbox
-              margin-right: 0
+              position: relative
+              top: 0
+              left: 0
+              right: 0
+              background: #FFFFFF
+              border: 1px solid #E0E0E0
+            &-favorites
+              padding: 8px 16px
+              position: relative
+              top: 0
+              right: 0
+              order: 2
+              margin-right: 16px
               background-color: transparent
-              margin-bottom: 30px
-        &__checkbox
-          &-active
-            border: 2px solid #000000
-            top: 11px
-            left: 11px
+            &-download
+              padding: 8px 16px
+              order: -1
+              margin-left: 51px
+            &-share
+              padding: 8px 16px
+              background-color: transparent
+              order: 1
+            &-dots
+              background: #FFFFFF
+              border: 1px solid #D6D6D6
+              order: 3
+              margin-left: 0
+            &-text
+              display: inline
+              font-family: Inter
+              font-style: normal
+              font-weight: normal
+              font-size: 14px
+              line-height: 16px
+              margin-left: 4px
+            &-form
+              &-checkbox
+                margin-right: 0
+                background-color: transparent
+                margin-bottom: 30px
+          &__checkbox
+            &-active
+              border: 2px solid #000000
+              top: 11px
+              left: 11px
+      &.list-small
+        & .articles
+          &__cards
+            display: block
+          &__card
+            display: block
+            max-width: 100%
+            width: 100%
+            margin-bottom: 0
+            &:first-child
+              & > .card
+                &::before
+                  content: ''
+                  position: absolute
+                  left: 0
+                  right: 0
+                  width: 100%
+                  background-color: #D6D6D6
+                  height: 1px
+        & .menu-list
+          display: flex
+        & .card
+          border: none
+          flex-direction: row
+          box-shadow: none
+          background-color: transparent
+          border-radius: 0
+          padding-left: 40px
+          &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            right: 0
+            width: 1600px
+            background-color: #D6D6D6
+            height: 1px
+          &__favorites
+            &-icon
+              stroke: #000
+          &__description
+            display: none
+          &__data
+            display: none
+          &__section
+            margin-bottom: 8px
+          &__id
+            margin-left: 32px
+          &__info
+            margin-bottom: 0
+          &__title
+            margin-bottom: 0
+            margin-right: 24px
+            font-weight: normal
+            font-size: 16px
+            line-height: 32px
+          &__author
+            margin-bottom: 0
+            font-weight: 300
+            font-size: 16px
+            line-height: 32px
+          &__piple
+            display: flex
+            align-items: center
+          &__link
+            &-image
+              width: 64px
+              height: 64px
+              margin: auto 0
+              &:hover
+                &>.card__link-eye
+                  display: none
+          &__image
+            height: 64px
+            border-radius: 8px
+          &__text
+            width: 100%
+            padding: 16px 0 16px 24px
+            display: flex
+            align-items: center
+            justify-content: space-between
+          &__button
+            border: 1px solid #D6D6D6
+            background-color: #fff
+            &-favorites
+              position: static
+              margin-right: 16px
+            &-checkbox
+              background-color: transparent
+              left: 0
+              top: 50%
+              transform: translateY(-50%)
+              &:hover
+                width: 40px
+                & .card
+                  &__hover
+                    &-text
+                      display: none
+            &-dots
+              display: none
+            &-download
+              order: -1
+            &-link
+              padding: 8px 24px
+              width: auto
+              display: flex
+              align-items: center
+              order: -2
+            &-text
+              &--link
+                font-weight: normal
+                font-size: 16px
+                line-height: 24px
+                display: inline
+          &__checkbox
+            &-active
+              cursor: pointer
+              left: 0
+              border: 2px solid #000000
+            &:checked
+              &+ .card__button-checkbox
+                background-color: transparent

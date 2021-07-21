@@ -349,16 +349,19 @@
       font-weight: 300
       font-size: 14px
       line-height: 32px
+@media (max-width: 1500px) and (min-width: 991px)
   .articles
     &-container
       &.small-cards
         & .card
           &__info
             margin-bottom: 27px
-          &__description
-            display: none
+
           &__author
             margin-bottom: 24px
+@media (max-width: 1500px) and (min-width: 767px)
+  .articles
+    &-container
       &.list-large
         & .card
           &__text
@@ -403,6 +406,13 @@
                 margin-bottom: 0
                 order: -2
                 margin-right: 16px
+      &.list-small
+        & .card
+          &__text
+            flex-direction: column
+            align-items: flex-start
+          &-text
+            margin-bottom: 10px
 @media (max-width: 1250px)
   .add
     &__wrapper

@@ -36,6 +36,13 @@
     &-icon
       stroke: #fff
       fill: none
+  &__link
+    &-icon
+      width: 24px
+      height: 24px
+      margin-right: 8px
+      stroke: #000
+      fill: none
   &__down
     display: flex
     align-items: center
@@ -100,6 +107,8 @@
       margin-left: auto
       margin-right: 0
       border-radius: 50%
+    &-link
+      display: none
     &-favorites
       margin-right: 0
       position: absolute
@@ -149,7 +158,6 @@
             &-active
               margin-right: auto
               border-color: #000
-
           &__hover
             &-text
               transition: 0.2s linear
@@ -198,3 +206,20 @@
     margin-right: 8px
 .download
   stroke: #000
+.menu-list
+  display: none
+  background: #FFFFFF
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1)
+  border-radius: 4px
+  overflow: hidden
+  border: 1px solid #D6D6D6
+  &__button
+    background-color: #fff
+    border: none
+    padding: 7px 16px
+    &:not(:last-child)
+      border-right: 1px solid #D6D6D6
+  &__icon
+    width: 24px
+    height: 24px
+    stroke: #000
