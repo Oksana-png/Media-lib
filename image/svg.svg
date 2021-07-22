@@ -62,10 +62,10 @@
     <path d="M7 10l5 4m0 0l5-4m-5 4V5M7 18h10" stroke-width="2"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="publicLink">
-    <rect x="5" y="10" width="14" height="12" rx="2" stroke="#828282" stroke-width="2"></rect>
-    <path d="M17 11V8a5 5 0 00-5-5v0a5 5 0 00-5 5v3" stroke="#828282" stroke-width="2"></path>
-    <path d="M12 14v4" stroke="#828282" stroke-width="2" stroke-linecap="round"></path>
-    <circle cx="12" cy="17" r="2" fill="#828282"></circle>
+    <rect x="5" y="10" width="14" height="12" rx="2" stroke-width="2"></rect>
+    <path d="M17 11V8a5 5 0 00-5-5v0a5 5 0 00-5 5v3" stroke-width="2"></path>
+    <path d="M12 14v4" stroke-width="2" stroke-linecap="round"></path>
+    <circle cx="12" cy="17" r="2"></circle>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="share">
     <circle cx="15" cy="7" r="3" stroke="#000" stroke-width="2"></circle>
@@ -143,9 +143,48 @@
     <path d="M2.438 8.307H4.59v-.193c.012-1.108.41-1.625 1.308-2.165 1.062-.63 1.755-1.466 1.755-2.801C7.653 1.159 6.051 0 3.795 0 1.733 0 .051 1.08 0 3.352h2.318c.034-.926.722-1.42 1.466-1.42.767 0 1.386.511 1.386 1.301 0 .744-.54 1.239-1.238 1.682-.955.602-1.489 1.21-1.494 3.199v.193zm1.119 3.636c.727 0 1.358-.608 1.363-1.364a1.38 1.38 0 00-1.363-1.352c-.75 0-1.37.608-1.364 1.352a1.36 1.36 0 001.364 1.364z" fill="#828282"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="edit">
-    <path d="M18.142 18.485H12.9l-1.497-1.496 5.243-5.243 1.496 1.497v5.242zm-2.91-8.153l-5.243 5.243L3.914 9.5l5.243-5.243 6.075 6.075z" stroke="#000" stroke-width="2"></path>
+    <path d="M18.142 18.485H12.9l-1.497-1.496 5.243-5.243 1.496 1.497v5.242zm-2.91-8.153l-5.243 5.243L3.914 9.5l5.243-5.243 6.075 6.075z" stroke-width="2"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="information">
     <path stroke="#000" stroke-width="2" d="M10 10h4v11h-4zm0-7h4v4h-4zm-5 7h12"></path>
+  </symbol>
+  <!-- ЛИЧНЫЙ КАБИНЕТ -->
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="drop-large">
+    <path d="M14 5H1v26h26V18" stroke="#000" stroke-width="2"></path>
+    <path d="M14 23l-4-4m4 4l4-4m-4 4c.757-14.12 4.96-17.762 18-18" stroke="#000" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="exit-large">
+    <path d="M24 10.25V1H1v37h23v-9.25m6-.75l8-9.5m0 0L30 9m8 9.5H20" stroke="#000" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="favorites-large">
+    <path d="M19.498 29.43L6 37.262V3h28v34.263L20.502 29.43 20 29.138l-.502.291z" stroke="#000" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="link-large">
+    <g clip-path="url(#clip0)" stroke="#000" stroke-width="2">
+      <path d="M16.432 8.659l4.491-4.491C24.882.209 31.3.209 35.258 4.168v0c3.959 3.958 3.959 10.376 0 14.335l-4.491 4.49m-22.108-6.56l-4.491 4.49c-3.959 3.96-3.959 10.377 0 14.336v0c3.958 3.958 10.376 3.958 14.335 0l4.491-4.492"></path>
+      <path d="M26.073 13.247l-12.72 12.72" stroke-linecap="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <path fill="#fff" d="M0 0h40v40H0z"></path>
+      </clipPath>
+    </defs>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="piple-large">
+    <rect x="13" y="2" width="14" height="18" rx="7" stroke="#000" stroke-width="2"></rect>
+    <path d="M36 40v0c0-7.18-5.82-13-13-13h-6C9.82 27 4 32.82 4 40v0" stroke="#000" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" id="delete-large">
+    <g clip-path="url(#clip0)" stroke="#000" stroke-width="2">
+      <path d="M7 12h26v27H7z"></path>
+      <rect x="7" y="1" width="26" height="11" rx="1"></rect>
+      <path d="M27 22v12m-7-14v14m-7-8v8"></path>
+      <path d="M40 12H0" stroke-linecap="round"></path>
+    </g>
+    <defs>
+      <clipPath id="clip0">
+        <path fill="#fff" d="M0 0h40v40H0z"></path>
+      </clipPath>
+    </defs>
   </symbol>
 </svg>

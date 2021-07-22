@@ -60,6 +60,9 @@
           &__data
             font-size: 14px
             line-height: 32px
+  .account
+    &__item
+      width: 201px
 @media ( min-width:  1501px)
   .col-xxl-3
     flex: 0 0 25%
@@ -349,6 +352,14 @@
       font-weight: 300
       font-size: 14px
       line-height: 32px
+  .account
+    &__item
+      width: 142px
+      &-text
+        text-align: center
+        font-size: 13px
+        line-height: 18px
+        max-width: 120px
 @media (max-width: 1500px) and (min-width: 991px)
   .articles
     &-container
@@ -618,6 +629,30 @@
     &__title
       font-size: 14px
       line-height: 32px
+  .account
+    &__title
+      font-size: 32px
+      line-height: 48px
+      margin-bottom: 15px
+    &__nav
+      &-list
+        background: #FFFFFF
+        border: 1px solid #D6D6D6
+        border-radius: 16px
+        overflow: hidden
+    &__item
+      width: 114px
+      height: 120px
+      border: none
+      box-shadow: none
+      border-radius: 0
+      &:not(:first-child)
+        border-left: 1px solid #D6D6D6
+    &__link
+      padding-top: 22px
+    &__icon
+      width: 24px
+      height: 24px
 @media (max-width: 767px)
   .container
     width: 80%
@@ -1237,7 +1272,31 @@
       &:nth-child(2)
         &::after
           display: none
-
+  .account
+    padding-bottom: 15px
+    &__title
+      display: none
+    &__nav
+      &-list
+        padding: 6px 0
+        flex-direction: column
+        box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1)
+    &__link
+      padding: 12px 24px
+      flex-direction: row
+      align-items: center
+    &__icon
+      margin-bottom: 0
+      margin-right: 16px
+    &__item
+      width: 100%
+      height: auto
+      &:not(:first-child)
+        border: none
+      &:not(:last-child)
+        border-bottom: 1px solid #D6D6D6
+      &-text
+        max-width: 100%
 @media (max-width: 360px)
   .popup
     &-info
