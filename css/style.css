@@ -2923,6 +2923,12 @@ thead > tr {
   flex-direction: column;
 }
 
+.account-personal__blocks {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 .account-personal__title {
   font-family: Montserrat;
   font-style: normal;
@@ -2930,6 +2936,57 @@ thead > tr {
   font-size: 32px;
   line-height: 48px;
   margin: 0;
+}
+
+.account-personal__icon {
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.account-personal__nav {
+  order: 2;
+  border: 1px solid #D6D6D6;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.account-personal__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.account-personal__item {
+  padding: 16px 24px;
+  list-style: none;
+  position: relative;
+}
+
+.account-personal__item-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.account-personal__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D6D6D6;
+}
+
+.account-personal__link {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
 }
 
 .account-form__form {
@@ -2987,6 +3044,7 @@ thead > tr {
 }
 
 .account-form__input {
+  width: 303px;
   padding: 16px 24px;
   background: #FFFFFF;
   box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1);

@@ -43,6 +43,10 @@
   &-personal
     &__wrapper
       flex-direction: column
+    &__blocks
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
     &__title
       font-family: Montserrat
       font-style: normal
@@ -50,6 +54,46 @@
       font-size: 32px
       line-height: 48px
       margin: 0
+    &__icon
+      margin-right: 16px
+      width: 24px
+      height: 24px
+    &__nav
+      order: 2
+      border: 1px solid #D6D6D6
+      box-sizing: border-box
+      box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1)
+      border-radius: 16px
+      overflow: hidden
+      &-list
+        margin: 0
+        padding: 0
+        display: flex
+        flex-direction: column
+    &__item
+      padding: 16px 24px
+      list-style: none
+      position: relative
+      &-text
+        font-weight: normal
+        font-size: 16px
+        line-height: 32px
+      &:not(:last-child)
+        &::after
+          content: ''
+          position: absolute
+          right: 0
+          bottom: 0
+          width: 100%
+          height: 1px
+          background-color: #D6D6D6
+
+    &__link
+      text-decoration: none
+      color: #000
+      display: flex
+      align-items: center
+
   &-form
     &__form
       padding: 32px 0
@@ -91,6 +135,7 @@
       line-height: 32px
       margin-bottom: 16px
     &__input
+      width: 303px
       padding: 16px 24px
       background: #FFFFFF
       box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1)

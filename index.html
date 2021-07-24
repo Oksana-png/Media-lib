@@ -817,188 +817,195 @@
     <div class="container">
       <div class="account-personal__wrapper row">
         <h2 class="account-personal__title">Профиль</h2>
-        <div class="account-form form">
-          <form action="#" class="account-form__form account-form__personal-data">
-            <h3 class="account-form__title">
-              <svg width="24" height="24" class="account-form__icon">
-                <use xlink:href='image/svg.svg#article'/>
-              </svg>
-              Личные данные
-            </h3>
-            <div class="account-form__wrap">
-              <div class="account-form__wrap-input">
-                <label for="name" class="account-form__label">Имя
-                  <img src="image/required.svg" alt="star" class="form__required-icon">
-                  <span class="form__question account-form__question">
-                    <svg class="question-mark">
-                      <use xlink:href="image/svg.svg#question"></use>
-                    </svg>
-                  </span>
-                </label>
-                <input type="text" class="account-form__input" placeholder="Елена">
-              </div>
-              <div class="account-form__wrap-input">
-                <label for="lastName" class="account-form__label">Фамилия
-                  <img src="image/required.svg" alt="star" class="form__required-icon">
-                  <span class="form__question account-form__question">
-                    <svg class="question-mark">
-                      <use xlink:href="image/svg.svg#question"></use>
-                    </svg>
-                </label>
-                <input type="text" class="account-form__input" placeholder="Савинцева">
-              </div>
-              <div class="account-form__wrap-input">
-                <label for="email" class="account-form__label">Электронная почта
-                  <img src="image/required.svg" alt="star" class="form__required-icon">
-                  <span class="form__question account-form__question">
-                    <svg class="question-mark">
-                      <use xlink:href="image/svg.svg#question"></use>
-                    </svg>
-                </label>
-                <input type="email" class="account-form__input" placeholder="elena.savinceva@gmail.com">
-              </div>
-              <div class="account-form__wrap-input">
-                <label for="phone" class="account-form__label">Номер телефона
-                  <img src="image/required.svg" alt="star" class="form__required-icon">
-                  <span class="form__question account-form__question">
-                    <svg class="question-mark">
-                      <use xlink:href="image/svg.svg#question"></use>
-                    </svg>
-                </label>
-                <input type="tel" class="account-form__input" placeholder="8 954 432 32 54">
-              </div>
-            </div>
-            <button type="submit" class="account-form__button">
-              <svg width="24" height="24" class="account-form__button-icon">
-                <use xlink:href='image/svg.svg#edit'/>
-              </svg>
-              Изменить
-            </button>
-          </form>
-          <form action="#" class="account-form__form account-form__password">
-            <h3 class="account-form__title">
-              <svg width="24" height="24" class="account-form__icon">
-                <use xlink:href='image/svg.svg#publicLink'/>
-              </svg>
-              Смена пароля
-            </h3>
-            <div class="account-form__wrap">
-              <div class="account-form__wrap-input">
-                <label for="password" class="account-form__label">Новый пароль
-                  <img src="image/required.svg" alt="star" class="form__required-icon">
-                  <span class="form__question account-form__question">
-                    <svg class="question-mark">
-                      <use xlink:href="image/svg.svg#question"></use>
-                    </svg>
-                  </span>
-                </label>
-                <input type="password" class="account-form__input" placeholder="">
-              </div>
-              <div class="account-form__wrap-input">
-                <label for="updatePassword" class="account-form__label">Повторите новый пароль
-                  <img src="image/required.svg" alt="star" class="form__required-icon">
-                  <span class="form__question account-form__question">
-                    <svg class="question-mark">
-                      <use xlink:href="image/svg.svg#question"></use>
-                    </svg>
-                </label>
-                <input type="password" class="account-form__input" placeholder="">
-              </div>
-            </div>
-            <button type="submit" class="account-form__button">
-              <svg width="24" height="24" class="account-form__button-icon">
-                <use xlink:href='image/svg.svg#edit'/>
-              </svg>
-              Сменить пароль
-            </button>
-          </form>
-          <form action="#" class="account-form__form account-form__photo">
-            <h3 class="account-form__title">
-              <svg width="24" height="24" class="account-form__icon">
-                <use xlink:href='image/svg.svg#publicLink'/>
-              </svg>
-              Изображение профиля
-            </h3>
-            <div class="account-form__photo-wrap">
-              <div class="account-form__avatar">
-                <img src="image/authorPhoto.jpg" alt="author" class="account-form__avatar-img">
-              </div>
+
+        <div class="account-personal__blocks">
+          <nav class="account-personal__nav">
+            <ul class="account-personal__nav-list">
+              <li class="account-personal__item">
+                <a href="#" class="account-personal__link">
+                  <svg class="account-personal__icon">
+                    <use xlink:href="image/svg.svg#piple-large"></use>
+                  </svg>
+                  <span class="account-personal__item-text">Профиль</span>
+                </a>
+              </li>
+              <li class="account-personal__item">
+                <a href="#" class="account-personal__link">
+                  <svg class="account-personal__icon">
+                    <use xlink:href="image/svg.svg#link-large"></use>
+                  </svg>
+                  <span class="account-personal__item-text">Публичные ссылки</span>
+                </a>
+              </li>
+              <li class="account-personal__item">
+                <a href="#" class="account-personal__link">
+                  <svg class="account-personal__icon">
+                    <use xlink:href="image/svg.svg#delete-large"></use>
+                  </svg>
+                  <span class="account-personal__item-text">Корзина</span>
+                </a>
+              </li>
+              <li class="account-personal__item">
+                <a href="#" class="account-personal__link">
+                  <svg class="account-personal__icon">
+                    <use xlink:href="image/svg.svg#drop-large"></use>
+                  </svg>
+                  <span class="account-personal__item-text">История просмотра</span>
+                </a>
+              </li>
+              <li class="account-personal__item">
+                <a href="#" class="account-personal__link">
+                  <svg class="account-personal__icon">
+                    <use xlink:href="image/svg.svg#favorites-large"></use>
+                  </svg>
+                  <span class="account-personal__item-text">Избранное</span>
+                </a>
+              </li>
+              <li class="account-personal__item">
+                <a href="#" class="account-personal__link">
+                  <svg class="account-personal__icon">
+                    <use xlink:href="image/svg.svg#exit-large"></use>
+                  </svg>
+                  <span class="account-personal__item-text">Выйти из профиля</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+    
+          <div class="account-form form">
+            <form action="#" class="account-form__form account-form__personal-data">
+              <h3 class="account-form__title">
+                <svg width="24" height="24" class="account-form__icon">
+                  <use xlink:href='image/svg.svg#article'/>
+                </svg>
+                Личные данные
+              </h3>
               <div class="account-form__wrap">
-                <div class="drag-drop">
-                  <label for="account-avatar" class="drag-drop__download-btn">
-                    <span class="drag-drop__download-curcul">
-                      <svg width="24" height="24" class="drag-drop__download-icon ">
-                        <use xlink:href='image/svg.svg#download'/>
+                <div class="account-form__wrap-input">
+                  <label for="name" class="account-form__label">Имя
+                    <img src="image/required.svg" alt="star" class="form__required-icon">
+                    <span class="form__question account-form__question">
+                      <svg class="question-mark">
+                        <use xlink:href="image/svg.svg#question"></use>
                       </svg>
                     </span>
-                    Загрузить с компьютера
                   </label>
-                  <label for="account-avatar" class="drag-drop__download-zona">
-                    <img src="image/drap-drop.svg" alt="icon: drap-drop" class="drag-drop__icon-drap">
-                    Вы можете загрузить файл просто&nbsp;перетащив его в эту рамку
-                    <input id="account-avatar" type="file" class="drag-drop__download-drag">
+                  <input type="text" class="account-form__input" placeholder="Елена">
+                </div>
+                <div class="account-form__wrap-input">
+                  <label for="lastName" class="account-form__label">Фамилия
+                    <img src="image/required.svg" alt="star" class="form__required-icon">
+                    <span class="form__question account-form__question">
+                      <svg class="question-mark">
+                        <use xlink:href="image/svg.svg#question"></use>
+                      </svg>
                   </label>
-                  <div class="drag-drop__download-format">
-                    Поддерживаемые форматы: .png, .jpg, .jpeg <br>
-                    Максимальный размер файла 10 Мб
+                  <input type="text" class="account-form__input" placeholder="Савинцева">
+                </div>
+                <div class="account-form__wrap-input">
+                  <label for="email" class="account-form__label">Электронная почта
+                    <img src="image/required.svg" alt="star" class="form__required-icon">
+                    <span class="form__question account-form__question">
+                      <svg class="question-mark">
+                        <use xlink:href="image/svg.svg#question"></use>
+                      </svg>
+                  </label>
+                  <input type="email" class="account-form__input" placeholder="elena.savinceva@gmail.com">
+                </div>
+                <div class="account-form__wrap-input">
+                  <label for="phone" class="account-form__label">Номер телефона
+                    <img src="image/required.svg" alt="star" class="form__required-icon">
+                    <span class="form__question account-form__question">
+                      <svg class="question-mark">
+                        <use xlink:href="image/svg.svg#question"></use>
+                      </svg>
+                  </label>
+                  <input type="tel" class="account-form__input" placeholder="8 954 432 32 54">
+                </div>
+              </div>
+              <button type="submit" class="account-form__button">
+                <svg width="24" height="24" class="account-form__button-icon">
+                  <use xlink:href='image/svg.svg#edit'/>
+                </svg>
+                Изменить
+              </button>
+            </form>
+            <form action="#" class="account-form__form account-form__password">
+              <h3 class="account-form__title">
+                <svg width="24" height="24" class="account-form__icon">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                Смена пароля
+              </h3>
+              <div class="account-form__wrap">
+                <div class="account-form__wrap-input">
+                  <label for="password" class="account-form__label">Новый пароль
+                    <img src="image/required.svg" alt="star" class="form__required-icon">
+                    <span class="form__question account-form__question">
+                      <svg class="question-mark">
+                        <use xlink:href="image/svg.svg#question"></use>
+                      </svg>
+                    </span>
+                  </label>
+                  <input type="password" class="account-form__input" placeholder="">
+                </div>
+                <div class="account-form__wrap-input">
+                  <label for="updatePassword" class="account-form__label">Повторите новый пароль
+                    <img src="image/required.svg" alt="star" class="form__required-icon">
+                    <span class="form__question account-form__question">
+                      <svg class="question-mark">
+                        <use xlink:href="image/svg.svg#question"></use>
+                      </svg>
+                  </label>
+                  <input type="password" class="account-form__input" placeholder="">
+                </div>
+              </div>
+              <button type="submit" class="account-form__button">
+                <svg width="24" height="24" class="account-form__button-icon">
+                  <use xlink:href='image/svg.svg#edit'/>
+                </svg>
+                Сменить пароль
+              </button>
+            </form>
+            <form action="#" class="account-form__form account-form__photo">
+              <h3 class="account-form__title">
+                <svg width="24" height="24" class="account-form__icon">
+                  <use xlink:href='image/svg.svg#publicLink'/>
+                </svg>
+                Изображение профиля
+              </h3>
+              <div class="account-form__photo-wrap">
+                <div class="account-form__avatar">
+                  <img src="image/authorPhoto.jpg" alt="author" class="account-form__avatar-img">
+                </div>
+                <div class="account-form__wrap">
+                  <div class="drag-drop">
+                    <label for="account-avatar" class="drag-drop__download-btn">
+                      <span class="drag-drop__download-curcul">
+                        <svg width="24" height="24" class="drag-drop__download-icon ">
+                          <use xlink:href='image/svg.svg#download'/>
+                        </svg>
+                      </span>
+                      Загрузить с компьютера
+                    </label>
+                    <label for="account-avatar" class="drag-drop__download-zona">
+                      <img src="image/drap-drop.svg" alt="icon: drap-drop" class="drag-drop__icon-drap">
+                      Вы можете загрузить файл просто&nbsp;перетащив его в эту рамку
+                      <input id="account-avatar" type="file" class="drag-drop__download-drag">
+                    </label>
+                    <div class="drag-drop__download-format">
+                      Поддерживаемые форматы: .png, .jpg, .jpeg <br>
+                      Максимальный размер файла 10 Мб
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-        <!-- <nav class="account__nav">
-          <ul class="account__nav-list">
-            <li class="account__item">
-              <a href="#" class="account__link">
-                <svg class="account__icon">
-                  <use xlink:href="image/svg.svg#piple-large"></use>
-                </svg>
-                <span class="account__item-text">Профиль</span>
-              </a>
-            </li>
-            <li class="account__item">
-              <a href="#" class="account__link">
-                <svg class="account__icon">
-                  <use xlink:href="image/svg.svg#link-large"></use>
-                </svg>
-                <span class="account__item-text">Публичные ссылки</span>
-              </a>
-            </li>
-            <li class="account__item">
-              <a href="#" class="account__link">
-                <svg class="account__icon">
-                  <use xlink:href="image/svg.svg#delete-large"></use>
-                </svg>
-                <span class="account__item-text">Корзина</span>
-              </a>
-            </li>
-            <li class="account__item">
-              <a href="#" class="account__link">
-                <svg class="account__icon">
-                  <use xlink:href="image/svg.svg#drop-large"></use>
-                </svg>
-                <span class="account__item-text">История просмотра</span>
-              </a>
-            </li>
-            <li class="account__item">
-              <a href="#" class="account__link">
-                <svg class="account__icon">
-                  <use xlink:href="image/svg.svg#favorites-large"></use>
-                </svg>
-                <span class="account__item-text">Избранное</span>
-              </a>
-            </li>
-            <li class="account__item">
-              <a href="#" class="account__link">
-                <svg class="account__icon">
-                  <use xlink:href="image/svg.svg#exit-large"></use>
-                </svg>
-                <span class="account__item-text">Выйти из профиля</span>
-              </a>
-            </li>
-          </ul>
-        </nav> -->
+
+        
+
       </div>
     </div>
   </div>
