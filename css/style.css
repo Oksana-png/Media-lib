@@ -2947,7 +2947,6 @@ thead > tr {
 .account-personal__nav {
   order: 2;
   border: 1px solid #D6D6D6;
-  box-sizing: border-box;
   box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   overflow: hidden;
@@ -3014,6 +3013,18 @@ thead > tr {
 
 .account-form__wrap {
   margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.account-form__wrap-input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.account-form__wrap-input--last {
+  margin-right: 0;
 }
 
 .account-form__title {
@@ -3023,17 +3034,6 @@ thead > tr {
   margin-bottom: 32px;
   display: flex;
   align-items: center;
-}
-
-.account-form__wrap {
-  display: flex;
-  align-items: center;
-}
-
-.account-form__wrap-input {
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
 }
 
 .account-form__label {
@@ -3168,6 +3168,21 @@ thead > tr {
   }
   .account__item {
     width: 201px;
+  }
+  .account-form__input {
+    width: 249px;
+  }
+  .account-form__input::placeholder {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .account-form__label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .account-personal__item-text {
+    font-size: 14px;
+    line-height: 32px;
   }
 }
 
@@ -3519,6 +3534,27 @@ thead > tr {
     line-height: 18px;
     max-width: 120px;
   }
+  .account-form {
+    width: 615px;
+  }
+  .account-form__wrap {
+    flex-wrap: wrap;
+  }
+  .account-form__wrap-input--two {
+    margin-right: 0;
+  }
+  .account-form__input {
+    width: 292px;
+  }
+  .account-form__title {
+    margin-bottom: 15px;
+  }
+  .account-form__wrap {
+    margin-bottom: 15px;
+  }
+  .account-personal__item {
+    padding: 10px 24px;
+  }
 }
 
 @media (max-width: 1500px) and (min-width: 991px) {
@@ -3623,6 +3659,14 @@ thead > tr {
   }
   .photo-edit__delete {
     padding: 12px 21px;
+  }
+  .drag-drop__download-btn {
+    font-size: 14px;
+    line-height: 32px;
+  }
+  .drag-drop__download-zona {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
@@ -3785,14 +3829,6 @@ thead > tr {
   .form-add__radio-wrapper {
     width: 338px;
   }
-  .form-add__download-btn {
-    font-size: 14px;
-    line-height: 32px;
-  }
-  .form-add__download-zona {
-    font-size: 14px;
-    line-height: 24px;
-  }
   .form-add__download-photo {
     width: 160px;
   }
@@ -3855,6 +3891,50 @@ thead > tr {
   .account__icon {
     width: 24px;
     height: 24px;
+  }
+  .account-form {
+    width: 100%;
+  }
+  .account-form__form {
+    padding: 15px 0;
+  }
+  .account-form__input {
+    width: 330px;
+  }
+  .account-personal__blocks {
+    padding-top: 15px;
+  }
+  .account-personal__nav {
+    width: 100%;
+    order: -1;
+    box-shadow: none;
+  }
+  .account-personal__nav-list {
+    flex-direction: row;
+  }
+  .account-personal__link {
+    flex-direction: column;
+  }
+  .account-personal__item {
+    padding: 22px 0;
+    width: 114px;
+  }
+  .account-personal__item-text {
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .account-personal__item:not(:last-child)::after {
+    width: 1px;
+    height: 100%;
+    right: 0;
+  }
+  .account-personal__icon {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .account-personal__blocks {
+    flex-direction: column;
   }
 }
 
@@ -4411,19 +4491,6 @@ thead > tr {
     font-size: 12px;
     line-height: 16px;
   }
-  .form-add__download-btn {
-    width: 100%;
-    padding: 4px 32px;
-    font-size: 12px;
-    line-height: 32px;
-  }
-  .form-add__download-zona {
-    display: none;
-  }
-  .form-add__download-format {
-    font-size: 10px;
-    line-height: 10px;
-  }
   .form-add__download-photo {
     flex-basis: 48%;
     margin-right: 0;
@@ -4487,6 +4554,19 @@ thead > tr {
     font-size: 12px;
     line-height: 40px;
     padding: 0 32px;
+  }
+  .drag-drop__download-zona {
+    display: none;
+  }
+  .drag-drop__download-format {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .drag-drop__download-btn {
+    width: 100%;
+    padding: 4px 32px;
+    font-size: 12px;
+    line-height: 32px;
   }
   .photo-edit__turn {
     padding: 12px 16px;
@@ -4632,6 +4712,54 @@ thead > tr {
   }
   .account__item-text {
     max-width: 100%;
+  }
+  .account-form__form {
+    padding: 10px 0;
+  }
+  .account-form__wrap-input {
+    margin-right: 0;
+    flex-basis: 100%;
+  }
+  .account-form__button {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 40px;
+    padding: 0 32px;
+    width: 100%;
+  }
+  .account-form__photo-wrap {
+    flex-direction: column;
+  }
+  .account-form__avatar {
+    width: 109px;
+    height: 109px;
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .account-form__title {
+    font-size: 18px;
+  }
+  .account-form__label {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .account-form__input {
+    width: 100%;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 8px 24px;
+  }
+  .account-form__input::placeholder {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .account-personal__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .account-personal__nav {
+    display: none;
   }
 }
 

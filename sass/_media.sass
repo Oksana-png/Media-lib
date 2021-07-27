@@ -63,6 +63,21 @@
   .account
     &__item
       width: 201px
+  .account
+    &-form
+      &__input
+          width: 249px
+          &::placeholder
+            font-size: 14px
+            line-height: 24px
+      &__label
+        font-size: 14px
+        margin-bottom: 5px
+    &-personal
+      &__item
+        &-text
+          font-size: 14px
+          line-height: 32px
 @media ( min-width:  1501px)
   .col-xxl-3
     flex: 0 0 25%
@@ -360,6 +375,22 @@
         font-size: 13px
         line-height: 18px
         max-width: 120px
+    &-form
+      width: 615px
+      &__wrap
+        flex-wrap: wrap
+        &-input
+          &--two
+            margin-right: 0
+      &__input
+        width: 292px
+      &__title
+        margin-bottom: 15px
+      &__wrap
+        margin-bottom: 15px
+    &-personal
+      &__item
+        padding: 10px 24px
 @media (max-width: 1500px) and (min-width: 991px)
   .articles
     &-container
@@ -452,6 +483,14 @@
         padding: 12px 21px
       &__delete
         padding: 12px 21px
+  .drag-drop
+    &__download
+      &-btn
+        font-size: 14px
+        line-height: 32px
+      &-zona
+        font-size: 14px
+        line-height: 24px
 @media (max-width: 991px)
   .container
     max-width: 690px
@@ -595,12 +634,6 @@
         &-wrapper
           width: 338px
       &__download
-        &-btn
-          font-size: 14px
-          line-height: 32px
-        &-zona
-          font-size: 14px
-          line-height: 24px
         &-photo
           width: 160px
           &:nth-child(6n)
@@ -653,6 +686,39 @@
     &__icon
       width: 24px
       height: 24px
+    &-form
+      width: 100%
+      &__form
+        padding: 15px 0
+      &__input
+        width: 330px
+    &-personal
+      &__blocks
+        padding-top: 15px
+      &__nav
+        width: 100%
+        order: -1
+        box-shadow: none
+        &-list
+          flex-direction: row
+      &__link
+        flex-direction: column
+      &__item
+        padding: 22px 0
+        width: 114px
+        &-text
+          text-align: center
+          font-size: 13px
+          line-height: 18px
+        &:not(:last-child)::after
+          width: 1px
+          height: 100%
+          right: 0
+      &__icon
+        margin-right: 0
+        margin-bottom: 16px
+      &__blocks
+        flex-direction: column
 @media (max-width: 767px)
   .container
     width: 80%
@@ -1114,16 +1180,6 @@
           font-size: 12px
           line-height: 16px
       &__download
-        &-btn
-          width: 100%
-          padding: 4px 32px
-          font-size: 12px
-          line-height: 32px
-        &-zona
-          display: none
-        &-format
-          font-size: 10px
-          line-height: 10px
         &-photo
           flex-basis: 48%
           margin-right: 0
@@ -1177,6 +1233,19 @@
         font-size: 12px
         line-height: 40px
         padding: 0 32px
+  .drag
+    &-drop
+      &__download
+        &-zona
+          display: none
+        &-format
+          font-size: 10px
+          line-height: 10px
+        &-btn
+          width: 100%
+          padding: 4px 32px
+          font-size: 12px
+          line-height: 32px
   .photo
     &-edit
       &__turn
@@ -1297,6 +1366,47 @@
         border-bottom: 1px solid #D6D6D6
       &-text
         max-width: 100%
+    &-form
+      &__form
+        padding: 10px 0
+      &__wrap
+        &-input
+          margin-right: 0
+          flex-basis: 100%
+      &__button
+        font-weight: 500
+        font-size: 12px
+        line-height: 40px
+        padding: 0 32px
+        width: 100%
+      &__photo
+        &-wrap
+          flex-direction: column
+      &__avatar
+        width: 109px
+        height: 109px
+        margin-right: 0
+        margin-bottom: 32px
+      &__title
+        font-size: 18px
+      &__label
+        font-size: 12px
+        margin-bottom: 0
+      &__input
+        width: 100%
+        font-size: 12px
+        line-height: 24px
+        padding: 8px 24px
+        &::placeholder
+          font-size: 12px
+          line-height: 24px
+    &-personal
+      &__title
+        font-weight: 600
+        font-size: 25px
+        line-height: 30px
+      &__nav
+        display: none
 @media (max-width: 360px)
   .popup
     &-info
