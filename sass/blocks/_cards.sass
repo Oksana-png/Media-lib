@@ -3,7 +3,6 @@
   border: 1px solid #F2F2F2
   box-shadow: 0px 15px 30px -15px rgba(0, 0, 0, 0.1)
   border-radius: 16px
-  overflow: hidden
   position: relative
   &__eye
     width: 28px
@@ -11,6 +10,9 @@
   &__link
     &-image
       position: relative
+      border-top-left-radius: 16px
+      border-top-right-radius: 16px
+      overflow: hidden
       &:hover
         & > .card
           &__link
@@ -207,19 +209,39 @@
 .download
   stroke: #000
 .menu-list
-  display: none
-  background: #FFFFFF
-  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1)
-  border-radius: 4px
-  overflow: hidden
+  display: flex
+  position: absolute
+  bottom: 25px
+  right: 50px
+  z-index: 1000
+  flex-direction: column
+  background-color: #FFFFFF
   border: 1px solid #D6D6D6
-  &__button
-    background-color: #fff
-    border: none
-    padding: 7px 16px
-    &:not(:last-child)
-      border-right: 1px solid #D6D6D6
+  box-shadow: 0px 10px 60px -10px rgba(0, 0, 0, 0.1)
+  border-radius: 16px
+  overflow: hidden
   &__icon
     width: 24px
     height: 24px
     stroke: #000
+    margin-right: 16px
+  &__button
+    padding: 16px 24px
+    font-size: 16px
+    line-height: 32px
+    display: flex
+    align-items: center
+    background-color: #FFFFFF
+    border: none
+    position: relative
+    &:not(:first-child)
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        height: 1px
+        width: 100%
+        background-color: #D6D6D6
+    &--info
+      order: 2

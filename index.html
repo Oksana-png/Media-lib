@@ -230,10 +230,71 @@
         </div>
         <div class="filters__choose align-items-center">
           <img src="image/filters.svg" alt="icon choose" class="filters__icon">
-          <button class="filters__item">
+          <button class="filters__item filters__item--author">
             <span class="filters__text">Авторы</span>
             <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
           </button>
+          <div class="select-author">
+            <svg width="24" height="24" class="select-author__icon">
+              <use xlink:href="image/svg.svg#magnifier"></use>
+            </svg>
+            <input type="text" class="select-author__search" placeholder="Имя автора">
+            <div class="select-author__body">
+              <div class="select-author__list-checkbox">
+                <div class="select-author__alphabet">
+                  <span class="select-author__letter">А</span>
+                  <div class="select-author__authors">
+                    <div class="select-author__item">
+                      <input name="author" id="AlexandrKozlov" type="checkbox" class="select-author__input">
+                      <label for="AlexandrKozlov" class="select-author__label">
+                        Алескандр Козлов
+                      </label>
+                    </div>
+                    <div class="select-author__item">
+                      <input name="author" id="AlexseiMorozov" type="checkbox" class="select-author__input">
+                      <label for="AlexseiMorozov" class="select-author__label">
+                        Алексей Морозов
+                      </label>
+                    </div>
+                    <div class="select-author__item">
+                      <input name="author" id="AxmadNazurov" type="checkbox" class="select-author__input">
+                      <label for="AxmadNazurov" class="select-author__label">
+                        Ахмад Назуров
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="select-author__alphabet">
+                  <span class="select-author__letter">Б</span>
+                  <div class="select-author__authors">
+                    <div class="select-author__item">
+                      <input name="author" id="BorisErmolin" type="checkbox" class="select-author__input">
+                      <label for="BorisErmolin" class="select-author__label">
+                        Борис Ермолин
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="select-author__alphabet">
+                  <span class="select-author__letter">В</span>
+                  <div class="select-author__authors">
+                    <div class="select-author__item">
+                      <input name="author" id="VladislavMorskiy" type="checkbox" class="select-author__input">
+                      <label for="VladislavMorskiy" class="select-author__label">
+                        Владислав Морский
+                      </label>
+                    </div>
+                    <div class="select-author__item">
+                      <input name="author" id="ViktorUzhenko" type="checkbox" class="select-author__input">
+                      <label for="ViktorUzhenko" class="select-author__label">
+                        Виктор Ющенко
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <button class="filters__item">
             <span class="filters__text">Дата публикации</span>
             <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
@@ -246,6 +307,60 @@
             <span class="filters__text">Фильтр редакции</span>
             <img src="image/arrowDown.svg" alt="arrow down" class="filters__arrow">
           </button>
+          <div class="select-edition">
+            <ul class="select-edition__list">
+              <li class="select-edition__item">
+                <input type="checkbox" id="notAuthor" name="scales" class="select-edition__checkbox">
+                <label for="notAuthor" class="select-edition__checkbox-active">
+                  <div class="select-edition__button-checkbox"></div>
+                    <svg width="12" height="9" class="select-edition__checkbox-check">
+                      <use xlink:href='image/svg.svg#check'/>
+                    </svg>
+                    <span class="select-edition__text">Без авторов</span>
+                </label>
+              </li>
+              <li class="select-edition__item">
+                <input type="checkbox" id="notTags" name="scales" class="select-edition__checkbox">
+                <label for="notTags" class="select-edition__checkbox-active">
+                  <div class="select-edition__button-checkbox"></div>
+                    <svg width="12" height="9" class="select-edition__checkbox-check">
+                      <use xlink:href='image/svg.svg#check'/>
+                    </svg>
+                    <span class="select-edition__text">Без тегов</span>
+                </label>
+              </li>
+              <li class="select-edition__item">
+                <input type="checkbox" id="notOblozhec" name="scales" class="select-edition__checkbox">
+                <label for="notOblozhec" class="select-edition__checkbox-active">
+                  <div class="select-edition__button-checkbox"></div>
+                    <svg width="12" height="9" class="select-edition__checkbox-check">
+                      <use xlink:href='image/svg.svg#check'/>
+                    </svg>
+                    <span class="select-edition__text">Без обложек</span>
+                </label>
+              </li>
+              <li class="select-edition__item">
+                <input type="checkbox" id="public" name="scales" class="select-edition__checkbox">
+                <label for="public" class="select-edition__checkbox-active">
+                  <div class="select-edition__button-checkbox"></div>
+                    <svg width="12" height="9" class="select-edition__checkbox-check">
+                      <use xlink:href='image/svg.svg#check'/>
+                    </svg>
+                    <span class="select-edition__text">Только публичные</span>
+                </label>
+              </li>
+              <li class="select-edition__item">
+                <input type="checkbox" id="notPublic" name="scales" class="select-edition__checkbox">
+                <label for="notPublic" class="select-edition__checkbox-active">
+                  <div class="select-edition__button-checkbox"></div>
+                    <svg width="12" height="9" class="select-edition__checkbox-check">
+                      <use xlink:href='image/svg.svg#check'/>
+                    </svg>
+                    <span class="select-edition__text">Только непубличные</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="filters__active">
           <div class="filters__active-item">
@@ -270,7 +385,7 @@
       </div>
     </div>
     <!-- small-cards/list-large/list-small -->
-    <div class="container articles-container list-small">
+    <div class="container articles-container">
       <div class="view articles__view row">
         <div class="view__left">
           <img src="image/sort.svg" alt="icon: sort" class="view__icon">
@@ -389,23 +504,25 @@
                   <svg width="24" height="24" class="dots">
                     <use xlink:href='image/svg.svg#dots'/>
                   </svg>
-                  
                 </button>
                 <div class="menu-list">
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#edit"></use>
                     </svg>
+                    <div class="menu-list__text">Редактировать</div>
                   </button>
-                  <button class="menu-list__button">
+                  <button class="menu-list__button menu-list__button--info">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#information"></use>
                     </svg>
+                    <div class="menu-list__text">Информация</div>
                   </button>
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#delete"></use>
                     </svg>
+                    <div class="menu-list__text">Удалить</div>
                   </button>
                 </div>
               </div>
@@ -489,16 +606,19 @@
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#edit"></use>
                     </svg>
+                    <div class="menu-list__text">Редактировать</div>
                   </button>
-                  <button class="menu-list__button">
+                  <button class="menu-list__button menu-list__button--info">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#information"></use>
                     </svg>
+                    <div class="menu-list__text">Информация</div>
                   </button>
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#delete"></use>
                     </svg>
+                    <div class="menu-list__text">Удалить</div>
                   </button>
                 </div>
               </div>
@@ -582,16 +702,19 @@
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#edit"></use>
                     </svg>
+                    <div class="menu-list__text">Редактировать</div>
                   </button>
-                  <button class="menu-list__button">
+                  <button class="menu-list__button menu-list__button--info">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#information"></use>
                     </svg>
+                    <div class="menu-list__text">Информация</div>
                   </button>
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#delete"></use>
                     </svg>
+                    <div class="menu-list__text">Удалить</div>
                   </button>
                 </div>
               </div>
@@ -675,16 +798,19 @@
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#edit"></use>
                     </svg>
+                    <div class="menu-list__text">Редактировать</div>
                   </button>
-                  <button class="menu-list__button">
+                  <button class="menu-list__button menu-list__button--info">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#information"></use>
                     </svg>
+                    <div class="menu-list__text">Информация</div>
                   </button>
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#delete"></use>
                     </svg>
+                    <div class="menu-list__text">Удалить</div>
                   </button>
                 </div>
               </div>
@@ -2192,5 +2318,10 @@
         <!-- /.add__form -->
     </div>
   </div>
+  <a href="#" class="add-matherial">
+    <svg class="add-matherial__icon">
+      <use xlink:href="image/svg.svg#addFiles"></use>
+    </svg>
+  </a>
 </body>
 </html>

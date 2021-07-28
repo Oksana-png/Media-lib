@@ -1,6 +1,5 @@
 .articles
   padding-bottom: 72px
-  display: none
   &__navigation
     display: flex
     align-items: center
@@ -89,6 +88,14 @@
     padding: 10px 0
     &:last-child
       margin-right: 0
+    &--author
+      position: relative
+      &:hover
+        .filters
+          &__item
+            &--author
+              &>.select-author
+                display: block
   &__icon
     width: 24px
     height: 24px
@@ -98,6 +105,7 @@
     height: 10px
     margin-left: 8px
   &__choose
+    position: relative
     margin-bottom: 16px
   &__mobile
     display: none
@@ -238,6 +246,8 @@
   .articles
     &-container
       &.list-large
+        & .menu-list
+          right: 32px
         & .articles
           &__cards
             display: block
@@ -323,6 +333,7 @@
               background: #FFFFFF
               border: 1px solid #E0E0E0
             &-favorites
+              border: none
               padding: 8px 16px
               position: relative
               top: 0
@@ -382,6 +393,27 @@
                   height: 1px
         & .menu-list
           display: flex
+          flex-direction: row
+          position: static
+          background: #FFFFFF
+          box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.1)
+          border-radius: 4px
+          overflow: hidden
+          border: 1px solid #D6D6D6
+          &__button
+            background-color: #fff
+            border: none
+            padding: 7px 16px
+            &:not(:last-child)
+              border-right: 1px solid #D6D6D6
+            &::before
+              display: none
+            &--info
+              order: 0
+          &__icon
+            margin-right: 0
+          &__text
+            display: none
         & .card
           border: none
           flex-direction: row
