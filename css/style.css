@@ -4659,6 +4659,9 @@ thead > tr {
     line-height: 18px;
     margin-bottom: 16px;
   }
+  .add-matherial {
+    display: none;
+  }
   .matherial-icon {
     margin-top: 8px;
   }

@@ -270,7 +270,7 @@
       </div>
     </div>
     <!-- small-cards/list-large/list-small -->
-    <div class="container articles-container list-small">
+    <div class="container articles-container">
       <div class="view articles__view row">
         <div class="view__left">
           <img src="image/sort.svg" alt="icon: sort" class="view__icon">
@@ -890,7 +890,7 @@
                       </svg>
                     </span>
                   </label>
-                  <input type="text" class="account-form__input" placeholder="Елена">
+                  <input id="name" type="text" class="account-form__input" placeholder="Елена">
                 </div>
                 <div class="account-form__wrap-input account-form__wrap-input--two">
                   <label for="lastName" class="account-form__label">Фамилия
@@ -899,8 +899,9 @@
                       <svg class="question-mark">
                         <use xlink:href="image/svg.svg#question"></use>
                       </svg>
+                    </span>
                   </label>
-                  <input type="text" class="account-form__input" placeholder="Савинцева">
+                  <input id="lastName" type="text" class="account-form__input" placeholder="Савинцева">
                 </div>
                 <div class="account-form__wrap-input">
                   <label for="email" class="account-form__label">Электронная почта
@@ -909,8 +910,9 @@
                       <svg class="question-mark">
                         <use xlink:href="image/svg.svg#question"></use>
                       </svg>
+                    </span>
                   </label>
-                  <input type="email" class="account-form__input" placeholder="elena.savinceva@gmail.com">
+                  <input id="email" type="email" class="account-form__input" placeholder="elena.savinceva@gmail.com">
                 </div>
                 <div class="account-form__wrap-input account-form__wrap-input--last">
                   <label for="phone" class="account-form__label">Номер телефона
@@ -920,7 +922,7 @@
                         <use xlink:href="image/svg.svg#question"></use>
                       </svg>
                   </label>
-                  <input type="tel" class="account-form__input" placeholder="8 954 432 32 54">
+                  <input id="phone" type="tel" class="account-form__input" placeholder="8 954 432 32 54">
                 </div>
               </div>
               <button type="submit" class="account-form__button">
@@ -947,7 +949,7 @@
                       </svg>
                     </span>
                   </label>
-                  <input type="password" class="account-form__input" placeholder="">
+                  <input id="password" type="password" class="account-form__input" placeholder="">
                 </div>
                 <div class="account-form__wrap-input account-form__wrap-input--last">
                   <label for="updatePassword" class="account-form__label">Повторите новый пароль
@@ -956,8 +958,9 @@
                       <svg class="question-mark">
                         <use xlink:href="image/svg.svg#question"></use>
                       </svg>
+                    </span>
                   </label>
-                  <input type="password" class="account-form__input" placeholder="">
+                  <input id="updatePassword" type="password" class="account-form__input" placeholder="">
                 </div>
               </div>
               <button type="submit" class="account-form__button">
@@ -980,7 +983,7 @@
                 </div>
                 <div class="account-form__wrap">
                   <div class="drag-drop">
-                    <label for="account-avatar" class="drag-drop__download-btn">
+                    <label for="account-update-avatar" class="drag-drop__download-btn">
                       <span class="drag-drop__download-curcul">
                         <svg width="24" height="24" class="drag-drop__download-icon ">
                           <use xlink:href='image/svg.svg#download'/>
@@ -988,10 +991,10 @@
                       </span>
                       Загрузить с компьютера
                     </label>
-                    <label for="account-avatar" class="drag-drop__download-zona">
+                    <label for="account-update-avatar" class="drag-drop__download-zona">
                       <img src="image/drap-drop.svg" alt="icon: drap-drop" class="drag-drop__icon-drap">
                       Вы можете загрузить файл просто&nbsp;перетащив его в эту рамку
-                      <input id="account-avatar" type="file" class="drag-drop__download-drag">
+                      <input id="account-update-avatar" type="file" class="drag-drop__download-drag">
                     </label>
                     <div class="drag-drop__download-format">
                       Поддерживаемые форматы: .png, .jpg, .jpeg <br>

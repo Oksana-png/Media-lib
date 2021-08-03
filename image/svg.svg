@@ -187,4 +187,12 @@
       </clipPath>
     </defs>
   </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="magnifier">
+    <path d="M17.432 10.716a6.716 6.716 0 11-13.432 0 6.716 6.716 0 0113.432 0z" stroke-width="2" stroke-linecap="square"></path>
+    <path d="M15.346 16.117l4.63 4.63" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="addFiles">
+    <path d="M13 5H2v24h18v-3M13 5v8h7m-7-8l7 8m0 0v3" stroke-width="2"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M26 20v-6h-2v6h-6v2h6v6h2v-6h6v-2h-6z" fill="#fff"></path>
+  </symbol>
 </svg>
