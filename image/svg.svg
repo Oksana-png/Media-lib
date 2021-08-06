@@ -68,10 +68,10 @@
     <circle cx="12" cy="17" r="2"></circle>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="share">
-    <circle cx="15" cy="7" r="3" stroke="#000" stroke-width="2"></circle>
-    <path d="M8.5 10.333l4-2.667m-4 6l4 2.667" stroke="#000" stroke-width="2"></path>
-    <circle cx="15" cy="17" r="3" stroke="#000" stroke-width="2"></circle>
-    <circle cx="7" cy="12" r="3" stroke="#000" stroke-width="2"></circle>
+    <circle cx="15" cy="7" r="3" stroke-width="2"></circle>
+    <path d="M8.5 10.333l4-2.667m-4 6l4 2.667" stroke-width="2"></path>
+    <circle cx="15" cy="17" r="3" stroke-width="2"></circle>
+    <circle cx="7" cy="12" r="3" stroke-width="2"></circle>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="articles">
     <path stroke="#000" stroke-width="2" d="M2 1h12v14H2zm3 4h6M5 9h4"></path>
@@ -194,5 +194,20 @@
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="addFiles">
     <path d="M13 5H2v24h18v-3M13 5v8h7m-7-8l7 8m0 0v3" stroke-width="2"></path>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M26 20v-6h-2v6h-6v2h6v6h2v-6h6v-2h-6z" fill="#fff"></path>
+  </symbol>
+  
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="menu-large">
+    <path d="M2.625 6h19m-19 7h12m-12 7h19" stroke="#000" stroke-width="2"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="search-large">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.807 7.716a5.716 5.716 0 11-11.432 0 5.716 5.716 0 0111.432 0zm-1.463 6.44a7.716 7.716 0 111.515-1.314l4.199 4.198-1.415 1.414-4.299-4.299z" fill="#000" fill-opacity=".8"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="account-large">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.125 8.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm2 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0zM22.397 21c.38.623.622 1.296.7 2H4.152c.079-.704.32-1.377.7-2 1.432-2.349 4.82-4 8.773-4 3.952 0 7.34 1.651 8.772 4zm-3.375-.572c.289.184.545.376.77.572H7.458c.225-.196.48-.388.77-.572C9.568 19.575 11.46 19 13.625 19s4.057.575 5.397 1.428z" fill="#000"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24" id="home-large">
+
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.375 1.662l.664.59 9 8 .336.299v11.45h-20V10.55l.336-.298 9-8 .664-.59zm0 2.676l-8 7.111V20h16v-8.55l-8-7.112z" fill="#282E2C"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.375 1.662l.664.59 9 8 .336.299v11.45h-20V10.55l.336-.298 9-8 .664-.59zm0 2.676l-8 7.111V20h16v-8.55l-8-7.112z" fill="#000"></path>
   </symbol>
 </svg>

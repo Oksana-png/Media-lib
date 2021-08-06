@@ -254,6 +254,7 @@
       &__right
         width: 100%
         padding: 30px 60px 57px 60px
+        min-height: 580px
       &__close
         top: 38px
         right: 60px
@@ -268,7 +269,8 @@
           margin-bottom: 10px
       &__social
         width: 131px
-        height: 30px
+        height: 35px
+
     &-reg-success
       &__text
         &-success
@@ -339,6 +341,7 @@
         line-height: 40px
         width: 100%
         margin-top: 5px
+        padding: 5px 32px
   .search
     &__close
       top: 20px
@@ -391,6 +394,7 @@
     &-personal
       &__item
         padding: 10px 24px
+
 @media (max-width: 1500px) and (min-width: 991px)
   .articles
     &-container
@@ -491,6 +495,8 @@
       &-zona
         font-size: 14px
         line-height: 24px
+  .add-matherial
+    bottom: 120px
 @media (max-width: 991px)
   .container
     max-width: 690px
@@ -719,11 +725,23 @@
         margin-bottom: 16px
       &__blocks
         flex-direction: column
+  .selecting-cards
+    &__list
+      min-width: 550px
+    &__item
+      padding: 8px 20px
+    &__link
+      font-size: 14px
+    &__icon
+      margin-right: 10px
+    &__close
+      font-size: 14px
+      padding: 8px 36px
 @media (max-width: 767px)
   .container
     width: 80%
     min-width: 260px
-    max-width: 460px
+    max-width: 340px
   .header
     &-top
       display: none
@@ -880,6 +898,7 @@
     width: 16px
     height: 16px
   .share
+
     width: 16px
     height: 16px
   .dots
@@ -1058,9 +1077,10 @@
         background-color: #FFFFFF
         border: 1px solid #D6D6D6
         top: 26px
-        right: 30px
+        right: 11px
       &__right
         padding: 30px
+        padding-right: 13px
         min-height: 610px
       &__text
         &-social
@@ -1149,9 +1169,11 @@
       font-size: 12px
       line-height: 32px
     &-input
-      padding: 8px 24px
+      padding: 6px 24px
       font-size: 12px
       line-height: 24px
+      box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1)
+      border-radius: 8px
       &::placeholder
         font-size: 12px
         line-height: 24px
@@ -1166,6 +1188,7 @@
         padding: 0
         padding-left: 32px
         padding-right: 32px
+        border-radius: 8px
       &-entry
         margin-top: 15px
     &-add
@@ -1324,7 +1347,15 @@
         line-height: 18px
         margin-bottom: 16px
     &-matherial
-      display: none
+      width: 50px
+      height: 50px
+      bottom: 93px
+      transform: translateX(-132px)
+      left: 50%
+      &__icon
+        display: none
+        &-mobile
+          display: block
   .matherial
     &-icon
       margin-top: 8px
@@ -1409,8 +1440,51 @@
         line-height: 30px
       &__nav
         display: none
+  .mobile
+    &-nav
+      display: block
+      position: fixed
+      bottom: 20px
+      right: 50%
+      transform: translateX(50%)
+      z-index: 1000
+  .selecting-cards
+    transform: translate(128px)
+    flex-direction: column
+    bottom: 93px
+    right: 50%
+    align-items: flex-end
+    &__list
+      min-width: 196px
+      max-width: 196px
+      margin-right: 0
+      margin-bottom: 5px
+      border-radius: 8px
+    &__item
+      background-color: #fff
+      padding: 0 11px
+      &:first-child
+        padding: 0 20px
+    &__text
+      display: none
+    &__icon
+      width: 15px
+      height: 15px
+      margin-right: 0
+      stroke: #000
+    &__close
+      font-size: 8px
+      line-height: 20px
+      padding: 0 36px
+      width: 196px
+      color: #000
+      background-color: #fff
+    &__link
+      font-size: 8px
+      line-height: 20px
+      color: #000
 
-  @media (max-width: 360px)
+@media (max-width: 360px)
   .popup
     &-info
       &__title

@@ -26,7 +26,7 @@
       padding: 40px
     &-download
       width: 1120px
-      height: 572px
+      height: 575px
       padding: 32px
     &-registration
       width: 1341px
@@ -230,13 +230,6 @@
       overflow-y: auto
       position: relative
       margin-bottom: 24px
-      &::after
-        content: ''
-        height: 1px
-        width: 100%
-        position: absolute
-        bottom: 0
-        background-color: #D6D6D6
     &__item
       position: relative
       padding: 20px 0
@@ -253,6 +246,13 @@
       &:last-child
         &::after
           display: none
+        &::before
+          content: ''
+          height: 1px
+          width: 100%
+          position: absolute
+          bottom: 0
+          background-color: #D6D6D6
     &__info
       &-name
         font-size: 16px

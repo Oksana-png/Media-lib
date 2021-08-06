@@ -2321,10 +2321,91 @@
         <!-- /.add__form -->
     </div>
   </div>
-  <a href="#" class="add-matherial">
-    <svg class="add-matherial__icon">
-      <use xlink:href="image/svg.svg#addFiles"></use>
-    </svg>
-  </a>
+  <div class="container">
+    <div class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item">
+          <a href="#" class="mobile-nav__link">
+            <svg class="mobile-nav__icon">
+              <use xlink:href="image/svg.svg#home-large"></use>
+            </svg>
+            <span class="mobile-nav__text">Главная</span>
+          </a>
+        </li>
+        <li class="mobile-nav__item mobile-nav__item-active">
+          <a href="#" class="mobile-nav__link">
+            <svg class="mobile-nav__icon">
+              <use xlink:href="image/svg.svg#menu-large"></use>
+            </svg>
+            <span class="mobile-nav__text">Меню</span>
+          </a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#" class="mobile-nav__link">
+            <svg class="mobile-nav__icon">
+              <use xlink:href="image/svg.svg#search-large"></use>
+            </svg>
+            <span class="mobile-nav__text">Поиск</span>
+          </a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="#" class="mobile-nav__link">
+            <svg class="mobile-nav__icon">
+              <use xlink:href="image/svg.svg#account-large"></use>
+            </svg>
+            <span class="mobile-nav__text">Кабинет</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a href="#" class="add-matherial">
+      <svg class="add-matherial__icon">
+        <use xlink:href="image/svg.svg#addFiles"></use>
+      </svg>
+      <svg class="add-matherial__icon-mobile">
+        <use xlink:href="image/svg.svg#plus"></use>
+      </svg>
+    </a>
+  </div>
+  <div class="selecting-cards">
+    <ul class="selecting-cards__list">
+      <li class="selecting-cards__item">
+        <a href="#" class="selecting-cards__link">
+          Выбрано: 5
+        </a>
+      </li>
+      <li class="selecting-cards__item">
+        <a href="#" class="selecting-cards__link">
+          <svg width="24" height="24" class="selecting-cards__icon">
+            <use xlink:href='image/svg.svg#download'/>
+          </svg>
+          <span class="selecting-cards__text">
+            Скачать
+          </span>
+        </a>
+      </li>
+      <li class="selecting-cards__item">
+        <a href="#" class="selecting-cards__link">
+          <svg width="24" height="24" class="selecting-cards__icon">
+            <use xlink:href='image/svg.svg#delete'/>
+          </svg>
+          <span class="selecting-cards__text">
+            Удалить
+          </span>
+        </a>
+      </li>
+      <li class="selecting-cards__item">
+        <a href="#" class="selecting-cards__link">
+          <svg width="24" height="24" class="selecting-cards__icon">
+            <use xlink:href='image/svg.svg#share'/>
+          </svg>
+          <span class="selecting-cards__text">
+            Поделиться
+          </span>
+        </a>
+      </li>
+    </ul>
+    <button class="selecting-cards__close">Отмена</button>
+  </div>
 </body>
 </html>
