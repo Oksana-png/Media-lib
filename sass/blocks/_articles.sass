@@ -1,6 +1,7 @@
 .articles
-  display: none
   padding-bottom: 72px
+  &__none
+    display: none !important
   &__navigation
     display: flex
     align-items: center
@@ -83,6 +84,8 @@
       transition: 0.3s linear
 .filters
   &__item
+    display: inline-flex
+    align-items: center
     border: none
     background-color: #fff
     margin-right: 24px
@@ -97,6 +100,8 @@
             &--author
               &>.select-author
                 display: block
+  &__arrow
+    transition: 0.2s linear
   &__icon
     width: 24px
     height: 24px
@@ -227,6 +232,8 @@
 .arrow
   &-next, &-prev
     stroke: #000
+.share
+  stroke: #000
 // ВИДЫ КАРТОЧЕК
 @media (min-width: 991px)
   .articles
@@ -303,6 +310,7 @@
               width: 120px
               height: 120px
               margin: auto
+              border-radius: 8px
           &__image
             height: 120px
             border-radius: 8px
@@ -462,6 +470,7 @@
               width: 64px
               height: 64px
               margin: auto 0
+              border-radius: 8px
               &:hover
                 &>.card__link-eye
                   display: none

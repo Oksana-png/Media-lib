@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Montserrat:wght@500;600;700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-  <script defer src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script defer src="https://unpkg.com/react@17/umd/react.production.min.jsgit " crossorigin></script>
+  <script defer src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.jsgit " crossorigin></script>
   <script defer src="js/main.js"></script>
   <title>Media Lib</title>
 </head>
@@ -19,28 +19,28 @@
     <div class="header-top">
       <div class="container">
         <div class="row justify-content-between">
-          <div class="header-top__link-lib">
+          <a href="#" class="header-top__link-lib">
             <div class="header-top__icon-block">
               <img src="image/link.svg" alt="icon link">
             </div>
-            <a href="#" class="header-top__text-lib">
+            <span class="header-top__text-lib">
               Перейти на сайт библиотеки
-            </a>
+            </span>
             <div class="header-top__icon-full">
               <img src="image/openNewWindow.svg" alt="open in new window">
             </div>
-          </div>
+          </a>
           <div class="header-top__wrap-right">
-            <div class="header-top__phone-block">
+            <a href="tel:89543242132" class="header-top__phone-block">
               <img class="header-top__icon-phone" src="image/phone.svg" alt="icon: phone">
               <div class="header-top__phone-text">
                 <div class="header-top__text">
                   Технический отдел
                 </div>
-                <a href="tel:89543242132" class="header-top__phone-number">8 954 324 21 32</a>
+                <span class="header-top__phone-number">8 954 324 21 32</span>
               </div>
               
-            </div>
+            </a>
             <a href="#" class="header-top__eye">
               <img src="image/eye.svg" alt="icon: eye" class="icon-eye">
               <div class="header-top__text-eye">Версия для слабовидящих</div>
@@ -75,9 +75,9 @@
             </button>
           </div>
           <div class="author">
-            <a href="#" class="author__photo">
+            <button class="author__photo">
               <img src="image/authorPhoto.jpg" alt="Фото: Елена Савинцева" class="author__photo-img">
-            </a>
+            </button>
             <div class="author__info">
               <div class="author__text">
                 <span class="author__name">Елена Савинцева</span>
@@ -315,7 +315,7 @@
               <li class="select-edition__item">
                 <input type="checkbox" id="notAuthor" name="scales" class="select-edition__checkbox">
                 <label for="notAuthor" class="select-edition__checkbox-active">
-                  <div class="select-edition__button-checkbox"></div>
+                  <span class="select-edition__button-checkbox"></span>
                     <svg width="12" height="9" class="select-edition__checkbox-check">
                       <use xlink:href='image/svg.svg#check'/>
                     </svg>
@@ -325,7 +325,7 @@
               <li class="select-edition__item">
                 <input type="checkbox" id="notTags" name="scales" class="select-edition__checkbox">
                 <label for="notTags" class="select-edition__checkbox-active">
-                  <div class="select-edition__button-checkbox"></div>
+                  <span class="select-edition__button-checkbox"></span>
                     <svg width="12" height="9" class="select-edition__checkbox-check">
                       <use xlink:href='image/svg.svg#check'/>
                     </svg>
@@ -335,7 +335,7 @@
               <li class="select-edition__item">
                 <input type="checkbox" id="notOblozhec" name="scales" class="select-edition__checkbox">
                 <label for="notOblozhec" class="select-edition__checkbox-active">
-                  <div class="select-edition__button-checkbox"></div>
+                  <span class="select-edition__button-checkbox"></span>
                     <svg width="12" height="9" class="select-edition__checkbox-check">
                       <use xlink:href='image/svg.svg#check'/>
                     </svg>
@@ -343,9 +343,9 @@
                 </label>
               </li>
               <li class="select-edition__item">
-                <input type="checkbox" id="public" name="scales" class="select-edition__checkbox">
-                <label for="public" class="select-edition__checkbox-active">
-                  <div class="select-edition__button-checkbox"></div>
+                <input type="checkbox" id="onliPublic" name="scales" class="select-edition__checkbox">
+                <label for="onliPublic" class="select-edition__checkbox-active">
+                  <span class="select-edition__button-checkbox"></span>
                     <svg width="12" height="9" class="select-edition__checkbox-check">
                       <use xlink:href='image/svg.svg#check'/>
                     </svg>
@@ -355,7 +355,7 @@
               <li class="select-edition__item">
                 <input type="checkbox" id="notPublic" name="scales" class="select-edition__checkbox">
                 <label for="notPublic" class="select-edition__checkbox-active">
-                  <div class="select-edition__button-checkbox"></div>
+                  <span class="select-edition__button-checkbox"></span>
                     <svg width="12" height="9" class="select-edition__checkbox-check">
                       <use xlink:href='image/svg.svg#check'/>
                     </svg>
@@ -504,7 +504,7 @@
                   <span class="card__button-text">Поделиться</span>
                 </button>
                 <button class="card__button card__button-dots">
-                  <svg width="24" height="24" class="dots">
+                  <svg width="24" height="24" class="dots card__dots">
                     <use xlink:href='image/svg.svg#dots'/>
                   </svg>
                 </button>
@@ -513,19 +513,19 @@
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#edit"></use>
                     </svg>
-                    <div class="menu-list__text">Редактировать</div>
+                    <span class="menu-list__text">Редактировать</span>
                   </button>
                   <button class="menu-list__button menu-list__button--info">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#information"></use>
                     </svg>
-                    <div class="menu-list__text">Информация</div>
+                    <span class="menu-list__text">Информация</span>
                   </button>
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#delete"></use>
                     </svg>
-                    <div class="menu-list__text">Удалить</div>
+                    <span class="menu-list__text">Удалить</span>
                   </button>
                 </div>
               </div>
@@ -609,19 +609,19 @@
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#edit"></use>
                     </svg>
-                    <div class="menu-list__text">Редактировать</div>
+                    <span class="menu-list__text">Редактировать</span>
                   </button>
                   <button class="menu-list__button menu-list__button--info">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#information"></use>
                     </svg>
-                    <div class="menu-list__text">Информация</div>
+                    <span class="menu-list__text">Информация</span>
                   </button>
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#delete"></use>
                     </svg>
-                    <div class="menu-list__text">Удалить</div>
+                    <span class="menu-list__text">Удалить</span>
                   </button>
                 </div>
               </div>
@@ -705,19 +705,19 @@
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#edit"></use>
                     </svg>
-                    <div class="menu-list__text">Редактировать</div>
+                    <span class="menu-list__text">Редактировать</span>
                   </button>
                   <button class="menu-list__button menu-list__button--info">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#information"></use>
                     </svg>
-                    <div class="menu-list__text">Информация</div>
+                    <span class="menu-list__text">Информация</span>
                   </button>
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#delete"></use>
                     </svg>
-                    <div class="menu-list__text">Удалить</div>
+                    <span class="menu-list__text">Удалить</span>
                   </button>
                 </div>
               </div>
@@ -801,19 +801,19 @@
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#edit"></use>
                     </svg>
-                    <div class="menu-list__text">Редактировать</div>
+                    <span class="menu-list__text">Редактировать</span>
                   </button>
                   <button class="menu-list__button menu-list__button--info">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#information"></use>
                     </svg>
-                    <div class="menu-list__text">Информация</div>
+                    <span class="menu-list__text">Информация</span>
                   </button>
                   <button class="menu-list__button">
                     <svg class="menu-list__icon">
                       <use xlink:href="image/svg.svg#delete"></use>
                     </svg>
-                    <div class="menu-list__text">Удалить</div>
+                    <span class="menu-list__text">Удалить</span>
                   </button>
                 </div>
               </div>
@@ -1150,13 +1150,13 @@
             <svg width="24" height="24" class="page-details__icon">
               <use xlink:href='image/svg.svg#favoritesActive'/>
             </svg>
-            <div class="page-details__text">В избранное</div>
+            <span class="page-details__text">В избранное</span>
           </button>
           <button class="page-details__download page-details__button">
             <svg width="24" height="24" class="page-details__icon">
               <use xlink:href='image/svg.svg#download'/>
             </svg>
-            <div class="page-details__text">Скачать</div>
+            <span class="page-details__text">Скачать</span>
           </button>
         </div>
           <ul class="page-details__list">
@@ -2411,14 +2411,14 @@
         </li>
       </ul>
     </div>
-    <a href="#" class="add-matherial">
+    <button class="add-matherial">
       <svg class="add-matherial__icon">
         <use xlink:href="image/svg.svg#addFiles"></use>
       </svg>
       <svg class="add-matherial__icon-mobile">
         <use xlink:href="image/svg.svg#plus"></use>
       </svg>
-    </a>
+    </button>
   </div>
   <div class="selecting-cards">
     <ul class="selecting-cards__list">
