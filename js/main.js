@@ -26,6 +26,9 @@
 // ReactDOM.render(e(LikeButton), test);
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  const widthScroll = window.innerWidth - document.body.clientWidth;
+
   // Виды карточек 
   const viewShowButtons = document.querySelectorAll('.view__show');
   const changeView = (i) => {
@@ -43,8 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
     articlesContainer.classList.add(classView[i]);
 
     articlesCards.classList.add('articles__none');
+    document.body.style.overflow = 'scroll';
     setTimeout(() => {
       articlesCards.classList.remove('articles__none');
+      document.body.style.overflow = 'auto';
     }, 100);
 
   };
@@ -76,6 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(card);
       const downloadModal = document.querySelector('.popup-download');
       downloadModal.style.visibility = 'visible';
+      document.body.style.cssText = `
+        padding-right: ${widthScroll}px;
+        overflow: hidden;
+      `;
     }
     const favorites = (card, btn) => {
       
@@ -105,6 +114,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target.classList.contains('popup-download') || target.closest('.popup-download__close')) {
         const downloadModal = document.querySelector('.popup-download');
         downloadModal.style.visibility = 'hidden';
+        document.body.style.cssText = `
+          padding-right: 0;
+          overflow: auto;
+        `;
       }
     });
   }
@@ -146,6 +159,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = e.target;
       if (target.closest('.filters__item')) {
         openSelect(target.closest('.filters__item'));
+      } else if (!target.closest('.filters__item') && !target.closest('.select-author') && !target.closest('.select-edition')) {
+        filterButtons.forEach((item, i) => {
+          if (i === 1 || i === 2) {
+            return;
+          }
+          (articlesFilter.querySelector(classFilters[i])).style.display = 'none';
+          allArrow[i + 1].style.transform = 'rotate(0deg)';
+        })
       }
     });
   }
@@ -160,11 +181,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const openAddingModal = () => {
       iconAdding.style.display = 'none';
       addingModal.style.visibility = 'visible';
+      document.body.style.cssText = `
+        padding-right: ${widthScroll}px;
+        overflow: hidden;
+      `;
     }
 
     const closeAddingModal = () => {
       iconAdding.style.display = 'flex';
       addingModal.style.visibility = 'hidden';
+      document.body.style.cssText = `
+        padding-right: 0;
+        overflow: auto;
+      `;
     }
 
     avatar.addEventListener('click', openAddingModal);
@@ -182,9 +211,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchHeader.addEventListener('click', () => {
       searchModal.style.visibility = 'visible';
+      document.body.style.cssText = `
+        padding-right: ${widthScroll}px;
+        overflow: hidden;
+      `;
     });
+
     closeSearchModal.addEventListener('click', () => {
       searchModal.style.visibility = 'hidden';
+      document.body.style.cssText = `
+        padding-right: 0;
+        overflow: auto;
+      `;
     });
   }
 
