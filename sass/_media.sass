@@ -393,7 +393,12 @@
     &-personal
       &__item
         padding: 10px 24px
-
+  .page
+    &__container
+      width: 896px
+  &__image
+    &-photo
+      height: 100%
 @media (max-width: 1500px) and (min-width: 991px)
   .articles
     &-container
@@ -480,6 +485,9 @@
             margin-right: 16px
           &:nth-child(6n)
             margin-right: 0
+  .author
+    &-menu
+      left: -122px
   .photo
     &-edit
       &__turn
@@ -496,6 +504,31 @@
         line-height: 24px
   .add-matherial
     bottom: 120px
+  .page
+    &__container
+      max-width: 880px
+    &-details
+      &__wrap
+        margin-bottom: 32px
+      &__item
+        min-width: 292px
+        &:not(:last-child)::after
+          width: 1px
+          height: 100%
+      &__list
+        position: static
+        right: 0
+        left: 0
+        width: 100%
+        flex-direction: row
+      &__button
+        &-text
+          display: inline-block
+        &-menu
+          padding: 8px 16px
+      &__icon
+        &-menu
+          margin-right: 8px
 @media (max-width: 991px)
   .container
     max-width: 690px
@@ -653,6 +686,7 @@
   .search
     &__close
       right: -32px
+
   .matherial
     &__info
       flex-direction: column
@@ -736,6 +770,18 @@
     &__close
       font-size: 14px
       padding: 8px 36px
+  .page
+    &__container
+      max-width: 690px
+    &__image
+      height: 459px
+    &-details
+      &__text
+        display: none
+      &__icon
+        margin-right: 0
+      &__item
+        min-width: 229px
 @media (max-width: 767px)
   .container
     width: 80%
@@ -1478,7 +1524,80 @@
       font-size: 8px
       line-height: 20px
       color: #000
+  .page
+    &__container
+      width: 80%
+      min-width: 260px
+      max-width: 340px
+      display: flex
+      flex-direction: column
+    &__title
+      font-style: normal
+      font-weight: 600
+      font-size: 25px
+      line-height: 30px
+      margin-bottom: 15px
+      order: -2
 
+    &__image
+      height: 160px
+      order: -1
+      margin-bottom: 15px
+    &__details
+      order: 0
+      margin-bottom: 15px
+    &__text
+      font-weight: normal
+      font-size: 12px
+      line-height: 18px
+      margin-bottom: 15px
+    &-details
+      &__wrap
+        flex-wrap: wrap
+        margin-bottom: 5px
+      &__elem
+        font-size: 12px
+        line-height: 40px
+        &:not(:last-child)::after
+          display: none
+      &__text
+        display: inline-block
+        font-weight: normal
+        font-size: 12px
+        line-height: 24px
+      &__icon
+        margin-right: 8px
+      &__type
+        &::after
+          content: ''
+          position: absolute
+          height: 16px
+          width: 1px
+          right: 0
+          top: 0
+          background-color: #D6D6D6
+      &__id
+        order: 1
+      &__date
+        order: 2
+        flex-basis: 100%
+        margin-right: 0
+        padding-right: 0
+      &__favorites
+        margin: 0
+        order: 3
+      &__download
+        order: 4
+      &__button
+        &-text
+          display: none
+      &__item
+        min-width: 86px
+        max-width: 113px
+        width: 100%
+      &__icon
+        &-menu
+          margin-right: 0
 @media (max-width: 360px)
   .popup
     &-info

@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const downloadFails = (card) => {
       console.log(card);
-      const downloadModal = document.querySelector('.popup-download');
+      const downloadModal = document.querySelector('.popup.popup-download');
       downloadModal.style.visibility = 'visible';
       document.body.style.cssText = `
         padding-right: ${widthScroll}px;
@@ -104,6 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
           downloadFails(card);
         } else if (target.closest('.card__button-favorites')) {
           favorites(card, target.closest('.card__button-favorites'));
+        } else if (!target.closest('.card__button-dots')) {
+          const menuAll = document.querySelectorAll('.menu-list');
+          menuAll.forEach((elem) => elem.style.display = 'none');
         }
       });
     });
